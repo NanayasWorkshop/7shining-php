@@ -1,4 +1,4 @@
-/* Navigation Styles */
+/* Navigation Styles - FIXED Z-INDEX VERSION */
 
 /* Main Navigation */
 nav {
@@ -67,14 +67,16 @@ nav.scrolled {
   width: 100%;
 }
 
-/* Mobile Menu */
+/* Mobile Menu - FIXED Z-INDEX */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   padding: var(--space-sm);
-  z-index: calc(var(--z-fixed) + 1);
+  z-index: 1060; /* FIXED: Higher than menu overlay */
   position: relative;
+  background: transparent;
+  border: none;
 }
 
 .hamburger span {
@@ -86,8 +88,10 @@ nav.scrolled {
   border-radius: 2px;
 }
 
+/* FIXED: Hamburger active state with proper transforms */
 .hamburger.active span:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
+  background: var(--color-text-primary);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -96,6 +100,12 @@ nav.scrolled {
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(45deg) translate(-5px, -6px);
+  background: var(--color-text-primary);
+}
+
+/* FIXED: Ensure hamburger stays on top when menu is open */
+.hamburger.active {
+  z-index: 1060; /* Higher than menu */
 }
 
 /* Footer */
@@ -160,27 +170,30 @@ nav.scrolled {
   margin: 0;
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation - FIXED VERSION */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
+  /* FIXED: Mobile menu with proper z-index hierarchy */
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
     height: 100vh;
+    height: 100svh; /* Better mobile support */
     width: 100%;
-    max-width: 300px;
+    max-width: 320px; /* Slightly wider for better UX */
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--color-bg-primary);
     transition: right var(--transition-slow);
-    z-index: var(--z-modal);
+    z-index: 1050; /* FIXED: Lower than hamburger */
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     gap: var(--space-2xl);
+    padding: var(--space-xl);
   }
 
   .nav-links.active {
@@ -189,6 +202,8 @@ nav.scrolled {
 
   .nav-links li {
     margin: var(--space-lg) 0;
+    width: 100%;
+    text-align: center;
   }
 
   .nav-links a {
@@ -196,12 +211,48 @@ nav.scrolled {
     color: var(--color-text-primary);
     text-decoration: none;
     transition: var(--transition-normal);
+    display: block;
+    padding: var(--space-md);
+    border-radius: var(--radius-md);
+    min-height: 44px; /* FIXED: Better touch target */
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .nav-links a:hover {
     color: var(--color-primary);
+    background: var(--color-bg-secondary);
   }
 
+  /* FIXED: Remove desktop hover effects on mobile */
+  .nav-links a::after {
+    display: none;
+  }
+
+  /* FIXED: Add mobile backdrop */
+  .nav-links.active::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+  }
+
+  /* FIXED: Ensure hamburger stays visible and clickable */
+  .nav-container {
+    position: relative;
+    z-index: 1060;
+  }
+
+  .hamburger {
+    position: relative;
+    z-index: 1060;
+  }
+
+  /* Footer adjustments for mobile */
   .footer-content {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -209,8 +260,56 @@ nav.scrolled {
   }
 }
 
+/* FIXED: Extra small mobile adjustments */
 @media (max-width: 480px) {
   .nav-container {
     padding: var(--space-md);
+  }
+
+  .nav-links {
+    max-width: 280px;
+    padding: var(--space-lg);
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+    padding: var(--space-sm);
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+}
+
+/* FIXED: Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  .nav-links {
+    transition: none;
+  }
+  
+  .hamburger span {
+    transition: none;
+  }
+}
+
+/* FIXED: Focus states for accessibility */
+.hamburger:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+.nav-links a:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+/* FIXED: High contrast mode support */
+@media (prefers-contrast: high) {
+  .nav-links {
+    border: 2px solid var(--color-text-primary);
+  }
+  
+  .hamburger span {
+    background: var(--color-text-primary);
   }
 }

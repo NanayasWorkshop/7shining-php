@@ -1,27 +1,28 @@
-/* Page-Specific Styles */
+/* Page-Specific Styles - MOBILE FIXED VERSION */
 
 /* Hero Sections */
 .hero {
+  min-height: 100vh;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(135deg, rgba(244, 244, 244, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%), 
-              url('milad-fakurian-DjjaZybYx4I-unsplash-e1663923748619.jpg') center/cover no-repeat;
+              url('../images/milad-fakurian-DjjaZybYx4I-unsplash-e1663923748619.jpg') center/cover no-repeat;
   text-align: center;
   padding: 0 var(--container-padding);
   position: relative;
 }
 
 .hero-content h1 {
-  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 4rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-lg);
   color: var(--color-text-primary);
 }
 
 .hero-content p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   margin-bottom: var(--space-xl);
   opacity: 0.9;
   max-width: 600px;
@@ -48,7 +49,7 @@
 .news-hero .hero-content h1,
 .legal-hero h1,
 .membership-hero .hero-content h1 {
-  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-lg);
   color: var(--color-text-primary);
@@ -60,7 +61,7 @@
 .news-hero .hero-content p,
 .legal-hero p,
 .membership-hero .hero-content p {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 3vw, 1.2rem);
   margin-bottom: var(--space-2xl);
   opacity: 0.8;
   max-width: 700px;
@@ -84,14 +85,14 @@
 }
 
 .about-text h2 {
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-xl);
   color: var(--color-text-primary);
 }
 
 .about-text p {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
   margin-bottom: var(--space-xl);
   opacity: 0.8;
   color: var(--color-text-secondary);
@@ -120,14 +121,14 @@
 }
 
 .value-item h3 {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-md);
   color: var(--color-text-primary);
 }
 
 .value-item p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   opacity: 0.7;
   margin-bottom: 0;
   color: var(--color-text-light);
@@ -152,14 +153,14 @@
 }
 
 .products-content h2 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-md);
   color: var(--color-text-primary);
 }
 
 .products-content p {
-  font-size: 1.1rem;
+  font-size: clamp(0.95rem, 2.5vw, 1.1rem);
   margin-bottom: var(--space-xl);
   opacity: 0.8;
   max-width: 600px;
@@ -178,14 +179,14 @@
 }
 
 .depot-text h3 {
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-lg);
   color: var(--color-text-primary);
 }
 
 .depot-text p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   line-height: 1.7;
   margin-bottom: var(--space-lg);
   opacity: 0.9;
@@ -206,6 +207,7 @@
   text-align: center;
   transition: var(--transition-normal);
   max-width: 280px;
+  width: 100%;
 }
 
 .feature-card:hover {
@@ -220,14 +222,14 @@
 }
 
 .feature-card h4 {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-md);
   color: var(--color-text-primary);
 }
 
 .feature-card p {
-  font-size: 0.95rem;
+  font-size: clamp(0.85rem, 2vw, 0.95rem);
   line-height: 1.6;
   color: var(--color-text-secondary);
   opacity: 0.9;
@@ -242,7 +244,7 @@
 
 .how-it-works h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-2xl);
   color: var(--color-text-primary);
@@ -250,7 +252,7 @@
 
 .steps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: var(--space-xl);
 }
 
@@ -284,19 +286,19 @@
 }
 
 .step h3 {
-  font-size: 1.3rem;
+  font-size: clamp(1.1rem, 3vw, 1.3rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-md);
   color: var(--color-text-primary);
 }
 
 .step p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   opacity: 0.8;
   color: var(--color-text-secondary);
 }
 
-/* Testimonials Section */
+/* Testimonials Section - FIXED FOR MOBILE */
 .testimonials {
   padding: var(--space-4xl) 0;
   background: var(--color-bg-primary);
@@ -304,22 +306,19 @@
 
 .testimonials h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-2xl);
   color: var(--color-text-primary);
 }
 
+/* FIXED: Simple grid for testimonials - no complex column positioning */
 .testimonials-grid {
   display: grid;
-  grid-template-columns: 1fr 0.2fr 1fr 0.2fr 1fr;
-  gap: 0;
-  align-items: start;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-xl);
+  max-width: 100%;
 }
-
-.testimonial:nth-child(1) { grid-column: 1; }
-.testimonial:nth-child(2) { grid-column: 3; }
-.testimonial:nth-child(3) { grid-column: 5; }
 
 .testimonial {
   background: var(--color-bg-secondary);
@@ -327,6 +326,8 @@
   border-radius: var(--radius-lg);
   border: 1px solid var(--color-border);
   transition: var(--transition-normal);
+  width: 100%;
+  max-width: 100%;
 }
 
 .testimonial:hover {
@@ -340,7 +341,7 @@
 }
 
 .testimonial-content p {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   line-height: 1.6;
   color: var(--color-text-primary);
   font-style: italic;
@@ -363,17 +364,18 @@
   color: var(--color-white);
   font-weight: var(--font-weight-semibold);
   font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .author-info h4 {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: 0.25rem;
   color: var(--color-text-primary);
 }
 
 .author-info span {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
   color: var(--color-text-light);
 }
 
@@ -385,7 +387,7 @@
 
 .contact h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-2xl);
   color: var(--color-text-primary);
@@ -399,7 +401,7 @@
 }
 
 .contact-info h2 {
-  font-size: 1.5rem;
+  font-size: clamp(1.3rem, 3vw, 1.5rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: var(--space-xl);
   color: var(--color-text-primary);
@@ -408,6 +410,7 @@
 
 .contact-info p {
   margin-bottom: var(--space-xl);
+  font-size: clamp(0.9rem, 2vw, 1rem);
 }
 
 .contact-details {
@@ -431,17 +434,18 @@
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
+  flex-shrink: 0;
 }
 
 .contact-details h4 {
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1rem);
   font-weight: var(--font-weight-semibold);
   margin-bottom: 0.25rem;
   color: var(--color-text-primary);
 }
 
 .contact-details p {
-  font-size: 0.9rem;
+  font-size: clamp(0.8rem, 1.8vw, 0.9rem);
   opacity: 0.8;
   color: var(--color-text-secondary);
   margin: 0;
@@ -451,17 +455,23 @@
   text-align: center;
 }
 
-/* Mobile Responsive for Pages */
+/* MOBILE RESPONSIVE - CRITICAL FIXES */
 @media (max-width: 768px) {
+  /* Reduce hero height on mobile */
   .hero {
-    padding: var(--space-3xl) var(--space-md);
-    min-height: 100vh;
+    min-height: 100svh; /* Use svh if supported */
+    padding: var(--space-2xl) var(--space-md);
   }
 
   .hero-content h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
   }
 
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Fix grid layouts for mobile */
   .about-content,
   .depot-info,
   .contact-content {
@@ -473,6 +483,7 @@
     height: 250px;
   }
 
+  /* FIXED: Smaller minimum widths for mobile */
   .values {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -483,6 +494,7 @@
     gap: var(--space-lg);
   }
 
+  /* FIXED: Ensure testimonials stay in container */
   .testimonials-grid {
     grid-template-columns: 1fr;
     gap: var(--space-lg);
@@ -504,31 +516,59 @@
   .membership-hero {
     padding: var(--space-4xl) 0 var(--space-2xl);
   }
+
+  /* Reduce section padding on mobile */
+  section {
+    padding: var(--space-2xl) 0;
+  }
+
+  .how-it-works,
+  .testimonials,
+  .contact,
+  .about {
+    padding: var(--space-2xl) 0;
+  }
 }
 
+/* EXTRA SMALL MOBILE */
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .hero-content p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .about h2,
   .how-it-works h2,
   .testimonials h2,
   .contact h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .step,
   .value-item,
-  .testimonial {
+  .testimonial,
+  .feature-card {
     padding: var(--space-lg);
   }
 
-  .contact-form {
-    padding: var(--space-lg);
+  /* FIXED: Ensure minimum widths don't overflow */
+  .steps {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .values {
+    grid-template-columns: 1fr;
+  }
+
+  /* Smaller container padding */
+  .hero {
+    padding: var(--space-xl) var(--space-sm);
   }
 }

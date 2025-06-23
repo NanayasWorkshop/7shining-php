@@ -1,55 +1,152 @@
 /* Reusable Components */
 
-/* Buttons */
-.btn {
+
+/* Base button styles */
+.btn,
+.cta-button,
+.secondary-button,
+.package-button {
   display: inline-block;
-  padding: var(--space-md) var(--space-xl);
+  padding: 1rem 2rem;
   border: 2px solid transparent;
-  border-radius: var(--radius-md);
-  font-weight: var(--font-weight-semibold);
-  font-size: var(--font-size-base);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  transition: var(--transition-normal);
+  transition: all 0.3s ease;
   line-height: 1;
+  font-family: inherit;
+  background: none;
+  box-sizing: border-box;
 }
 
+/* Primary CTA Button */
 .cta-button {
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  background: #D4AF37;
+  color: #ffffff;
+  border-color: #D4AF37;
 }
 
 .cta-button:hover {
-  background: var(--color-primary-dark);
-  border-color: var(--color-primary-dark);
+  background: #B8941F;
+  border-color: #B8941F;
   transform: translateY(-2px);
-  box-shadow: var(--shadow-primary);
-  color: var(--color-white);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  color: #ffffff;
 }
 
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* Secondary Button */
 .secondary-button {
   background: transparent;
-  color: var(--color-text-primary);
-  border-color: var(--color-text-primary);
+  color: #1a1a1a;
+  border-color: #1a1a1a;
 }
 
 .secondary-button:hover {
-  background: var(--color-text-primary);
-  color: var(--color-white);
+  background: #1a1a1a;
+  color: #ffffff;
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.btn-outline-primary {
-  background: transparent;
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+.secondary-button:active {
+  transform: translateY(0);
 }
 
-.btn-outline-primary:hover {
-  background: var(--color-primary);
-  color: var(--color-white);
+/* Package Button */
+.package-button {
+  background: #D4AF37;
+  color: #ffffff;
+  border-color: #D4AF37;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.package-button:hover {
+  background: #B8941F;
+  border-color: #B8941F;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+  color: #ffffff;
+}
+
+/* Button sizes */
+.btn-sm {
+  padding: 0.75rem 1.5rem;
+  font-size: 0.875rem;
+}
+
+.btn-lg {
+  padding: 1.25rem 2.5rem;
+  font-size: 1.125rem;
+}
+
+/* Button states */
+.btn:disabled,
+.cta-button:disabled,
+.secondary-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .btn,
+  .cta-button,
+  .secondary-button,
+  .package-button {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.95rem;
+  }
+  
+  .package-button {
+    width: 100%;
+  }
+}
+
+/* Focus states for accessibility */
+.btn:focus,
+.cta-button:focus,
+.secondary-button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+/* Loading state */
+.btn.loading,
+.cta-button.loading,
+.secondary-button.loading {
+  position: relative;
+  color: transparent;
+}
+
+.btn.loading::after,
+.cta-button.loading::after,
+.secondary-button.loading::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border: 2px solid currentColor;
+  border-top: 2px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 /* Cards */

@@ -3,7 +3,13 @@
 define('ROOT_PATH', dirname(__DIR__));
 define('APP_PATH', ROOT_PATH . '/app');
 define('PUBLIC_PATH', __DIR__);
-define('BASE_URL', 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST']);
+
+// Fix BASE_URL to include the full path
+$protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
+$host = $_SERVER['HTTP_HOST'];
+$scriptName = $_SERVER['SCRIPT_NAME'];
+$basePath = str_replace('/index.php', '', $scriptName);
+define('BASE_URL', $protocol . '://' . $host . $basePath);
 
 // Load configuration (which includes session config)
 require_once APP_PATH . '/Config/app.php';
@@ -25,11 +31,10 @@ require_once APP_PATH . '/Config/routes.php';
 // Initialize router
 $router = new Core\Router();
 
-// Get the current URI
+// Get the current URI and clean it properly
 $uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
-// Remove base path if app is in subdirectory
-$basePath = str_replace($_SERVER['DOCUMENT_ROOT'], '', PUBLIC_PATH);
+// Remove the base path (e.g., /7shining-php/public)
 if ($basePath && strpos($uri, $basePath) === 0) {
     $uri = substr($uri, strlen($basePath));
 }
@@ -46,5 +51,6 @@ try {
     echo '<!DOCTYPE html><html><head><title>404 - Seite nicht gefunden</title></head>';
     echo '<body><h1>404 - Seite nicht gefunden</h1>';
     echo '<p>Die angeforderte Seite konnte nicht gefunden werden.</p>';
-    echo '<a href="' . BASE_URL . '/public/">Zurück zur Startseite</a></body></html>';
+    echo '<p>Debug info: URI = ' . htmlspecialchars($uri) . ', Error: ' . htmlspecialchars($e->getMessage()) . '</p>';
+    echo '<a href="' . BASE_URL . '/">Zurück zur Startseite</a></body></html>';
 }

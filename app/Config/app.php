@@ -54,7 +54,9 @@ if (DEBUG_MODE) {
 // Set timezone
 date_default_timezone_set('Europe/Zurich');
 
-// Start session configuration
-ini_set('session.cookie_httponly', 1);
-ini_set('session.cookie_secure', isset($_SERVER['HTTPS']));
-ini_set('session.use_strict_mode', 1);
+// Session configuration - MOVED BEFORE session_start()
+if (!session_id()) {
+    ini_set('session.cookie_httponly', 1);
+    ini_set('session.cookie_secure', isset($_SERVER['HTTPS']));
+    ini_set('session.use_strict_mode', 1);
+}

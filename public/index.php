@@ -1,12 +1,15 @@
 <?php
-// Start session
-session_start();
-
-// Define constants
+// Define constants first
 define('ROOT_PATH', dirname(__DIR__));
 define('APP_PATH', ROOT_PATH . '/app');
 define('PUBLIC_PATH', __DIR__);
 define('BASE_URL', 'http' . (isset($_SERVER['HTTPS']) ? 's' : '') . '://' . $_SERVER['HTTP_HOST']);
+
+// Load configuration (which includes session config)
+require_once APP_PATH . '/Config/app.php';
+
+// Start session AFTER configuration
+session_start();
 
 // Autoload classes
 spl_autoload_register(function ($class) {
@@ -16,8 +19,7 @@ spl_autoload_register(function ($class) {
     }
 });
 
-// Load configuration
-require_once APP_PATH . '/Config/app.php';
+// Load routes
 require_once APP_PATH . '/Config/routes.php';
 
 // Initialize router
@@ -39,8 +41,10 @@ try {
     // Route the request
     $router->route($uri);
 } catch (Exception $e) {
-    // Handle errors
+    // Handle errors - show simple 404 for now
     http_response_code(404);
-    $errorController = new Controllers\ErrorController();
-    $errorController->notFound();
+    echo '<!DOCTYPE html><html><head><title>404 - Seite nicht gefunden</title></head>';
+    echo '<body><h1>404 - Seite nicht gefunden</h1>';
+    echo '<p>Die angeforderte Seite konnte nicht gefunden werden.</p>';
+    echo '<a href="' . BASE_URL . '/public/">Zurück zur Startseite</a></body></html>';
 }

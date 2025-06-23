@@ -1,0 +1,122 @@
+/* Member Page Specific Styles */
+
+/* Membership Hero Section */
+.membership-hero {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.membership-hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+    animation: gentle-rotate 20s ease-in-out infinite alternate;
+}
+
+@keyframes gentle-rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(5deg); }
+}
+
+.membership-hero .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.membership-hero .hero-content h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.membership-hero .hero-content p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.hero-visual {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+.community-circle {
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+    animation: float 3s ease-in-out infinite;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.community-circle::before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 2px solid rgba(212, 175, 55, 0.3);
+    border-radius: 50%;
+    animation: pulse-ring 2s ease-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-ring {
+    0% {
+        transform: scale(0.8);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+.circle-content {
+    text-align: center;
+    color: white;
+}
+
+.circle-icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.circle-text {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+/* Membership Options */
+.membership-options {
+    padding: 6rem 0;
+    background: #ffffff;
+}
+
+.membership-options h2 {
+    text-align: center;
+    font-size

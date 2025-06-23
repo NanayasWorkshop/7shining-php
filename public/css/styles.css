@@ -1,14 +1,14 @@
 /* 7Shining Main CSS File - Imports all component styles */
 
 /* Import CSS files in the correct order */
-@import url('01-variables.css');
-@import url('02-reset.css');
-@import url('03-base.css');
-@import url('04-layout.css');
-@import url('05-components.css');
-@import url('06-navigation.css');
-@import url('07-pages.css');
-@import url('08-utilities.css');
+@import url('core/01-variables.css');
+@import url('core/02-reset.css');
+@import url('core/03-base.css');
+@import url('core/04-layout.css');
+@import url('core/05-components.css');
+@import url('core/06-navigation.css');
+@import url('core/07-pages.css');
+@import url('core/08-utilities.css');
 
 /* Additional page-specific imports can be added here if needed */
 

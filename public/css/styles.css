@@ -1,0 +1,66 @@
+/* 7Shining Main CSS File - Imports all component styles */
+
+/* Import CSS files in the correct order */
+@import url('01-variables.css');
+@import url('02-reset.css');
+@import url('03-base.css');
+@import url('04-layout.css');
+@import url('05-components.css');
+@import url('06-navigation.css');
+@import url('07-pages.css');
+@import url('08-utilities.css');
+
+/* Additional page-specific imports can be added here if needed */
+
+/* Global overrides and additional styles */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Ensure proper loading states */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* Fix for any missing image styles */
+.image-placeholder {
+    background: linear-gradient(135deg, #f0f0f0 0%, #e0e0e0 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888888;
+    font-size: 3rem;
+    min-height: 200px;
+    border-radius: 12px;
+}
+
+/* Testimonials Grid Fallback */
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+/* Ensure footer is always at bottom */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+/* Print styles */
+@media print {
+    nav, .hamburger {
+        display: none !important;
+    }
+    
+    .hero {
+        height: auto !important;
+        padding: 2rem 0 !important;
+    }
+}

@@ -25,7 +25,7 @@ class ErrorController extends Controller
             'description' => 'Die angeforderte Seite konnte nicht gefunden werden. Entdecken Sie unsere anderen Angebote oder kehren Sie zur Startseite zurück.',
             'keywords' => '404, Seite nicht gefunden, 7Shining',
             'ogType' => 'website',
-            'additionalStyles' => ['pages/404.css'],
+            'additionalStyles' => ['404.css'],
             'additionalScripts' => ['pages/404.js']
         ];
         

@@ -27,7 +27,7 @@ class MemberController extends Controller
             'keywords' => '7Shining, Mitglied werden, Gemeinschaft, persönliches Wachstum, spirituelle Entwicklung, finanzielle Freiheit, Verein, Schweiz',
             'ogType' => 'website',
             'additionalStyles' => ['member.css'], // member.css is already loaded via main styles.css
-            'additionalScripts' => [], // member.js is already loaded
+            'additionalScripts' => ['pages/member.js'], // member.js is already loaded
             
             // Member page data
             'hero' => $memberData['hero'],

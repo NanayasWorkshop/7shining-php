@@ -48,7 +48,7 @@ if (isset($title) && $title !== SITE_NAME) {
 <link rel="stylesheet" href="<?= $this->css('styles.css') ?>">
 <?php if (isset($additionalStyles)): ?>
     <?php foreach ($additionalStyles as $style): ?>
-        <link rel="stylesheet" href="<?= $this->css($style) ?>">
+        <link rel="stylesheet" href="<?= $this->css('pages/' . $style) ?>">
     <?php endforeach; ?>
 <?php endif; ?>
 

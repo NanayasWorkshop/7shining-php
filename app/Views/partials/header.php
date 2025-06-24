@@ -10,7 +10,6 @@
             <li><a href="<?= $this->url('mitglied-werden') ?>">Mitglied werden</a></li>
             <li><a href="<?= $this->url('faq') ?>">FAQ</a></li>
             <li><a href="<?= $this->url('news') ?>">News</a></li>
-            <li><a href="<?= $this->url('contact') ?>">Kontakt</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
             <span></span>

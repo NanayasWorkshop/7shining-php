@@ -27,7 +27,7 @@ class LegalController extends Controller
             'description' => 'Rechtliche Grundlagen für die Mitgliedschaft und Nutzung unserer Dienstleistungen bei 7Shining.',
             'keywords' => 'AGB, Geschäftsbedingungen, Rechtliches, 7Shining, Schweiz, Verein, Depot, Gold',
             'ogType' => 'website',
-            'additionalStyles' => [], // legal.css is already loaded
+            'additionalStyles' => ['legal.css'],
             'additionalScripts' => [],
             
             // AGB content
@@ -51,7 +51,7 @@ class LegalController extends Controller
             'description' => 'Ihre Privatsphäre ist uns wichtig. Hier erfahren Sie, wie wir Ihre Daten schützen und verwenden.',
             'keywords' => 'Datenschutz, Datenschutzerklärung, Privatsphäre, DSGVO, 7Shining, Schweiz',
             'ogType' => 'website',
-            'additionalStyles' => ['legal.css'], // legal.css is already loaded
+            'additionalStyles' => ['legal.css'],
             'additionalScripts' => [],
             
             // Privacy policy content
@@ -75,7 +75,7 @@ class LegalController extends Controller
             'description' => 'Rechtliche Informationen und Angaben gemäß den gesetzlichen Bestimmungen über 7Shining.',
             'keywords' => 'Impressum, Kontakt, Rechtliches, 7Shining, Schweiz, Verein, St. Gallen',
             'ogType' => 'website',
-            'additionalStyles' => ['legal.css'], // legal.css is already loaded
+            'additionalStyles' => ['legal.css'],
             'additionalScripts' => [],
             
             // Impressum content
@@ -92,24 +92,36 @@ class LegalController extends Controller
      */
     public function downloadPdf($document)
     {
-        $allowedDocuments = ['agb', 'agb-aktive-mitglieder', 'datenschutz', 'impressum'];
+        $allowedDocuments = ['7shining-agb', '7shining-agb-aktive-mitglieder', 'datenschutz', 'impressum'];
         
         if (!in_array($document, $allowedDocuments)) {
-            $this->redirect('404');
+            // Show 404 page
+            $errorController = new \Controllers\ErrorController();
+            $errorController->notFound();
             return;
         }
         
-        $pdfPath = PUBLIC_PATH . '/pdf/' . $document . '.pdf';
+        // Build the PDF path
+        $pdfPath = $_SERVER['DOCUMENT_ROOT'] . '/7shining-php/public/pdf/' . $document . '.pdf';
         
         if (!file_exists($pdfPath)) {
-            $this->redirect('404');
+            // Show 404 page
+            $errorController = new \Controllers\ErrorController();
+            $errorController->notFound();
             return;
         }
         
         // Set headers for PDF download
         header('Content-Type: application/pdf');
-        header('Content-Disposition: attachment; filename="7shining-' . $document . '.pdf"');
+        header('Content-Disposition: attachment; filename="' . $document . '.pdf"');
         header('Content-Length: ' . filesize($pdfPath));
+        header('Cache-Control: private, max-age=0, must-revalidate');
+        header('Pragma: public');
+        
+        // Clear any output buffer
+        if (ob_get_level()) {
+            ob_end_clean();
+        }
         
         // Output the PDF file
         readfile($pdfPath);

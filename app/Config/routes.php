@@ -16,6 +16,7 @@ $routes = [
     'agb'                   => 'Legal@agb',
     'datenschutz'           => 'Legal@datenschutz',
     'impressum'             => 'Legal@impressum',
+    'legal/download/{document}' => 'Legal@downloadPdf',
     
     // News articles (dynamic)
     'news/{slug}'           => 'News@article',

@@ -6,9 +6,9 @@ define('SITE_DESCRIPTION', 'Mehr als ein Verein - eine Bewegung für Wachstum un
 define('SITE_KEYWORDS', '7Shining, Verein, Gold, Depot, Sparplan, Schweiz, St. Gallen');
 define('SITE_AUTHOR', '7Shining');
 
-// Environment settings
-define('ENVIRONMENT', 'development'); // development, staging, production
-define('DEBUG_MODE', ENVIRONMENT === 'development');
+// Environment für Production ändern
+define('ENVIRONMENT', 'production'); // statt 'development'
+define('DEBUG_MODE', false); // für Production
 
 // Default meta data
 define('DEFAULT_META', [

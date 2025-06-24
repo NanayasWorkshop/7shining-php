@@ -119,4 +119,663 @@
 
 .membership-options h2 {
     text-align: center;
-    font-size
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    margin-bottom: 4rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #333333;
+    line-height: 1.6;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.membership-card {
+    background: #f8f9fa;
+    border-radius: 20px;
+    padding: 3rem;
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 600px;
+}
+
+.membership-card:hover {
+    transform: translateY(-10px);
+    border-color: #D4AF37;
+    box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+}
+
+.membership-card.featured {
+    border-color: #D4AF37;
+    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+}
+
+.card-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #D4AF37;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.card-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.membership-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    display: block;
+    color: #D4AF37;
+}
+
+.membership-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: #1a1a1a;
+}
+
+.membership-description {
+    font-size: 1rem;
+    opacity: 0.8;
+    color: #666666;
+    line-height: 1.5;
+    font-style: italic;
+}
+
+.membership-benefits {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+}
+
+.membership-benefits ul {
+    list-style: none;
+    padding: 0;
+}
+
+.membership-benefits li {
+    padding: 0.8rem 0;
+    font-size: 1rem;
+    color: #333333;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 1.5;
+}
+
+.membership-benefits li:last-child {
+    border-bottom: none;
+}
+
+.membership-cta {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.membership-button {
+    display: block;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+}
+
+.membership-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+.standard-btn {
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    border: 2px solid #D4AF37;
+}
+
+.standard-btn:hover {
+    background: linear-gradient(135deg, #B8941F, #A67C00);
+    border: 2px solid #B8941F;
+}
+
+.active-btn {
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    border: 2px solid #D4AF37;
+}
+
+.active-btn:hover {
+    background: linear-gradient(135deg, #B8941F, #A67C00);
+    border: 2px solid #B8941F;
+}
+
+.secondary-btn {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    color: #D4AF37 !important;
+    border: 2px solid #D4AF37;
+}
+
+.secondary-btn:hover {
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    color: white !important;
+    border: 2px solid #B8941F;
+}
+
+/* Active Benefits Section */
+.active-benefits {
+    padding: 6rem 0;
+    background: #f8f9fa;
+}
+
+.benefits-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.benefits-text h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.benefits-text > p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 3rem;
+    color: #333333;
+    opacity: 0.9;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.benefit-item {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.benefit-item:hover {
+    transform: translateY(-5px);
+    border-color: #D4AF37;
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+}
+
+.benefit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.benefit-item h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+    color: #1a1a1a;
+}
+
+.benefit-item p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #666666;
+    opacity: 0.9;
+}
+
+.benefits-visual {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.growth-diagram {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.growth-step {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateX(30px);
+    animation: slide-in 0.6s ease forwards;
+    animation-delay: var(--delay, 0s);
+}
+
+@keyframes slide-in {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.step-dot {
+    width: 40px;
+    height: 40px;
+    background: #D4AF37;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.growth-step span {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+/* Community Spirit */
+.community-spirit {
+    padding: 6rem 0;
+    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+    text-align: center;
+    color: white;
+}
+
+.spirit-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.spirit-quote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 4rem;
+    opacity: 0.95;
+    font-weight: 300;
+}
+
+.spirit-values {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.value-circle {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 2.5rem 2rem;
+    transition: all 0.3s ease;
+}
+
+.value-circle:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.value-circle h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.value-circle p {
+    font-size: 1rem;
+    opacity: 0.9;
+    line-height: 1.5;
+}
+
+/* Registration CTA with Collapsible iFrame */
+.registration-cta {
+    padding: 6rem 0;
+    background: #ffffff;
+    text-align: center;
+}
+
+.cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    color: #333333;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.cta-highlight {
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    color: #D4AF37 !important;
+    opacity: 1 !important;
+    margin-bottom: 3rem !important;
+    font-style: italic;
+}
+
+/* Toggle Button Styles */
+.registration-toggle {
+    margin: 3rem 0;
+}
+
+.toggle-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.toggle-button:hover {
+    background: linear-gradient(135deg, #B8941F, #A67C00);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+.toggle-icon {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.toggle-button.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.toggle-text {
+    transition: all 0.3s ease;
+}
+
+/* Collapsible Registration Form Container */
+.registration-form-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.3s ease;
+    opacity: 0;
+    margin-top: 2rem;
+    border-radius: 15px;
+    background: #f8f9fa;
+    border: 2px solid #e0e0e0;
+}
+
+.registration-form-container.expanded {
+    max-height: 2000px;
+    opacity: 1;
+    padding: 2rem;
+    border-color: #D4AF37;
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+}
+
+.registration-form-container.expanding {
+    opacity: 1;
+}
+
+/* Registration Form Inner Styling */
+#wboRegistrationContainer {
+    transition: all 0.3s ease;
+}
+
+.registration-form-container.expanded #wboRegistrationContainer {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading State */
+.toggle-button.loading {
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.toggle-button.loading .toggle-text::after {
+    content: "...";
+    animation: loadingDots 1.5s infinite;
+}
+
+@keyframes loadingDots {
+    0%, 20% { content: "..."; }
+    40% { content: "...."; }
+    60% { content: "....."; }
+    80%, 100% { content: "..."; }
+}
+
+.final-cta-buttons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 3rem;
+}
+
+.final-cta-buttons .cta-button {
+    padding: 1.5rem 3rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    min-width: 250px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.final-cta-buttons .cta-button.primary {
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    border: 2px solid #D4AF37;
+}
+
+.final-cta-buttons .cta-button.secondary {
+    background: linear-gradient(135deg, #D4AF37, #B8941F);
+    border: 2px solid #D4AF37;
+}
+
+.final-cta-buttons .cta-button:hover {
+    background: linear-gradient(135deg, #B8941F, #A67C00);
+    transform: translateY(-3px);
+    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+}
+
+.registration-note {
+    background: #f8f9fa;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    max-width: 600px;
+    margin: 2rem auto 0;
+}
+
+.registration-note p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #666666;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .membership-hero {
+        padding: 6rem 0 3rem;
+    }
+    
+    .community-circle {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .circle-icon {
+        font-size: 2.5rem !important;
+    }
+    
+    .circle-text {
+        font-size: 1rem !important;
+    }
+    
+    .membership-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .membership-card {
+        padding: 2rem;
+        min-height: auto;
+    }
+    
+    .membership-cta {
+        gap: 0.8rem;
+    }
+    
+    .membership-button {
+        padding: 1rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .benefits-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .spirit-values {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .final-cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .final-cta-buttons .cta-button {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .growth-diagram {
+        gap: 1.5rem;
+    }
+    
+    .toggle-button {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    
+    .registration-form-container.expanded {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .membership-hero .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .membership-hero .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .membership-card {
+        padding: 1.5rem;
+    }
+    
+    .membership-icon {
+        font-size: 3rem !important;
+    }
+    
+    .membership-card h3 {
+        font-size: 1.5rem;
+    }
+    
+    .benefit-item {
+        padding: 1.5rem;
+    }
+    
+    .value-circle {
+        padding: 2rem 1.5rem;
+    }
+    
+    .spirit-quote {
+        font-size: 1.2rem;
+    }
+    
+    .benefits-text h2,
+    .spirit-content h2,
+    .cta-content h2 {
+        font-size: 2rem;
+    }
+    
+    .toggle-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+    
+    .registration-form-container.expanded {
+        padding: 1rem;
+    }
+}

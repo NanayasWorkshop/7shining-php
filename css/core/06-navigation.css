@@ -1,4 +1,4 @@
-/* Navigation Styles - FIXED Z-INDEX VERSION */
+/* Navigation Styles - WITH LOGO SUPPORT */
 
 /* Main Navigation */
 nav {
@@ -23,12 +23,49 @@ nav.scrolled {
   justify-content: space-between;
   align-items: center;
   padding: var(--space-md) var(--container-padding);
+  min-height: 80px; /* Ensure consistent height */
 }
 
+/* LOGO STYLES */
 .logo {
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevent logo from shrinking */
+}
+
+.logo-link {
+  display: block;
+  text-decoration: none;
+  line-height: 0; /* Remove line-height to prevent extra spacing */
+}
+
+.logo-image {
+  height: 50px; /* Desktop height */
+  width: auto; /* Maintain aspect ratio */
+  max-width: 200px; /* Prevent logo from getting too wide */
+  object-fit: contain;
+}
+
+/* Fallback for broken images */
+.logo-image {
+  color: var(--color-white);
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
   font-weight: var(--font-weight-bold);
-  color: var(--color-text-primary);
+  border-radius: var(--radius-sm);
+  min-width: 120px;
+}
+
+.logo-image:before {
+  content: "7Shining";
+  display: block;
+  padding: 0 var(--space-md);
+}
+
+/* Hide fallback text when image loads */
+.logo-image[src]:before {
+  display: none;
 }
 
 .nav-links {
@@ -67,13 +104,13 @@ nav.scrolled {
   width: 100%;
 }
 
-/* Mobile Menu - FIXED Z-INDEX */
+/* Mobile Menu */
 .hamburger {
   display: none;
   flex-direction: column;
   cursor: pointer;
   padding: var(--space-sm);
-  z-index: 1060; /* FIXED: Higher than menu overlay */
+  z-index: 1060;
   position: relative;
   background: transparent;
   border: none;
@@ -88,7 +125,6 @@ nav.scrolled {
   border-radius: 2px;
 }
 
-/* FIXED: Hamburger active state with proper transforms */
 .hamburger.active span:nth-child(1) {
   transform: rotate(-45deg) translate(-5px, 6px);
   background: var(--color-text-primary);
@@ -103,9 +139,8 @@ nav.scrolled {
   background: var(--color-text-primary);
 }
 
-/* FIXED: Ensure hamburger stays on top when menu is open */
 .hamburger.active {
-  z-index: 1060; /* Higher than menu */
+  z-index: 1060;
 }
 
 /* Footer */
@@ -170,27 +205,38 @@ nav.scrolled {
   margin: 0;
 }
 
-/* Mobile Navigation - FIXED VERSION */
+/* MOBILE NAVIGATION WITH LOGO ADJUSTMENTS */
 @media (max-width: 768px) {
   .hamburger {
     display: flex;
   }
 
-  /* FIXED: Mobile menu with proper z-index hierarchy */
+  /* Adjust logo size for mobile */
+  .logo-image {
+    height: 40px; /* Smaller on mobile */
+    max-width: 160px;
+  }
+
+  /* Adjust nav container padding for mobile */
+  .nav-container {
+    padding: var(--space-sm) var(--container-padding);
+    min-height: 70px; /* Slightly smaller on mobile */
+  }
+
   .nav-links {
     position: fixed;
     top: 0;
     right: -100%;
     height: 100vh;
-    height: 100svh; /* Better mobile support */
+    height: 100svh;
     width: 100%;
-    max-width: 320px; /* Slightly wider for better UX */
+    max-width: 320px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: var(--color-bg-primary);
     transition: right var(--transition-slow);
-    z-index: 1050; /* FIXED: Lower than hamburger */
+    z-index: 1050;
     box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
     gap: var(--space-2xl);
     padding: var(--space-xl);
@@ -214,7 +260,7 @@ nav.scrolled {
     display: block;
     padding: var(--space-md);
     border-radius: var(--radius-md);
-    min-height: 44px; /* FIXED: Better touch target */
+    min-height: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -225,12 +271,10 @@ nav.scrolled {
     background: var(--color-bg-secondary);
   }
 
-  /* FIXED: Remove desktop hover effects on mobile */
   .nav-links a::after {
     display: none;
   }
 
-  /* FIXED: Add mobile backdrop */
   .nav-links.active::before {
     content: '';
     position: fixed;
@@ -241,7 +285,6 @@ nav.scrolled {
     z-index: -1;
   }
 
-  /* FIXED: Ensure hamburger stays visible and clickable */
   .nav-container {
     position: relative;
     z-index: 1060;
@@ -260,10 +303,16 @@ nav.scrolled {
   }
 }
 
-/* FIXED: Extra small mobile adjustments */
+/* EXTRA SMALL MOBILE */
 @media (max-width: 480px) {
   .nav-container {
-    padding: var(--space-md);
+    padding: var(--space-sm);
+  }
+
+  /* Even smaller logo on very small screens */
+  .logo-image {
+    height: 35px;
+    max-width: 140px;
   }
 
   .nav-links {
@@ -275,13 +324,18 @@ nav.scrolled {
     font-size: 1.1rem;
     padding: var(--space-sm);
   }
+}
 
-  .logo {
-    font-size: 1.3rem;
+/* RETINA/HIGH-DPI DISPLAYS */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  /* Ensure logo stays crisp on retina displays */
+  .logo-image {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
   }
 }
 
-/* FIXED: Accessibility improvements */
+/* ACCESSIBILITY IMPROVEMENTS */
 @media (prefers-reduced-motion: reduce) {
   .nav-links {
     transition: none;
@@ -292,7 +346,6 @@ nav.scrolled {
   }
 }
 
-/* FIXED: Focus states for accessibility */
 .hamburger:focus {
   outline: 2px solid var(--color-primary);
   outline-offset: 2px;
@@ -303,7 +356,13 @@ nav.scrolled {
   outline-offset: 2px;
 }
 
-/* FIXED: High contrast mode support */
+.logo-link:focus {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* HIGH CONTRAST MODE */
 @media (prefers-contrast: high) {
   .nav-links {
     border: 2px solid var(--color-text-primary);
@@ -311,5 +370,35 @@ nav.scrolled {
   
   .hamburger span {
     background: var(--color-text-primary);
+  }
+  
+  .logo-image {
+    border: 1px solid var(--color-text-primary);
+  }
+}
+
+/* SCROLLED STATE LOGO ADJUSTMENTS */
+nav.scrolled .logo-image {
+  height: 45px; /* Slightly smaller when scrolled */
+}
+
+@media (max-width: 768px) {
+  nav.scrolled .logo-image {
+    height: 38px; /* Even smaller on mobile when scrolled */
+  }
+}
+
+/* LOADING STATE FOR LOGO */
+.logo-image[loading] {
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: 200px 0;
   }
 }

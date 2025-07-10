@@ -40,27 +40,55 @@ return [
     ],
     
     'faq_items' => [
-        // Mitgliedschaft
+        // Mitgliedschaft - Original FAQs
         [
             'id' => 'what-is-7shining',
             'category' => 'membership',
-            'question' => 'Was ist 7Shining genau?',
-            'answer' => '7Shining ist ein Schweizer Verein, der sich der Förderung von Gemeinschaft, persönlichem Wachstum und finanzieller Bildung verschrieben hat. Wir bieten unseren Mitgliedern verschiedene Programme zur persönlichen und finanziellen Entwicklung, einschließlich Depot-Paketen für Goldbarren-Sparpläne.',
+            'question' => 'Was ist 7Shining?',
+            'answer' => '7Shining ist ein eingetragener Verein mit dem Ziel, die Entstehung von Geld, die zukünftige Weiterentwicklung und den Schutz von Geld und Vermögenswerten zu erforschen. Menschen auf ihrem persönlichen, spirituellen und finanziellen Weg zu begleiten und zu stärken. Wir verbinden Gemeinschaft, Inspiration und individuelle Entfaltung mit einem einzigartigen Werte- und Punktesystem.',
             'popular' => true
+        ],
+        [
+            'id' => 'religious-requirement',
+            'category' => 'membership',
+            'question' => 'Muss ich religiös oder spirituell sein um dabei zu sein?',
+            'answer' => 'Nein. Wir stehen für Offenheit und Vielfalt im Glauben. Ob du religiös, spirituell oder einfach nur interessiert am persönlichen Wachstum mit universellen Werten bist – du bist willkommen, so lange du unsere Grundwerte unterstützen kannst und willst.',
+            'popular' => true
+        ],
+        [
+            'id' => 'membership-costs',
+            'category' => 'membership',
+            'question' => 'Was kostet die Mitgliedschaft?',
+            'answer' => 'Die Mitgliedschaft ist generell für jeden ohne Jahresbeitrag möglich. Die aktive Mitgliedschaft ist für einen jährlichen Mitgliedsbeitrag von CHF 29,- möglich und beinhaltet zusätzliche Leistungen wie den Zugang zum Punktesystem – Details findest du unter „Mitglied werden".',
+            'popular' => true
+        ],
+        [
+            'id' => 'points-system',
+            'category' => 'membership',
+            'question' => 'Was ist das Punktesystem?',
+            'answer' => 'Aktive Mitglieder sammeln Punkte durch Empfehlungen, persönliche Aktivitäten und kontinuierliche Teilnahme. Diese Punkte werden in Form von Prämien oder finanziellen Vorteilen belohnt. Mehr dazu findest du in unserem Vergütungsplan.',
+            'popular' => true
+        ],
+        [
+            'id' => 'passive-support',
+            'category' => 'membership',
+            'question' => 'Kann ich einfach nur unterstützen, ohne aktiv zu werden?',
+            'answer' => 'Ja natürlich. Als Mitglied darfst du unsere Einkaufsvorteile nutzen, aber auch gern jederzeit mit freiwilligen Spenden oder Gönnerbeträgen, oder nur ideell unsere Vision unterstützen und wirst über unsere Aktivitäten informiert – ganz ohne Verpflichtungen.',
+            'popular' => false
+        ],
+        [
+            'id' => 'personal-mentoring',
+            'category' => 'membership',
+            'question' => 'Gibt es persönliche Betreuung oder Schulungen?',
+            'answer' => 'Ja. Wir bieten für aktive Mitglieder regelmäßige Schulungen, Austauschformate und auf Wunsch auch persönliches Mentoring. Unsere Gemeinschaft lebt von gegenseitiger Unterstützung und Wissensteilung.',
+            'popular' => false
         ],
         [
             'id' => 'how-to-become-member',
             'category' => 'membership',
-            'question' => 'Wie werde ich Mitglied bei 7Shining?',
-            'answer' => 'Die Anmeldung erfolgt ganz einfach über unser Online-Portal. Nach der Registrierung und Zahlung der einmaligen Startgebühr von CHF 29 erhalten Sie Zugang zu Ihrem persönlichen Mitgliederbereich und können Ihr gewünschtes Depot-Paket auswählen.',
+            'question' => 'Wie werde ich Mitglied?',
+            'answer' => 'Du hast zwei Möglichkeiten, Teil von 7Shining zu werden: <strong>Gold-Depot kaufen</strong> – Lege den Grundstein für deine finanzielle Zukunft mit einem persönlichen Edelmetall-Depot (mit quartalsweiser Auslieferung). <strong>Aktives Mitglied werden</strong> – Bringe dich mit deinem Wissen, Herz und Engagement in unsere Gemeinschaft ein und gestalte 7Shining aktiv mit. Wähle deinen Weg – oder kombiniere beides. Denn dein Licht gehört in die Welt.',
             'popular' => true
-        ],
-        [
-            'id' => 'membership-types',
-            'category' => 'membership',
-            'question' => 'Was ist der Unterschied zwischen normaler und aktiver Mitgliedschaft?',
-            'answer' => 'Normale Mitglieder nutzen unsere Depot-Programme für ihre persönlichen Sparziele. Aktive Mitglieder können zusätzlich andere Menschen für 7Shining gewinnen und erhalten dafür Provisionen gemäß unserem Marketingplan. Aktive Mitglieder zahlen einen jährlichen Mitgliedsbeitrag von CHF 29.',
-            'popular' => false
         ],
         
         // Depot-Pakete
@@ -193,7 +221,7 @@ return [
         ],
         [
             'id' => 'value-guarantees',
-            'category' => 'membership',
+            'category' => 'legal',
             'question' => 'Erhalte ich eine Garantie auf Wertsteigerungen?',
             'answer' => 'Nein, 7Shining gibt keine Garantien für Wertsteigerungen oder -verluste von Goldbarren. Edelmetall-Investments unterliegen natürlichen Marktschwankungen. Gold wird traditionell als Wertaufbewahrungsmittel betrachtet, aber der Wert kann steigen oder fallen.',
             'popular' => false

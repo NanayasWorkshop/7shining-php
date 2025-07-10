@@ -3,7 +3,7 @@
 /* Legal Hero Section */
 .legal-hero {
     padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
     text-align: center;
 }
 
@@ -11,7 +11,7 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .legal-hero p {
@@ -20,14 +20,14 @@
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    color: #333333;
+    color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
 /* Legal Content */
 .legal-content {
     padding: 4rem 0;
-    background: #ffffff;
+    background: var(--color-bg-primary);
     min-height: 70vh;
 }
 
@@ -41,10 +41,10 @@
 
 /* Content Navigation */
 .content-nav {
-    background: #f8f9fa;
+    background: var(--color-bg-secondary);
     padding: 2rem;
     border-radius: 12px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
     height: fit-content;
     position: sticky;
     top: 100px;
@@ -54,7 +54,7 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .content-nav ul {
@@ -67,7 +67,7 @@
 }
 
 .content-nav ul li a {
-    color: #333333;
+    color: var(--color-text-secondary);
     text-decoration: none;
     font-size: 0.9rem;
     padding: 0.5rem;
@@ -77,22 +77,22 @@
 }
 
 .content-nav ul li a:hover {
-    background: #D4AF37;
-    color: #ffffff;
+    background: var(--color-primary);
+    color: var(--color-white);
 }
 
 /* Main Content */
 .content-main {
-    background: #f8f9fa;
+    background: var(--color-bg-secondary);
     padding: 3rem;
     border-radius: 12px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
 }
 
 .content-main section {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
-    border-bottom: 1px solid #e0e0e0;
+    border-bottom: 1px solid var(--color-border);
 }
 
 .content-main section:last-child {
@@ -104,8 +104,8 @@
     font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
-    border-left: 4px solid #D4AF37;
+    color: var(--color-text-primary);
+    border-left: 4px solid var(--color-primary);
     padding-left: 1rem;
 }
 
@@ -114,7 +114,7 @@
     font-weight: 600;
     margin-bottom: 1rem;
     margin-top: 2rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .content-main h4 {
@@ -122,20 +122,20 @@
     font-weight: 600;
     margin-bottom: 0.8rem;
     margin-top: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .content-main p {
     font-size: 1rem;
     line-height: 1.7;
     margin-bottom: 1rem;
-    color: #333333;
+    color: var(--color-text-secondary);
 }
 
 .content-main ul, .content-main ol {
     margin-bottom: 1rem;
     padding-left: 2rem;
-    color: #333333;
+    color: var(--color-text-secondary);
 }
 
 .content-main li {
@@ -144,7 +144,7 @@
 }
 
 .content-main a {
-    color: #D4AF37;
+    color: var(--color-primary);
     text-decoration: none;
     transition: opacity 0.3s ease;
 }
@@ -156,15 +156,15 @@
 
 /* Info Boxes */
 .info-box {
-    background: #ffffff;
-    border: 1px solid #D4AF37;
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-primary);
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1.5rem 0;
 }
 
 .info-box h4 {
-    color: #D4AF37;
+    color: var(--color-primary);
     margin-bottom: 0.8rem;
     margin-top: 0;
 }
@@ -178,18 +178,18 @@
     border-radius: 8px;
     padding: 1.5rem;
     margin: 1.5rem 0;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .warning-box h4 {
-    color: #ffffff;
+    color: var(--color-white);
     margin-bottom: 0.8rem;
     margin-top: 0;
 }
 
 .warning-box p {
     margin-bottom: 0;
-    color: #ffffff;
+    color: var(--color-white);
 }
 
 .payment-info {
@@ -208,13 +208,13 @@
 
 .payment-info ul {
     margin-bottom: 0;
-    color: #333333;
+    color: var(--color-text-secondary);
 }
 
 /* Contact Info Styling */
 .contact-info {
-    background: #ffffff;
-    border-left: 4px solid #D4AF37;
+    background: var(--color-bg-primary);
+    border-left: 4px solid var(--color-primary);
     padding: 1.5rem;
     margin: 1.5rem 0;
     border-radius: 0 8px 8px 0;
@@ -234,14 +234,14 @@
 }
 
 .contact-item {
-    background: #ffffff;
+    background: var(--color-bg-primary);
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
 }
 
 .contact-item h4 {
-    color: #D4AF37;
+    color: var(--color-primary);
     margin-bottom: 0.8rem;
     margin-top: 0;
 }
@@ -254,15 +254,15 @@
 }
 
 .board-member {
-    background: #ffffff;
+    background: var(--color-bg-primary);
     padding: 1.5rem;
     border-radius: 8px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
     text-align: center;
 }
 
 .board-member h4 {
-    color: #D4AF37;
+    color: var(--color-primary);
     margin-bottom: 0.8rem;
     margin-top: 0;
 }
@@ -273,28 +273,28 @@
 }
 
 .board-member em {
-    color: #666666;
+    color: var(--color-text-light);
     font-size: 0.85rem;
 }
 
 /* PDF Download Section */
 .pdf-downloads {
-    background: #ffffff;
-    border: 2px solid #D4AF37;
+    background: var(--color-bg-primary);
+    border: 2px solid var(--color-primary);
     border-radius: 12px;
     padding: 2rem;
     margin: 3rem 0;
 }
 
 .pdf-downloads h3 {
-    color: #D4AF37;
+    color: var(--color-primary);
     margin-bottom: 1rem;
     margin-top: 0;
 }
 
 .pdf-downloads p {
     margin-bottom: 2rem;
-    color: #333333;
+    color: var(--color-text-secondary);
 }
 
 .download-buttons {
@@ -306,8 +306,8 @@
     display: flex;
     align-items: center;
     gap: 1rem;
-    background: #f8f9fa;
-    border: 2px solid #e0e0e0;
+    background: var(--color-bg-secondary);
+    border: 2px solid var(--color-border);
     border-radius: 8px;
     padding: 1.5rem;
     text-decoration: none;
@@ -316,8 +316,8 @@
 }
 
 .download-button:hover {
-    border-color: #D4AF37;
-    background: #ffffff;
+    border-color: var(--color-primary);
+    background: var(--color-bg-primary);
     transform: translateY(-2px);
     text-decoration: none;
 }
@@ -336,12 +336,12 @@
 .download-text strong {
     font-size: 1.1rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .download-text span {
     font-size: 0.9rem;
-    color: #666666;
+    color: var(--color-text-light);
     opacity: 0.8;
 }
 

@@ -23,9 +23,9 @@ class LegalController extends Controller
         $agbContent = $this->legalModel->getAGB();
         
         $data = [
-            'title' => 'Allgemeine GeschÃ¤ftsbedingungen',
-            'description' => 'Rechtliche Grundlagen fÃ¼r die Mitgliedschaft und Nutzung unserer Dienstleistungen bei 7Shining.',
-            'keywords' => 'AGB, GeschÃ¤ftsbedingungen, Rechtliches, 7Shining, Schweiz, Verein, Depot, Gold',
+            'title' => 'Allgemeine Geschäftsbedingungen',
+            'description' => 'Rechtliche Grundlagen für die Mitgliedschaft und Nutzung unserer Dienstleistungen bei 7Shining.',
+            'keywords' => 'AGB, Geschäftsbedingungen, Rechtliches, 7Shining, Schweiz, Verein, Depot, Gold',
             'ogType' => 'website',
             'additionalStyles' => ['legal.css'],
             'additionalScripts' => [],
@@ -40,16 +40,16 @@ class LegalController extends Controller
     }
     
     /**
-     * DatenschutzerklÃ¤rung (Privacy Policy) page
+     * Datenschutzerklärung (Privacy Policy) page
      */
     public function datenschutz()
     {
         $privacyContent = $this->legalModel->getPrivacyPolicy();
         
         $data = [
-            'title' => 'DatenschutzerklÃ¤rung',
-            'description' => 'Ihre PrivatsphÃ¤re ist uns wichtig. Hier erfahren Sie, wie wir Ihre Daten schÃ¼tzen und verwenden.',
-            'keywords' => 'Datenschutz, DatenschutzerklÃ¤rung, PrivatsphÃ¤re, DSGVO, 7Shining, Schweiz',
+            'title' => 'Datenschutzerklärung',
+            'description' => 'Ihre Privatsphäre ist uns wichtig. Hier erfahren Sie, wie wir Ihre Daten schützen und verwenden.',
+            'keywords' => 'Datenschutz, Datenschutzerklärung, Privatsphäre, DSGVO, 7Shining, Schweiz',
             'ogType' => 'website',
             'additionalStyles' => ['legal.css'],
             'additionalScripts' => [],
@@ -72,7 +72,7 @@ class LegalController extends Controller
         
         $data = [
             'title' => 'Impressum',
-            'description' => 'Rechtliche Informationen und Angaben gemÃ¤ÃŸ den gesetzlichen Bestimmungen Ã¼ber 7Shining.',
+            'description' => 'Rechtliche Informationen und Angaben gemäß den gesetzlichen Bestimmungen über 7Shining.',
             'keywords' => 'Impressum, Kontakt, Rechtliches, 7Shining, Schweiz, Verein, St. Gallen',
             'ogType' => 'website',
             'additionalStyles' => ['legal.css'],
@@ -101,8 +101,8 @@ class LegalController extends Controller
             return;
         }
         
-        // Build the PDF path
-        $pdfPath = $_SERVER['DOCUMENT_ROOT'] . '/7shining-php/public/pdf/' . $document . '.pdf';
+        // Build the PDF path - FIXED for new directory structure
+        $pdfPath = $_SERVER['DOCUMENT_ROOT'] . '/pdf/' . $document . '.pdf';
         
         if (!file_exists($pdfPath)) {
             // Show 404 page

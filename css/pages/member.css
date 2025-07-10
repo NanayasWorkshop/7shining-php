@@ -3,7 +3,7 @@
 /* Membership Hero Section */
 .membership-hero {
     padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -34,7 +34,7 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
     line-height: 1.2;
 }
 
@@ -43,7 +43,7 @@
     opacity: 0.9;
     max-width: 700px;
     margin: 0 auto 3rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
@@ -56,12 +56,12 @@
 .community-circle {
     width: 250px;
     height: 250px;
-    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 20px 40px rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-primary-lg);
     animation: float 3s ease-in-out infinite;
     position: relative;
     cursor: pointer;
@@ -96,7 +96,7 @@
 
 .circle-content {
     text-align: center;
-    color: white;
+    color: var(--color-white);
 }
 
 .circle-icon {
@@ -114,7 +114,7 @@
 /* Membership Options */
 .membership-options {
     padding: 6rem 0;
-    background: #ffffff;
+    background: var(--color-bg-primary);
 }
 
 .membership-options h2 {
@@ -122,7 +122,7 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .section-subtitle {
@@ -133,7 +133,7 @@
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    color: #333333;
+    color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
@@ -146,10 +146,10 @@
 }
 
 .membership-card {
-    background: #f8f9fa;
+    background: var(--color-bg-secondary);
     border-radius: 20px;
     padding: 3rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--color-border);
     transition: all 0.3s ease;
     position: relative;
     display: flex;
@@ -159,14 +159,14 @@
 
 .membership-card:hover {
     transform: translateY(-10px);
-    border-color: #D4AF37;
-    box-shadow: 0 25px 50px rgba(212, 175, 55, 0.15);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-primary-lg);
 }
 
 .membership-card.featured {
-    border-color: #D4AF37;
-    background: linear-gradient(145deg, #f8f9fa 0%, #ffffff 100%);
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+    border-color: var(--color-primary);
+    background: linear-gradient(145deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
+    box-shadow: var(--shadow-primary-lg);
 }
 
 .card-badge {
@@ -174,13 +174,13 @@
     top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #D4AF37;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-white);
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     font-size: 0.9rem;
     font-weight: 600;
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-primary);
 }
 
 .card-header {
@@ -192,20 +192,20 @@
     font-size: 4rem;
     margin-bottom: 1rem;
     display: block;
-    color: #D4AF37;
+    color: var(--color-primary);
 }
 
 .membership-card h3 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .membership-description {
     font-size: 1rem;
     opacity: 0.8;
-    color: #666666;
+    color: var(--color-text-light);
     line-height: 1.5;
     font-style: italic;
 }
@@ -223,8 +223,8 @@
 .membership-benefits li {
     padding: 0.8rem 0;
     font-size: 1rem;
-    color: #333333;
-    border-bottom: 1px solid #e0e0e0;
+    color: var(--color-text-secondary);
+    border-bottom: 1px solid var(--color-border);
     line-height: 1.5;
 }
 
@@ -251,50 +251,50 @@
     transition: all 0.3s ease;
     text-decoration: none;
     text-align: center;
-    color: white;
+    color: var(--color-white);
 }
 
 .membership-button:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-primary);
 }
 
 .standard-btn {
-    background: linear-gradient(135deg, #D4AF37, #B8941F);
-    border: 2px solid #D4AF37;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border: 2px solid var(--color-primary);
 }
 
 .standard-btn:hover {
-    background: linear-gradient(135deg, #B8941F, #A67C00);
-    border: 2px solid #B8941F;
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-darker));
+    border: 2px solid var(--color-primary-dark);
 }
 
 .active-btn {
-    background: linear-gradient(135deg, #D4AF37, #B8941F);
-    border: 2px solid #D4AF37;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border: 2px solid var(--color-primary);
 }
 
 .active-btn:hover {
-    background: linear-gradient(135deg, #B8941F, #A67C00);
-    border: 2px solid #B8941F;
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-darker));
+    border: 2px solid var(--color-primary-dark);
 }
 
 .secondary-btn {
-    background: linear-gradient(135deg, #f8f9fa, #ffffff);
-    color: #D4AF37 !important;
-    border: 2px solid #D4AF37;
+    background: linear-gradient(135deg, var(--color-bg-secondary), var(--color-bg-primary));
+    color: var(--color-primary) !important;
+    border: 2px solid var(--color-primary);
 }
 
 .secondary-btn:hover {
-    background: linear-gradient(135deg, #D4AF37, #B8941F);
-    color: white !important;
-    border: 2px solid #B8941F;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white) !important;
+    border: 2px solid var(--color-primary-dark);
 }
 
 /* Active Benefits Section */
 .active-benefits {
     padding: 6rem 0;
-    background: #f8f9fa;
+    background: var(--color-bg-secondary);
 }
 
 .benefits-content {
@@ -308,14 +308,14 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .benefits-text > p {
     font-size: 1.1rem;
     line-height: 1.7;
     margin-bottom: 3rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     opacity: 0.9;
 }
 
@@ -326,18 +326,18 @@
 }
 
 .benefit-item {
-    background: #ffffff;
+    background: var(--color-bg-primary);
     padding: 2rem;
     border-radius: 15px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
     transition: all 0.3s ease;
     text-align: center;
 }
 
 .benefit-item:hover {
     transform: translateY(-5px);
-    border-color: #D4AF37;
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.1);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-primary-lg);
 }
 
 .benefit-icon {
@@ -350,13 +350,13 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .benefit-item p {
     font-size: 0.95rem;
     line-height: 1.5;
-    color: #666666;
+    color: var(--color-text-light);
     opacity: 0.9;
 }
 
@@ -392,8 +392,8 @@
 .step-dot {
     width: 40px;
     height: 40px;
-    background: #D4AF37;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-white);
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -405,15 +405,15 @@
 .growth-step span {
     font-size: 1rem;
     font-weight: 600;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 /* Community Spirit */
 .community-spirit {
     padding: 6rem 0;
-    background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+    background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
     text-align: center;
-    color: white;
+    color: var(--color-white);
 }
 
 .spirit-content h2 {
@@ -472,7 +472,7 @@
 /* Registration CTA with Collapsible iFrame */
 .registration-cta {
     padding: 6rem 0;
-    background: #ffffff;
+    background: var(--color-bg-primary);
     text-align: center;
 }
 
@@ -480,13 +480,13 @@
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .cta-content p {
     font-size: 1.1rem;
     margin-bottom: 1.5rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     opacity: 0.9;
     line-height: 1.6;
 }
@@ -494,7 +494,7 @@
 .cta-highlight {
     font-size: 1.3rem !important;
     font-weight: 600 !important;
-    color: #D4AF37 !important;
+    color: var(--color-primary) !important;
     opacity: 1 !important;
     margin-bottom: 3rem !important;
     font-style: italic;
@@ -509,8 +509,8 @@
     display: inline-flex;
     align-items: center;
     gap: 0.8rem;
-    background: linear-gradient(135deg, #D4AF37, #B8941F);
-    color: white;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    color: var(--color-white);
     border: none;
     padding: 1.2rem 2.5rem;
     border-radius: 10px;
@@ -518,11 +518,11 @@
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-primary);
 }
 
 .toggle-button:hover {
-    background: linear-gradient(135deg, #B8941F, #A67C00);
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-darker));
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
 }
@@ -548,16 +548,16 @@
     opacity: 0;
     margin-top: 2rem;
     border-radius: 15px;
-    background: #f8f9fa;
-    border: 2px solid #e0e0e0;
+    background: var(--color-bg-secondary);
+    border: 2px solid var(--color-border);
 }
 
 .registration-form-container.expanded {
     max-height: 2000px;
     opacity: 1;
     padding: 2rem;
-    border-color: #D4AF37;
-    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.1);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-primary-lg);
 }
 
 .registration-form-container.expanding {
@@ -618,30 +618,30 @@
     min-width: 250px;
     transition: all 0.3s ease;
     text-decoration: none;
-    color: white;
+    color: var(--color-white);
     border: none;
     cursor: pointer;
 }
 
 .final-cta-buttons .cta-button.primary {
-    background: linear-gradient(135deg, #D4AF37, #B8941F);
-    border: 2px solid #D4AF37;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border: 2px solid var(--color-primary);
 }
 
 .final-cta-buttons .cta-button.secondary {
-    background: linear-gradient(135deg, #D4AF37, #B8941F);
-    border: 2px solid #D4AF37;
+    background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
+    border: 2px solid var(--color-primary);
 }
 
 .final-cta-buttons .cta-button:hover {
-    background: linear-gradient(135deg, #B8941F, #A67C00);
+    background: linear-gradient(135deg, var(--color-primary-dark), var(--color-primary-darker));
     transform: translateY(-3px);
-    box-shadow: 0 15px 30px rgba(212, 175, 55, 0.3);
+    box-shadow: var(--shadow-primary-lg);
 }
 
 .registration-note {
-    background: #f8f9fa;
-    border: 1px solid #e0e0e0;
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border);
     border-radius: 10px;
     padding: 1.5rem;
     max-width: 600px;
@@ -651,7 +651,7 @@
 .registration-note p {
     margin: 0;
     font-size: 0.95rem;
-    color: #666666;
+    color: var(--color-text-light);
 }
 
 /* Mobile Responsive */

@@ -3,7 +3,7 @@
 /* FAQ Hero Section */
 .faq-hero {
     padding: 8rem 0 4rem;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
     text-align: center;
 }
 
@@ -11,7 +11,7 @@
     font-size: clamp(2.5rem, 5vw, 3.5rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .faq-hero .hero-content p {
@@ -21,7 +21,7 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 3rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     line-height: 1.6;
 }
 
@@ -35,22 +35,22 @@
 .search-box input {
     width: 100%;
     padding: 1rem 3rem 1rem 1.5rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid var(--color-border);
     border-radius: 50px;
-    background: #ffffff;
-    color: #1a1a1a;
+    background: var(--color-bg-primary);
+    color: var(--color-text-primary);
     font-size: 1rem;
     transition: all 0.3s ease;
 }
 
 .search-box input:focus {
     outline: none;
-    border-color: #D4AF37;
-    background: #f8f9fa;
+    border-color: var(--color-primary);
+    background: var(--color-bg-secondary);
 }
 
 .search-box input::placeholder {
-    color: #888888;
+    color: var(--color-text-muted);
 }
 
 .search-icon {
@@ -59,14 +59,14 @@
     top: 50%;
     transform: translateY(-50%);
     font-size: 1.2rem;
-    color: #888888;
+    color: var(--color-text-muted);
     pointer-events: none;
 }
 
 /* FAQ Categories */
 .faq-categories {
     padding: 3rem 0;
-    background: #ffffff;
+    background: var(--color-bg-primary);
 }
 
 .faq-categories h2 {
@@ -74,7 +74,7 @@
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .category-tabs {
@@ -85,9 +85,9 @@
 }
 
 .tab-button {
-    background: #f8f9fa;
-    color: #333333;
-    border: 2px solid #e0e0e0;
+    background: var(--color-bg-secondary);
+    color: var(--color-text-secondary);
+    border: 2px solid var(--color-border);
     padding: 0.8rem 1.5rem;
     border-radius: 25px;
     font-size: 0.9rem;
@@ -97,20 +97,20 @@
 }
 
 .tab-button:hover {
-    border-color: #D4AF37;
-    background: #ffffff;
+    border-color: var(--color-primary);
+    background: var(--color-bg-primary);
 }
 
 .tab-button.active {
-    background: #D4AF37;
-    border-color: #D4AF37;
-    color: #ffffff;
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+    color: var(--color-white);
 }
 
 /* FAQ Content */
 .faq-content {
     padding: 4rem 0;
-    background: #f8f9fa;
+    background: var(--color-bg-secondary);
 }
 
 .faq-list {
@@ -119,8 +119,8 @@
 }
 
 .faq-item {
-    background: #ffffff;
-    border: 1px solid #e0e0e0;
+    background: var(--color-bg-primary);
+    border: 1px solid var(--color-border);
     border-radius: 12px;
     margin-bottom: 1rem;
     overflow: hidden;
@@ -128,7 +128,7 @@
 }
 
 .faq-item:hover {
-    border-color: #D4AF37;
+    border-color: var(--color-primary);
     box-shadow: 0 5px 15px rgba(212, 175, 55, 0.1);
 }
 
@@ -146,20 +146,20 @@
 }
 
 .faq-question:hover {
-   background: #f8f9fa;
+   background: var(--color-bg-secondary);
 }
 
 .faq-question h3 {
    font-size: 1.1rem;
    font-weight: 600;
-   color: #1a1a1a;
+   color: var(--color-text-primary);
    margin: 0;
    line-height: 1.4;
 }
 
 .toggle-icon {
    font-size: 1.5rem;
-   color: #D4AF37;
+   color: var(--color-primary);
    font-weight: 700;
    transition: transform 0.3s ease;
    flex-shrink: 0;
@@ -185,7 +185,7 @@
 .faq-answer p {
    font-size: 1rem;
    line-height: 1.6;
-   color: #333333;
+   color: var(--color-text-secondary);
    opacity: 0.9;
    margin-bottom: 1rem;
 }
@@ -197,7 +197,7 @@
 .faq-answer ul {
    margin: 1rem 0;
    padding-left: 2rem;
-   color: #333333;
+   color: var(--color-text-secondary);
 }
 
 .faq-answer li {
@@ -206,36 +206,36 @@
 }
 
 .faq-answer strong {
-   color: #1a1a1a;
+   color: var(--color-text-primary);
 }
 
 /* No Results */
 .no-results {
    text-align: center;
    padding: 4rem 2rem;
-   background: #ffffff;
+   background: var(--color-bg-primary);
    border-radius: 12px;
-   border: 1px solid #e0e0e0;
+   border: 1px solid var(--color-border);
 }
 
 .no-results h3 {
    font-size: 1.5rem;
    font-weight: 600;
    margin-bottom: 1rem;
-   color: #1a1a1a;
+   color: var(--color-text-primary);
 }
 
 .no-results p {
    font-size: 1rem;
    margin-bottom: 2rem;
-   color: #333333;
+   color: var(--color-text-secondary);
    opacity: 0.8;
 }
 
 /* FAQ CTA Section */
 .faq-cta {
    padding: 6rem 0;
-   background: linear-gradient(135deg, #D4AF37 0%, #B8941F 100%);
+   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
    text-align: center;
 }
 
@@ -243,7 +243,7 @@
    font-size: 2.5rem;
    font-weight: 700;
    margin-bottom: 1rem;
-   color: #ffffff;
+   color: var(--color-white);
 }
 
 .faq-cta .cta-content p {
@@ -253,7 +253,7 @@
    max-width: 600px;
    margin-left: auto;
    margin-right: auto;
-   color: #ffffff;
+   color: var(--color-white);
 }
 
 .cta-buttons {
@@ -264,8 +264,8 @@
 }
 
 .cta-buttons .cta-button {
-   background: #ffffff;
-   color: #D4AF37;
+   background: var(--color-white);
+   color: var(--color-primary);
 }
 
 .cta-buttons .cta-button:hover {
@@ -275,13 +275,13 @@
 
 .cta-buttons .secondary-button {
    background: transparent;
-   color: #ffffff;
-   border-color: #ffffff;
+   color: var(--color-white);
+   border-color: var(--color-white);
 }
 
 .cta-buttons .secondary-button:hover {
-   background: #ffffff;
-   color: #D4AF37;
+   background: var(--color-white);
+   color: var(--color-primary);
 }
 
 /* Mobile Responsive */

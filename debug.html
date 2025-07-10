@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Info - new.7shining.com</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background: #1a1a1a;
+            color: #00ff00;
+            line-height: 1.6;
+        }
+        .container {
+            background: #000;
+            border: 2px solid #00ff00;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 20px rgba(0, 255, 0, 0.3);
+        }
+        h1 {
+            color: #00ffff;
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 0 10px #00ffff;
+        }
+        .section {
+            margin: 25px 0;
+            padding: 15px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            background: #111;
+        }
+        .section h3 {
+            color: #ffff00;
+            margin-top: 0;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+        }
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            margin: 8px 0;
+            padding: 5px;
+            background: #222;
+            border-radius: 3px;
+        }
+        .label {
+            color: #ff6600;
+            font-weight: bold;
+            min-width: 200px;
+        }
+        .value {
+            color: #00ff00;
+            word-break: break-all;
+        }
+        .test-section {
+            background: #001a00;
+            border: 1px solid #00ff00;
+        }
+        .error {
+            color: #ff0000;
+            background: #330000;
+        }
+        .success {
+            color: #00ff00;
+            background: #003300;
+        }
+        button {
+            background: #333;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-family: 'Courier New', monospace;
+            transition: all 0.3s ease;
+        }
+        button:hover {
+            background: #00ff00;
+            color: #000;
+            box-shadow: 0 0 10px #00ff00;
+        }
+        .php-test {
+            background: #1a0000;
+            border: 1px solid #ff0000;
+            color: #ff6666;
+        }
+        .timestamp {
+            text-align: center;
+            color: #666;
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>?? DEBUG INFO - new.7shining.com</h1>
+        
+        <div class="section">
+            <h3>?? Server Information</h3>
+            <div class="info-row">
+                <span class="label">Domain:</span>
+                <span class="value" id="domain">new.7shining.com</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Current URL:</span>
+                <span class="value" id="current-url"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">Protocol:</span>
+                <span class="value" id="protocol"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">Port:</span>
+                <span class="value" id="port"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">User Agent:</span>
+                <span class="value" id="user-agent"></span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>?? Browser Information</h3>
+            <div class="info-row">
+                <span class="label">Browser Language:</span>
+                <span class="value" id="language"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">Screen Resolution:</span>
+                <span class="value" id="resolution"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">Cookies Enabled:</span>
+                <span class="value" id="cookies"></span>
+            </div>
+            <div class="info-row">
+                <span class="label">Online Status:</span>
+                <span class="value" id="online"></span>
+            </div>
+        </div>
+
+        <div class="section test-section">
+            <h3>? Functionality Tests</h3>
+            <div class="info-row">
+                <span class="label">HTML Rendering:</span>
+                <span class="value success">? WORKING</span>
+            </div>
+            <div class="info-row">
+                <span class="label">JavaScript:</span>
+                <span class="value" id="js-test">?? Testing...</span>
+            </div>
+            <div class="info-row">
+                <span class="label">CSS Styling:</span>
+                <span class="value success">? WORKING</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Local Storage:</span>
+                <span class="value" id="storage-test">?? Testing...</span>
+            </div>
+        </div>
+
+        <div class="section php-test">
+            <h3>?? PHP Status</h3>
+            <div class="info-row">
+                <span class="label">PHP Test File:</span>
+                <span class="value">
+                    <button onclick="testPHP()">Test PHP Now</button>
+                    <span id="php-result">Click to test</span>
+                </span>
+            </div>
+            <div class="info-row">
+                <span class="label">Expected PHP URL:</span>
+                <span class="value">http://new.7shining.com/test.php</span>
+            </div>
+            <div class="info-row">
+                <span class="label">PHP Info URL:</span>
+                <span class="value">http://new.7shining.com/info.php</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>?? Troubleshooting Info</h3>
+            <div class="info-row">
+                <span class="label">Document Root:</span>
+                <span class="value">/home/dupulosu/www/new.7shining.com/</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Recommended PHP Files:</span>
+                <span class="value">644 permissions</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Recommended Folders:</span>
+                <span class="value">755 permissions</span>
+            </div>
+            <div class="info-row">
+                <span class="label">Index Files:</span>
+                <span class="value">index.html, index.php</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3>?? Quick Tests</h3>
+            <button onclick="window.open('http://new.7shining.com/test.php', '_blank')">Test PHP File</button>
+            <button onclick="window.open('http://new.7shining.com/info.php', '_blank')">Test PHP Info</button>
+            <button onclick="testConnectivity()">Test Connectivity</button>
+            <button onclick="copyDebugInfo()">Copy Debug Info</button>
+        </div>
+
+        <div class="section">
+            <h3>?? Debug Output</h3>
+            <div id="debug-output" style="background: #111; padding: 15px; border-radius: 5px; min-height: 100px; white-space: pre-wrap; font-size: 12px;">
+Ready for testing...
+            </div>
+        </div>
+
+        <div class="timestamp">
+            Generated: <span id="timestamp"></span>
+        </div>
+    </div>
+
+    <script>
+        // Update all info on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            updateInfo();
+            testBasicFunctionality();
+        });
+
+        function updateInfo() {
+            // Current timestamp
+            document.getElementById('timestamp').textContent = new Date().toLocaleString('de-DE');
+            
+            // URL info
+            document.getElementById('current-url').textContent = window.location.href;
+            document.getElementById('protocol').textContent = window.location.protocol;
+            document.getElementById('port').textContent = window.location.port || 'default';
+            
+            // Browser info
+            document.getElementById('user-agent').textContent = navigator.userAgent;
+            document.getElementById('language').textContent = navigator.language;
+            document.getElementById('resolution').textContent = screen.width + 'x' + screen.height;
+            document.getElementById('cookies').textContent = navigator.cookieEnabled ? 'Yes' : 'No';
+            document.getElementById('online').textContent = navigator.onLine ? 'Online' : 'Offline';
+        }
+
+        function testBasicFunctionality() {
+            // Test JavaScript
+            document.getElementById('js-test').innerHTML = '<span class="success">? WORKING</span>';
+            
+            // Test localStorage
+            try {
+                localStorage.setItem('test', 'working');
+                const test = localStorage.getItem('test');
+                if (test === 'working') {
+                    document.getElementById('storage-test').innerHTML = '<span class="success">? WORKING</span>';
+                    localStorage.removeItem('test');
+                } else {
+                    throw new Error('LocalStorage not working');
+                }
+            } catch (e) {
+                document.getElementById('storage-test').innerHTML = '<span class="error">? NOT WORKING</span>';
+            }
+        }
+
+        function testPHP() {
+            const debugOutput = document.getElementById('debug-output');
+            const phpResult = document.getElementById('php-result');
+            
+            debugOutput.textContent += '\n[' + new Date().toLocaleTimeString() + '] Testing PHP...\n';
+            phpResult.innerHTML = '?? Testing...';
+            
+            // Try to fetch PHP test file
+            fetch('/test.php')
+                .then(response => {
+                    debugOutput.textContent += 'PHP Response Status: ' + response.status + '\n';
+                    debugOutput.textContent += 'PHP Response Headers: ' + JSON.stringify([...response.headers.entries()]) + '\n';
+                    
+                    if (response.status === 200) {
+                        phpResult.innerHTML = '<span class="success">? PHP WORKING</span>';
+                        return response.text();
+                    } else if (response.status === 403) {
+                        phpResult.innerHTML = '<span class="error">? 403 FORBIDDEN</span>';
+                        throw new Error('403 Forbidden - PHP not properly configured');
+                    } else {
+                        phpResult.innerHTML = '<span class="error">? ERROR ' + response.status + '</span>';
+                        throw new Error('HTTP ' + response.status);
+                    }
+                })
+                .then(data => {
+                    debugOutput.textContent += 'PHP Response Content: ' + data.substring(0, 200) + '...\n';
+                })
+                .catch(error => {
+                    debugOutput.textContent += 'PHP Error: ' + error.message + '\n';
+                    phpResult.innerHTML = '<span class="error">? FAILED</span>';
+                });
+        }
+
+        function testConnectivity() {
+            const debugOutput = document.getElementById('debug-output');
+            debugOutput.textContent += '\n[' + new Date().toLocaleTimeString() + '] Testing connectivity...\n';
+            
+            const tests = [
+                { name: 'Main Page', url: '/' },
+                { name: 'Index HTML', url: '/index.html' },
+                { name: 'Test PHP', url: '/test.php' },
+                { name: 'Info PHP', url: '/info.php' }
+            ];
+            
+            tests.forEach(test => {
+                fetch(test.url)
+                    .then(response => {
+                        debugOutput.textContent += test.name + ': ' + response.status + ' ' + response.statusText + '\n';
+                    })
+                    .catch(error => {
+                        debugOutput.textContent += test.name + ': ERROR - ' + error.message + '\n';
+                    });
+            });
+        }
+
+        function copyDebugInfo() {
+            const debugInfo = `
+DEBUG INFO - new.7shining.com
+Generated: ${new Date().toLocaleString('de-DE')}
+
+Domain: new.7shining.com
+Current URL: ${window.location.href}
+User Agent: ${navigator.userAgent}
+Browser Language: ${navigator.language}
+Screen Resolution: ${screen.width}x${screen.height}
+
+Document Root: /home/dupulosu/www/new.7shining.com/
+PHP Version Set: Hostpoint Standard (PHP 8.1)
+
+Debug Output:
+${document.getElementById('debug-output').textContent}
+            `;
+            
+            navigator.clipboard.writeText(debugInfo).then(() => {
+                alert('Debug info copied to clipboard!');
+            }).catch(() => {
+                // Fallback
+                const textarea = document.createElement('textarea');
+                textarea.value = debugInfo;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+                alert('Debug info copied to clipboard!');
+            });
+        }
+    </script>
+</body>
+</html>

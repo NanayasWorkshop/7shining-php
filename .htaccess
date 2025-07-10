@@ -1,6 +1,14 @@
 # Enable Rewrite Engine
 RewriteEngine On
 
+# Force UTF-8 encoding
+AddDefaultCharset UTF-8
+
+# Set UTF-8 for specific file types
+<FilesMatch "\.(php|html|htm|js|css)$">
+    AddCharset UTF-8 .php .html .htm .js .css
+</FilesMatch>
+
 # Handle Angular/SPA routes and PHP routes
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d

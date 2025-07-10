@@ -2,7 +2,7 @@
 
 return [
     'hero' => [
-        'title' => '🤝 Mitglied bei 7Shining werden',
+        'title' => 'Mitglied bei 7Shining',
         'description' => 'Du möchtest Teil einer lebendigen Gemeinschaft werden, die persönliches Wachstum, spirituelle Entwicklung und finanzielle Freiheit verbindet? Dann bist du bei 7Shining genau richtig.',
         'community_circle' => [
             'icon' => '✨',
@@ -64,23 +64,23 @@ return [
         'benefits' => [
             [
                 'icon' => '🎯',
-                'title' => 'Inspirierende Events & Workshops',
-                'description' => 'Zugang zu exklusiven Veranstaltungen, Materialien und Weiterbildungen'
+                'title' => 'Zugang zu inspirierenden Events, Workshops und Materialien',
+                'description' => 'Exklusive Veranstaltungen, Materialien und Weiterbildungen für deine persönliche Entwicklung'
             ],
             [
                 'icon' => '🤝',
-                'title' => 'Starke Community',
-                'description' => 'Mitglied in einer werteorientierten Gemeinschaft von Gleichgesinnten'
+                'title' => 'Mitglied in einer starken, werteorientierten Community',
+                'description' => 'Teil einer Gemeinschaft von Gleichgesinnten, die gemeinsam wachsen und sich unterstützen'
             ],
             [
                 'icon' => '💰',
-                'title' => 'Mitgestaltung & Einkommen',
-                'description' => 'Möglichkeit zur aktiven Mitgestaltung – persönlich wie auch finanziell'
+                'title' => 'Möglichkeit zur Mitgestaltung – persönlich wie auch finanziell',
+                'description' => 'Aktive Rolle in der Vereinsgestaltung und finanzielle Vorteile durch Empfehlungen'
             ],
             [
                 'icon' => '🌱',
-                'title' => 'Spirituelle Begleitung',
-                'description' => 'Spirituelle und praktische Begleitung auf deinem persönlichen Weg'
+                'title' => 'Spirituelle und praktische Begleitung auf deinem Weg',
+                'description' => 'Ganzheitliche Unterstützung für deine persönliche und spirituelle Entwicklung'
             ]
         ],
         'growth_steps' => [

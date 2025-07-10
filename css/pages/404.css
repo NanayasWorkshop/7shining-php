@@ -31,7 +31,7 @@
 }
 
 .error-number {
-    color: #D4AF37;
+    color: var(--color-primary);
     animation: bounce 2s infinite;
 }
 
@@ -59,13 +59,13 @@
     font-size: clamp(2rem, 4vw, 3rem);
     font-weight: 700;
     margin-bottom: 1.5rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .error-content > p {
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     opacity: 0.9;
     line-height: 1.6;
     max-width: 600px;
@@ -84,7 +84,7 @@
     font-size: 1.5rem;
     font-weight: 600;
     margin-bottom: 2rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .suggestions-grid {
@@ -100,7 +100,7 @@
 .suggestion-item {
     background: rgba(255, 255, 255, 0.9);
     backdrop-filter: blur(10px);
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
     border-radius: 12px;
     padding: 2rem;
     text-align: center;
@@ -116,7 +116,7 @@
 
 .suggestion-item:hover {
     transform: translateY(-5px);
-    border-color: #D4AF37;
+    border-color: var(--color-primary);
     box-shadow: 0 10px 25px rgba(212, 175, 55, 0.1);
 }
 
@@ -130,21 +130,21 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.8rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .suggestion-item p {
     font-size: 0.95rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     opacity: 0.8;
 }
 
 .suggestion-link {
     display: inline-block;
-    background: #D4AF37;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-white);
     padding: 0.8rem 1.5rem;
     text-decoration: none;
     border-radius: 6px;
@@ -154,9 +154,9 @@
 }
 
 .suggestion-link:hover {
-    background: #B8941F;
+    background: var(--color-primary-dark);
     transform: translateY(-2px);
-    color: white;
+    color: var(--color-white);
 }
 
 /* Back Actions */
@@ -172,7 +172,7 @@
 .fun-fact {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
-    border: 1px solid #e0e0e0;
+    border: 1px solid var(--color-border);
     border-radius: 12px;
     padding: 2rem;
     margin: 3rem auto;
@@ -190,21 +190,21 @@
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    color: #1a1a1a;
+    color: var(--color-text-primary);
 }
 
 .fun-fact p {
     font-size: 1rem;
     line-height: 1.6;
     margin-bottom: 1.5rem;
-    color: #333333;
+    color: var(--color-text-secondary);
     transition: opacity 0.3s ease;
 }
 
 .fun-fact-btn {
     background: transparent;
-    color: #D4AF37;
-    border: 2px solid #D4AF37;
+    color: var(--color-primary);
+    border: 2px solid var(--color-primary);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -214,8 +214,8 @@
 }
 
 .fun-fact-btn:hover {
-    background: #D4AF37;
-    color: white;
+    background: var(--color-primary);
+    color: var(--color-white);
     transform: translateY(-2px);
 }
 

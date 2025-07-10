@@ -192,195 +192,180 @@ return [
     ],
     
     'datenschutz' => [
-        'title' => 'Datenschutzerklärung',
-        'subtitle' => 'Ihre Privatsphäre ist uns wichtig. Hier erfahren Sie, wie wir Ihre Daten schützen und verwenden.',
+        'title' => 'Datenschutz',
+        'subtitle' => 'Deine Privatsphäre ist uns wichtig. Hier erfährst du, wie wir deine Daten schützen und verwenden.',
         'navigation' => [
-            ['id' => 'overview', 'title' => '1. Überblick'],
-            ['id' => 'controller', 'title' => '2. Verantwortlicher'],
-            ['id' => 'data-collection', 'title' => '3. Datenerfassung'],
-            ['id' => 'data-usage', 'title' => '4. Datenverwendung'],
-            ['id' => 'data-sharing', 'title' => '5. Datenweitergabe'],
-            ['id' => 'data-security', 'title' => '6. Datensicherheit'],
-            ['id' => 'user-rights', 'title' => '7. Ihre Rechte'],
-            ['id' => 'cookies', 'title' => '8. Cookies'],
-            ['id' => 'contact-data', 'title' => '9. Kontakt & Änderungen']
+            ['id' => 'overview', 'title' => '1. Allgemeine Hinweise'],
+            ['id' => 'controller', 'title' => '2. Verantwortliche Stelle'],
+            ['id' => 'data-collection', 'title' => '3. Erhebung und Verarbeitung'],
+            ['id' => 'media-usage', 'title' => '4. Verbindliche Mediennutzung'],
+            ['id' => 'data-purpose', 'title' => '5. Zweck der Datenverarbeitung'],
+            ['id' => 'legal-basis', 'title' => '6. Rechtsgrundlagen'],
+            ['id' => 'data-sharing', 'title' => '7. Weitergabe an Dritte'],
+            ['id' => 'data-storage', 'title' => '8. Speicherung und Aufbewahrung'],
+            ['id' => 'user-rights', 'title' => '9. Deine Rechte'],
+            ['id' => 'cookies', 'title' => '10. Cookies und Tracking'],
+            ['id' => 'data-security', 'title' => '11. Datensicherheit'],
+            ['id' => 'changes', 'title' => '12. Änderungen'],
+            ['id' => 'contact', 'title' => '13. Kontakt']
         ],
         'sections' => [
             [
                 'id' => 'overview',
-                'title' => '1. Überblick',
+                'title' => '1. Allgemeine Hinweise',
                 'content' => [
-                    '<p>Diese Datenschutzerklärung informiert Sie über die Art, den Umfang und Zweck der Verarbeitung von personenbezogenen Daten durch 7Shining (nachfolgend "wir" oder "uns"). Diese Datenschutzerklärung gilt für alle Dienstleistungen, die wir über unsere Website und im Rahmen der Vereinsmitgliedschaft anbieten.</p>',
-                    '<p>Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare natürliche Person beziehen. Hierzu gehören beispielsweise Name, Adresse, E-Mail-Adressen oder Nutzerverhalten.</p>'
+                    '<p>Der Schutz deiner persönlichen Daten ist uns, dem Verein 7Shining, ein wichtiges Anliegen. Wir behandeln deine Daten vertraulich und gemäss den gesetzlichen Datenschutzvorschriften der Schweiz (insbesondere DSG) sowie – soweit anwendbar – der EU-Datenschutzgrundverordnung (DSGVO).</p>',
+                    '<p>Diese Datenschutzerklärung informiert darüber, wie wir personenbezogene Daten erheben, verarbeiten und speichern – insbesondere im Zusammenhang mit der Vereinsmitgliedschaft, der aktiven Mitgliedschaft, Veranstaltungen, Kommunikation und unserer Website.</p>'
                 ]
             ],
             [
                 'id' => 'controller',
-                'title' => '2. Verantwortlicher',
-                'content' => [
-                    '<p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p>'
-                ],
+                'title' => '2. Verantwortliche Stelle',
+                'content' => [],
                 'contact_info' => [
-                    'name' => '7Shining',
-                    'address' => '[Adresse]<br>St. Gallen, Schweiz',
-                    'email' => 'info@7shining.com'
+                    'name' => 'Verein 7Shining',
+                    'address' => 'Hauptstrasse 1<br>9400 Rorschach, Schweiz',
+                    'email' => 'kontakt@7shining.ch'
                 ]
             ],
             [
                 'id' => 'data-collection',
-                'title' => '3. Datenerfassung auf unserer Website',
+                'title' => '3. Erhebung und Verarbeitung personenbezogener Daten',
                 'content' => [
-                    '<h3>3.1 Server-Log-Dateien</h3>',
-                    '<p>Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:</p>',
+                    '<p>Wir erheben folgende Daten – je nach Kontext:</p>',
+                    '<h3>a) Bei Mitgliedschaft/aktiven Mitgliedschaft:</h3>',
                     '<ul>',
-                    '<li>Browsertyp und Browserversion</li>',
-                    '<li>Verwendetes Betriebssystem</li>',
-                    '<li>Referrer URL</li>',
-                    '<li>Hostname des zugreifenden Rechners</li>',
-                    '<li>Uhrzeit der Serveranfrage</li>',
-                    '<li>IP-Adresse</li>',
-                    '</ul>',
-                    '<p>Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen.</p>',
-                    
-                    '<h3>3.2 Kontaktformular</h3>',
-                    '<p>Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.</p>',
-                    
-                    '<h3>3.3 Registrierung</h3>',
-                    '<p>Bei der Registrierung für unsere Dienstleistungen erheben wir folgende Daten:</p>',
-                    '<ul>',
-                    '<li>Name und Vorname</li>',
+                    '<li>Vor- und Nachname</li>',
+                    '<li>Adresse</li>',
+                    '<li>Geburtsdatum</li>',
+                    '<li>Telefonnummer</li>',
                     '<li>E-Mail-Adresse</li>',
-                    '<li>Anschrift</li>',
-                    '<li>Bankverbindung (für Zahlungsabwicklung)</li>',
-                    '<li>Telefonnummer (optional)</li>',
+                    '<li>Zahlungsinformationen</li>',
+                    '<li>Mitgliedsstatus und Beteiligung (z. B. aktive Mitgliedschaft)</li>',
+                    '</ul>',
+                    '<h3>b) Bei Nutzung unserer Website:</h3>',
+                    '<ul>',
+                    '<li>IP-Adresse</li>',
+                    '<li>Datum und Uhrzeit der Anfrage</li>',
+                    '<li>Browsertyp und Version</li>',
+                    '<li>Besuchte Seiten (Logfiles)</li>',
+                    '</ul>',
+                    '<h3>c) Bei Kontaktaufnahme (z. B. per E-Mail oder Formular):</h3>',
+                    '<ul>',
+                    '<li>Name</li>',
+                    '<li>E-Mail-Adresse</li>',
+                    '<li>Telefonnummer</li>',
+                    '<li>Inhalt der Nachricht</li>',
                     '</ul>'
                 ]
             ],
             [
-                'id' => 'data-usage',
-                'title' => '4. Verwendung Ihrer Daten',
+                'id' => 'media-usage',
+                'title' => '4. Verbindliche Mediennutzung – keine Teilnahme ohne Zustimmung',
                 'content' => [
-                    '<p>Wir verwenden Ihre personenbezogenen Daten für folgende Zwecke:</p>',
-                    
-                    '<h3>4.1 Vertragserfüllung</h3>',
+                    '<h3>Bild-, Ton- und Videoaufnahmen</h3>',
+                    '<p>Im Rahmen unserer Vereinsaktivitäten können Bild-, Ton- und Videoaufnahmen gemacht werden. Diese dienen der Dokumentation sowie der Öffentlichkeitsarbeit von 7Shining und können auf unserer Website, in sozialen Medien, Druckerzeugnissen oder anderen vereinsbezogenen Kanälen veröffentlicht werden.</p>',
+                    '<p><strong>Mit dem Beitritt zum Verein bzw. der Teilnahme an einer Veranstaltung erklären sich alle Mitglieder, aktiven Mitglieder und Teilnehmenden ausdrücklich damit einverstanden, dass solche Aufnahmen von ihnen gemacht und für die genannten Zwecke genutzt werden dürfen.</strong></p>',
+                    '<p><strong>Eine Teilnahme an Vereinsaktivitäten bzw. eine Mitgliedschaft ist ohne diese Einwilligung nicht möglich. Ein Widerspruchsrecht besteht in diesem Zusammenhang nicht.</strong></p>'
+                ]
+            ],
+            [
+                'id' => 'data-purpose',
+                'title' => '5. Zweck der Datenverarbeitung',
+                'content' => [
+                    '<p>Deine Daten verarbeiten wir zu folgenden Zwecken:</p>',
                     '<ul>',
-                    '<li>Abwicklung der Mitgliedschaft</li>',
-                    '<li>Verwaltung Ihres Depot-Accounts</li>',
-                    '<li>Versand von Goldbarren</li>',
-                    '<li>Zahlungsabwicklung</li>',
-                    '</ul>',
-                    
-                    '<h3>4.2 Kommunikation</h3>',
+                    '<li>Verwaltung der Mitgliedschaften, aktiven Mitgliedschaften und Beiträge</li>',
+                    '<li>Organisation von Vereinsaktivitäten</li>',
+                    '<li>Kommunikation mit Mitgliedern, aktiven Mitgliedern und Interessenten</li>',
+                    '<li>Versand von Informationen über Veranstaltungen, Projekte oder Neuigkeiten</li>',
+                    '<li>Erfüllung gesetzlicher Pflichten (z. B. Aufbewahrungspflichten)</li>',
+                    '</ul>'
+                ]
+            ],
+            [
+                'id' => 'legal-basis',
+                'title' => '6. Rechtsgrundlagen der Verarbeitung',
+                'content' => [
+                    '<p>Die Datenverarbeitung erfolgt auf folgenden Grundlagen:</p>',
                     '<ul>',
-                    '<li>Beantwortung von Anfragen</li>',
-                    '<li>Kundenservice und Support</li>',
-                    '<li>Informationen über Änderungen unserer Dienstleistungen</li>',
-                    '</ul>',
-                    
-                    '<h3>4.3 Rechtliche Verpflichtungen</h3>',
-                    '<ul>',
-                    '<li>Erfüllung gesetzlicher Aufbewahrungspflichten</li>',
-                    '<li>Geldwäscheprävention</li>',
+                    '<li>Einwilligung (Art. 6 Abs. 1 lit. a DSGVO)</li>',
+                    '<li>Vertragserfüllung (Mitgliedschaft, aktive Mitgliedschaft)</li>',
+                    '<li>Berechtigtes Interesse (z. B. Vereinsorganisation, Verbesserung der Website)</li>',
+                    '<li>Gesetzliche Verpflichtungen</li>',
                     '</ul>'
                 ]
             ],
             [
                 'id' => 'data-sharing',
-                'title' => '5. Datenweitergabe',
+                'title' => '7. Weitergabe an Dritte',
                 'content' => [
-                    '<p>Eine Übermittlung Ihrer persönlichen Daten an Dritte zu anderen als den im Folgenden aufgeführten Zwecken findet nicht statt.</p>',
-                    '<p>Wir geben Ihre persönlichen Daten nur an Dritte weiter, wenn:</p>',
+                    '<p>Wir geben deine personenbezogenen Daten grundsätzlich nicht an Dritte weiter, ausser:</p>',
                     '<ul>',
-                    '<li>Sie Ihre ausdrückliche Einwilligung dazu erteilt haben</li>',
-                    '<li>Die Weitergabe zur Erfüllung unserer Leistungen erforderlich ist (z.B. Versanddienstleister)</li>',
-                    '<li>Eine gesetzliche Verpflichtung zur Weitergabe besteht</li>',
-                    '<li>Die Weitergabe zur Durchsetzung unserer Rechte erforderlich ist</li>',
-                    '</ul>',
-                    
-                    '<h3>5.1 Dienstleister</h3>',
-                    '<p>Wir arbeiten mit folgenden Kategorien von Dienstleistern zusammen:</p>',
-                    '<ul>',
-                    '<li>Versanddienstleister für die Goldbarren-Lieferung</li>',
-                    '<li>Zahlungsdienstleister für die Abwicklung von Zahlungen</li>',
-                    '<li>IT-Dienstleister für die Wartung unserer Systeme</li>',
+                    '<li>mit deiner ausdrücklichen Einwilligung</li>',
+                    '<li>an beauftragte Dienstleister (z. B. Hosting-Provider, Buchhaltung, Transportdienstleister), mit denen Auftragsverarbeitungsverträge bestehen</li>',
+                    '<li>wenn eine gesetzliche Pflicht besteht</li>',
                     '</ul>'
                 ]
             ],
             [
-                'id' => 'data-security',
-                'title' => '6. Datensicherheit',
+                'id' => 'data-storage',
+                'title' => '8. Speicherung und Aufbewahrung',
                 'content' => [
-                    '<p>Wir verwenden innerhalb des Website-Besuchs das verbreitete SSL-Verfahren (Secure Socket Layer) in Verbindung mit der jeweils höchsten Verschlüsselungsstufe, die von Ihrem Browser unterstützt wird.</p>',
-                    '<p>Zusätzlich sichern wir Ihre Daten durch:</p>',
-                    '<ul>',
-                    '<li>Regelmäßige Sicherheitsupdates</li>',
-                    '<li>Zugriffsbeschränkungen auf Need-to-know-Basis</li>',
-                    '<li>Regelmäßige Backups</li>',
-                    '<li>Schulung unserer Mitarbeiter im Datenschutz</li>',
-                    '</ul>'
+                    '<p>Personenbezogene Daten werden nur so lange aufbewahrt, wie dies zur Erfüllung der jeweiligen Zwecke notwendig ist oder eine gesetzliche Aufbewahrungspflicht besteht.</p>'
                 ]
             ],
             [
                 'id' => 'user-rights',
-                'title' => '7. Ihre Rechte',
+                'title' => '9. Deine Rechte',
                 'content' => [
-                    '<p>Sie haben bezüglich Ihrer bei uns gespeicherten personenbezogenen Daten folgende Rechte:</p>',
-                    
-                    '<h3>7.1 Auskunftsrecht</h3>',
-                    '<p>Sie haben das Recht, Auskunft über die von uns zu Ihrer Person gespeicherten Daten zu erhalten.</p>',
-                    
-                    '<h3>7.2 Berichtigungsrecht</h3>',
-                    '<p>Sie haben das Recht, unrichtige Daten korrigieren zu lassen.</p>',
-                    
-                    '<h3>7.3 Löschungsrecht</h3>',
-                    '<p>Sie haben das Recht, die Löschung Ihrer Daten zu verlangen, sofern keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p>',
-                    
-                    '<h3>7.4 Einschränkung der Verarbeitung</h3>',
-                    '<p>Sie haben das Recht, die Einschränkung der Verarbeitung Ihrer Daten zu verlangen.</p>',
-                    
-                    '<h3>7.5 Datenübertragbarkeit</h3>',
-                    '<p>Sie haben das Recht, Ihre Daten in einem strukturierten, gängigen und maschinenlesbaren Format zu erhalten.</p>',
-                    
-                    '<h3>7.6 Widerspruchsrecht</h3>',
-                    '<p>Sie haben das Recht, der Verarbeitung Ihrer Daten zu widersprechen.</p>'
+                    '<p>Du hast folgende Rechte:</p>',
+                    '<ul>',
+                    '<li>Auskunft über deine gespeicherten Daten</li>',
+                    '<li>Berichtigung unrichtiger Daten</li>',
+                    '<li>Löschung deiner Daten, sofern keine Pflicht zur Aufbewahrung besteht</li>',
+                    '<li>Einschränkung der Verarbeitung</li>',
+                    '<li>Widerspruch gegen die Verarbeitung</li>',
+                    '<li>Datenübertragbarkeit (sofern anwendbar)</li>',
+                    '</ul>',
+                    '<p>Du kannst deine Rechte jederzeit schriftlich oder per E-Mail (datenschutz@7shining.ch) an uns geltend machen.</p>'
                 ]
             ],
             [
                 'id' => 'cookies',
-                'title' => '8. Cookies',
+                'title' => '10. Cookies und Tracking (für die Website)',
                 'content' => [
-                    '<p>Die Internetseiten verwenden teilweise so genannte Cookies. Cookies richten auf Ihrem Rechner keinen Schaden an und enthalten keine Viren. Cookies dienen dazu, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen.</p>',
-                    
-                    '<h3>8.1 Arten von Cookies</h3>',
-                    '<p>Wir verwenden folgende Arten von Cookies:</p>',
-                    '<ul>',
-                    '<li><strong>Technisch notwendige Cookies:</strong> Für die Grundfunktionalität der Website</li>',
-                    '<li><strong>Funktionalitäts-Cookies:</strong> Für erweiterte Funktionen und Personalisierung</li>',
-                    '<li><strong>Analyse-Cookies:</strong> Zur Verbesserung der Website-Performance</li>',
-                    '</ul>',
-                    
-                    '<h3>8.2 Cookie-Verwaltung</h3>',
-                    '<p>Sie können Ihren Browser so einstellen, dass Sie über das Setzen von Cookies informiert werden und Cookies nur im Einzelfall erlauben, die Annahme von Cookies für bestimmte Fälle oder generell ausschließen sowie das automatische Löschen der Cookies beim Schließen des Browser aktivieren.</p>'
+                    '<p>Unsere Website verwendet Cookies, um die Nutzerfreundlichkeit zu verbessern. Du kannst dem Einsatz von Cookies über die Einstellungen deines Browsers widersprechen.</p>',
+                    '<p>Wir verwenden keine personalisierten Tracking-Tools ohne deine Einwilligung.</p>'
                 ]
             ],
             [
-                'id' => 'contact-data',
-                'title' => '9. Kontakt & Änderungen',
+                'id' => 'data-security',
+                'title' => '11. Datensicherheit',
                 'content' => [
-                    '<h3>9.1 Kontakt bei Datenschutzfragen</h3>',
-                    '<p>Bei Fragen zum Datenschutz kontaktieren Sie uns unter:</p>'
+                    '<p>Wir setzen technische und organisatorische Sicherheitsmassnahmen ein, um deine Daten vor unbefugtem Zugriff, Verlust oder Missbrauch zu schützen.</p>'
+                ]
+            ],
+            [
+                'id' => 'changes',
+                'title' => '12. Änderungen dieser Datenschutzerklärung',
+                'content' => [
+                    '<p>Diese Datenschutzerklärung kann angepasst werden, um gesetzlichen Anforderungen oder Änderungen unserer Prozesse Rechnung zu tragen. Die aktuelle Version findest du stets auf unserer Website.</p>'
+                ]
+            ],
+            [
+                'id' => 'contact',
+                'title' => '13. Kontakt bei Fragen zum Datenschutz',
+                'content' => [
+                    '<p>Bei Fragen oder Anliegen zum Datenschutz kannst du uns unter folgender Adresse kontaktieren:</p>'
                 ],
                 'contact_info' => [
-                    'email' => 'datenschutz@7shining.com',
-                    'phone' => '[Telefonnummer]'
+                    'name' => 'Verein 7Shining',
+                    'address' => 'Hauptstrasse 1, 9400 Rorschach',
+                    'email' => 'datenschutz@7shining.com'
                 ],
                 'additional_content' => [
-                    '<h3>9.2 Änderungen der Datenschutzerklärung</h3>',
-                    '<p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, damit sie stets den aktuellen rechtlichen Anforderungen entspricht oder um Änderungen unserer Leistungen in der Datenschutzerklärung umzusetzen.</p>',
-                    '<p>Für Ihren erneuten Besuch gilt dann die neue Datenschutzerklärung.</p>',
-                    
-                    '<h3>9.3 Stand der Datenschutzerklärung</h3>',
-                    '<p>Diese Datenschutzerklärung ist aktuell gültig und hat den Stand Mai 2025.</p>'
+                    '<p><strong>Stand: 16.05.2025</strong></p>'
                 ]
             ]
         ]
@@ -391,134 +376,120 @@ return [
         'subtitle' => 'Rechtliche Informationen und Angaben gemäß den gesetzlichen Bestimmungen.',
         'navigation' => [
             ['id' => 'company-info', 'title' => '1. Vereinsangaben'],
-            ['id' => 'contact-info', 'title' => '2. Kontaktdaten'],
-            ['id' => 'registration', 'title' => '3. Registrierung'],
-            ['id' => 'board', 'title' => '4. Vorstand'],
-            ['id' => 'liability', 'title' => '5. Haftungsausschluss'],
-            ['id' => 'copyright', 'title' => '6. Urheberrecht'],
-            ['id' => 'links', 'title' => '7. Externe Links']
+            ['id' => 'registration', 'title' => '2. Registrierung'],
+            ['id' => 'board', 'title' => '3. Vertretungsberechtigte Personen'],
+            ['id' => 'purpose', 'title' => '4. Vereinszweck'],
+            ['id' => 'values', 'title' => '5. Werte und Grundsätze'],
+            ['id' => 'liability', 'title' => '6. Haftungsausschluss'],
+            ['id' => 'copyright', 'title' => '7. Urheberrecht'],
+            ['id' => 'responsible', 'title' => '8. Verantwortliche Personen'],
+            ['id' => 'contact', 'title' => '9. Kontakt']
         ],
         'sections' => [
             [
                 'id' => 'company-info',
                 'title' => '1. Vereinsangaben',
                 'content' => [
-                    '<p>7Shining ist ein gemeinnütziger Verein, der sich der Förderung von Gemeinschaft, persönlichem Wachstum und finanzieller Bildung verschrieben hat. Der Verein bietet seinen Mitgliedern verschiedene Programme und Dienstleistungen zur persönlichen und finanziellen Entwicklung.</p>'
+                    '<p><strong>7Shining</strong> - Verein gemäss Art. 60 ff. ZGB</p>',
+                    '<p><strong>Adresse:</strong> Hauptstrasse 1, 9400 Rorschach, Schweiz</p>'
                 ],
                 'info_box' => [
                     'title' => '7Shining',
-                    'content' => '<strong>Rechtsform:</strong> Verein nach schweizerischem Recht<br><strong>Vereinszweck:</strong> Förderung von Gemeinschaft, persönlichem Wachstum und finanzieller Bildung<br><strong>Sitz:</strong> St. Gallen, Schweiz'
-                ]
-            ],
-            [
-                'id' => 'contact-info',
-                'title' => '2. Kontaktdaten',
-                'content' => [],
-                'contact_grid' => [
-                    [
-                        'title' => 'Postanschrift',
-                        'content' => '7Shining<br>[Straße und Hausnummer]<br>[PLZ] St. Gallen<br>Schweiz'
-                    ],
-                    [
-                        'title' => 'Kontakt',
-                        'content' => '<strong>Telefon:</strong> [Telefonnummer]<br><strong>E-Mail:</strong> info@7shining.com<br><strong>Website:</strong> www.7shining.com'
-                    ],
-                    [
-                        'title' => 'Geschäftszeiten',
-                        'content' => 'Montag - Freitag: 09:00 - 17:00 Uhr<br>Samstag - Sonntag: Geschlossen<br><em>Oder nach Vereinbarung</em>'
-                    ],
-                    [
-                        'title' => 'Spezielle Kontakte',
-                        'content' => '<strong>Support:</strong> support@7shining.com<br><strong>Depot-Fragen:</strong> depot@7shining.com<br><strong>Widerrufe:</strong> widerruf@7shining.com<br><strong>Datenschutz:</strong> datenschutz@7shining.com'
-                    ]
+                    'content' => '<strong>Rechtsform:</strong> Eingetragener Verein<br><strong>Branche:</strong> Kirchliche, politische oder säkulare Vereinigungen<br><strong>Status:</strong> Aktiv<br><strong>Gründungsjahr:</strong> 2024'
                 ]
             ],
             [
                 'id' => 'registration',
-                'title' => '3. Registrierung und Aufsicht',
-                'content' => [
-                    '<h4>Rechtliche Hinweise</h4>',
-                    '<p>7Shining ist als Verein nach schweizerischem Recht organisiert und unterliegt dem Schweizerischen Zivilgesetzbuch (ZGB). Der Verein ist nicht der Aufsicht der FINMA (Eidgenössische Finanzmarktaufsicht) unterstellt, da er keine Bankgeschäfte, Finanzberatung oder Versicherungsvermittlung betreibt.</p>',
-                    '<p>Die angebotenen Depot-Dienstleistungen stellen private Vermittlungstätigkeiten dar und unterliegen den allgemeinen zivilrechtlichen Bestimmungen.</p>'
-                ],
+                'title' => '2. Registrierung',
+                'content' => [],
                 'info_box' => [
-                    'title' => 'Vereinsregistrierung',
-                    'content' => '<strong>Handelsregister:</strong> [Registernummer]<br><strong>Registergericht:</strong> Handelsregisteramt St. Gallen<br><strong>UID-Nummer:</strong> [UID-Nummer]'
+                    'title' => 'Handelsregister-Informationen',
+                    'content' => '<strong>Handelsregister-Nr.:</strong> CH-320.6.100.283-3<br><strong>UID:</strong> CHE-271.646.240<br><strong>Registergericht:</strong> Handelsregisteramt St. Gallen'
                 ]
             ],
             [
                 'id' => 'board',
-                'title' => '4. Vorstand',
+                'title' => '3. Vertretungsberechtigte Personen',
                 'content' => [
-                    '<p>Gemäß den Statuten des Vereins 7Shining wird der Verein durch den Vorstand vertreten:</p>',
-                    '<p><strong>Vertretungsberechtigung:</strong> Der Verein wird durch den Präsidenten und ein weiteres Vorstandsmitglied gemeinsam vertreten.</p>'
+                    '<p>Gemäß den Statuten des Vereins 7Shining wird der Verein durch folgende Personen vertreten:</p>'
                 ],
                 'board_grid' => [
                     [
                         'title' => 'Präsident',
-                        'name' => '[Name des Präsidenten]',
+                        'name' => 'Michael Plic',
                         'description' => 'Verantwortlich für die strategische Führung'
                     ],
                     [
                         'title' => 'Vizepräsident',
-                        'name' => '[Name des Vizepräsidenten]',
+                        'name' => 'Tomás Flitar',
                         'description' => 'Stellvertretung und operative Leitung'
                     ],
                     [
-                        'title' => 'Kassier',
-                        'name' => '[Name des Kassiers]',
-                        'description' => 'Finanzwesen und Buchhaltung'
-                    ],
-                    [
-                        'title' => 'Sekretär',
-                        'name' => '[Name des Sekretärs]',
-                        'description' => 'Protokollführung und Verwaltung'
+                        'title' => 'Administrator',
+                        'name' => 'Karina Plic',
+                        'description' => 'Verwaltung und technische Betreuung'
                     ]
                 ]
             ],
             [
-                'id' => 'liability',
-                'title' => '5. Haftungsausschluss',
+                'id' => 'purpose',
+                'title' => '4. Vereinszweck',
                 'content' => [
-                    '<h3>5.1 Inhalt der Website</h3>',
-                    '<p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich.</p>',
-                    
-                    '<h3>5.2 Haftung für Links</h3>',
-                    '<p>Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>',
-                    
-                    '<h3>5.3 Technische Störungen</h3>',
-                    '<p>Wir übernehmen keine Haftung für technische Störungen, Serverausfälle oder Systemfehler, die zu Unterbrechungen unserer Dienstleistungen führen können, sofern diese nicht vorsätzlich herbeigeführt wurden.</p>',
-                    
-                    '<h3>5.4 Finanzielle Beratung</h3>',
-                    '<p>Die auf dieser Website bereitgestellten Informationen stellen keine Finanz-, Anlage- oder Rechtsberatung dar. Jede Anlageentscheidung sollte auf Basis einer individuellen Beratung durch qualifizierte Fachkräfte getroffen werden.</p>'
+                    '<p>Der Verein <strong>7Shining</strong> verfolgt das Ziel, Menschen auf ihrem persönlichen und finanziellen Weg ganzheitlich zu stärken. Er bezweckt insbesondere:</p>',
+                    '<ul>',
+                    '<li>Die <strong>Förderung von Gemeinschaft, Austausch und gegenseitiger Unterstützung</strong> unter den Mitgliedern</li>',
+                    '<li>Die <strong>Persönlichkeitsentwicklung</strong> seiner Mitglieder durch Seminare, Workshops, Mentoring, Online-Angebote und gemeinsame Aktivitäten</li>',
+                    '<li>Die <strong>finanzielle Bildung</strong>, insbesondere in den Bereichen Sparen, Investieren, Vermögensschutz und Vermögensaufbau</li>',
+                    '<li>Den <strong>Zugang zu Edelmetallen</strong> wie Gold durch faire, transparente und gemeinschaftsorientierte Programme</li>',
+                    '<li>Die Schaffung einer Plattform, auf der Mitglieder voneinander lernen, gemeinsam profitieren und bewusst handeln können</li>',
+                    '<li>Die Organisation von Veranstaltungen, Kursen, Austauschgruppen, Mitgliederprogrammen und Sonderaktionen zur Umsetzung der genannten Ziele</li>',
+                    '</ul>',
+                    '<p>Der Verein ist politisch unabhängig.</p>',
+                    '<p>Gewinne werden reinvestiert zur Erfüllung des Vereinszwecks. Eine kommerzielle Gewinnerzielung steht nicht im Vordergrund.</p>'
+                ]
+            ],
+            [
+                'id' => 'values',
+                'title' => '5. Werte und Grundsätze',
+                'content' => [
+                    '<p>Der Verein 7Shining verfolgt seine Ziele auf Grundlage ethischer und geistiger Werte. Unsere Forschung und Bildungsarbeit zu Themen wie Wertsicherung, Geldsystemen und Vermögensschutz basiert auf Prinzipien wie Fairness, Integrität, Verantwortung und sozialem Engagement.</p>',
+                    '<p>Dabei orientieren wir uns an christlichen Werten, insbesondere am Gedanken der Nächstenliebe, Gerechtigkeit, Ehrlichkeit und Hoffnung. Diese Grundhaltung prägt unsere Recherchen, Veranstaltungen und den Umgang miteinander.</p>',
+                    '<p>Die Mitgliedschaft steht allen offen – unabhängig von Religion oder Weltanschauung – sofern die Werte des Vereins respektiert und unterstützt werden.</p>'
+                ]
+            ],
+            [
+                'id' => 'liability',
+                'title' => '6. Haftungsausschluss',
+                'content' => [
+                    '<p>Die Inhalte dieser Website wurden mit grösstmöglicher Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte übernehmen wir jedoch keine Gewähr. Die Nutzung der Inhalte der Website erfolgt auf eigene Gefahr.</p>'
                 ]
             ],
             [
                 'id' => 'copyright',
-                'title' => '6. Urheberrecht',
+                'title' => '7. Urheberrecht',
                 'content' => [
-                    '<p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>',
-                    
-                    '<h3>6.1 Markenrechte</h3>',
-                    '<p>Die Marke "7Shining" sowie das zugehörige Logo sind markenrechtlich geschützt. Eine Verwendung ohne ausdrückliche Genehmigung ist nicht gestattet.</p>',
-                    
-                    '<h3>6.2 Bildrechte</h3>',
-                    '<p>Die auf dieser Website verwendeten Bilder unterliegen ebenfalls dem Urheberrecht. Soweit nicht anders angegeben, stammen die Bilder aus lizenzfreien Quellen oder sind Eigenaufnahmen.</p>'
+                    '<p>Die auf dieser Website veröffentlichten Inhalte unterliegen dem schweizerischen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung oder sonstige Art der Verwertung bedarf der vorherigen schriftlichen Zustimmung des jeweiligen Rechteinhabers.</p>'
                 ]
             ],
             [
-                'id' => 'links',
-                'title' => '7. Externe Links',
+                'id' => 'responsible',
+                'title' => '8. Verantwortliche Personen',
                 'content' => [
-                    '<p>Diese Website enthält Verknüpfungen zu Websites Dritter ("externe Links"). Diese Websites unterliegen der Haftung der jeweiligen Betreiber. Der Anbieter hat bei der erstmaligen Verknüpfung der externen Links die fremden Inhalte daraufhin überprüft, ob etwaige Rechtsverstöße bestehen.</p>',
-                    '<p>Zu dem Zeitpunkt waren keine Rechtsverstöße ersichtlich. Der Anbieter hat keinerlei Einfluss auf die aktuelle und zukünftige Gestaltung und auf die Inhalte der verknüpften Seiten. Das Setzen von externen Links bedeutet nicht, dass sich der Anbieter die hinter dem Verweis oder Link liegenden Inhalte zu Eigen macht.</p>',
-                    
-                    '<h3>7.1 Meldung problematischer Inhalte</h3>',
-                    '<p>Sollten Sie problematische oder rechtswidrige Inhalte auf verlinkten Seiten entdecken, bitten wir Sie, uns dies mitzuteilen, damit wir entsprechende Links entfernen können.</p>'
+                    '<p><strong>Verantwortlich für den Inhalt nach Art. 3 lit. o UWG / Art. 322 StGB (Schweiz):</strong></p>',
+                    '<p><strong>Michael Plic</strong><br>Präsident des Vereins 7Shining<br>(Einstehend für die Inhalte und rechtliche Verantwortung)</p>',
+                    '<p><strong>Karina Plic</strong><br>Administratorin, beauftragt mit der technischen und inhaltlichen Betreuung der Website<br>(Eingesetzt durch den Vorstand)</p>'
+                ]
+            ],
+            [
+                'id' => 'contact',
+                'title' => '9. Kontakt',
+                'content' => [
+                    '<p><strong>Kontakt:</strong> info@7shining.ch</p>'
                 ],
-                'info_box' => [
-                    'title' => 'Letzte Aktualisierung',
-                    'content' => 'Dieses Impressum wurde zuletzt am <strong>Mai 2025</strong> aktualisiert.'
+                'contact_info' => [
+                    'name' => 'Verein 7Shining',
+                    'address' => 'Hauptstrasse 1<br>9400 Rorschach, Schweiz',
+                    'email' => 'info@7shining.ch'
                 ]
             ]
         ]
@@ -526,7 +497,7 @@ return [
     
     'summary' => [
         'agb_summary' => 'Unsere AGB regeln die Rechtsbeziehung zwischen 7Shining und seinen Mitgliedern, einschließlich Depot-Services, Zahlungsbedingungen und Widerrufsrechte.',
-        'privacy_summary' => 'Wir schützen Ihre Privatsphäre durch SSL-Verschlüsselung, minimale Datenerhebung und strikte Einhaltung des Schweizer Datenschutzrechts.',
+        'privacy_summary' => 'Wir schützen deine Privatsphäre durch SSL-Verschlüsselung, minimale Datenerhebung und strikte Einhaltung des Schweizer Datenschutzrechts.',
         'impressum_summary' => '7Shining ist ein gemeinnütziger Schweizer Verein mit Sitz in St. Gallen, der sich der Förderung von Gemeinschaft und finanzieller Bildung widmet.'
     ]
 ];

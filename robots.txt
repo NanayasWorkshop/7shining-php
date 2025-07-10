@@ -1,0 +1,48 @@
+# robots.txt for 7Shining
+# This file tells search engines which parts of your site to crawl
+#
+# Website designed by: Y. N. Scheiweiler
+# Part of SaniGear GmbH
+# Address: Allenwindenstrasse 10, 8832 Wollerau, Switzerland
+# Website created: 2025
+
+# Allow all search engines to access everything by default
+User-agent: *
+Allow: /
+
+# Block access to admin/sensitive areas
+Disallow: /app/
+Disallow: /vendor/
+Disallow: /.git/
+Disallow: /.htaccess
+Disallow: /composer.json
+Disallow: /composer.lock
+Disallow: *.log
+
+# Block access to temporary and cache files
+Disallow: /tmp/
+Disallow: /cache/
+Disallow: /temp/
+
+# Allow access to important pages for SEO
+Allow: /
+Allow: /about
+Allow: /packages
+Allow: /mitglied-werden
+Allow: /faq
+Allow: /contact
+Allow: /agb
+Allow: /datenschutz
+Allow: /impressum
+
+# Allow CSS, JS and images for proper rendering
+Allow: /css/
+Allow: /js/
+Allow: /images/
+Allow: /favicon.ico
+
+# Sitemap location (create this later)
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# Crawl delay to be nice to servers (optional)
+Crawl-delay: 1

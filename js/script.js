@@ -1,25 +1,5 @@
 // Main JavaScript for 7Shining
 document.addEventListener('DOMContentLoaded', function() {
-    // Mobile Navigation Toggle
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.querySelector('.nav-links');
-    
-    if (hamburger && navLinks) {
-        hamburger.addEventListener('click', function() {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close mobile menu when clicking on a link
-        const navLinkItems = document.querySelectorAll('.nav-links a');
-        navLinkItems.forEach(link => {
-            link.addEventListener('click', function() {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            });
-        });
-    }
-
     // Navbar Background on Scroll
     const navbar = document.getElementById('navbar');
     if (navbar) {

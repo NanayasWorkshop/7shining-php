@@ -24,17 +24,17 @@
 
 /* Primary CTA Button */
 .cta-button {
-  background: #D4AF37;
-  color: #ffffff;
-  border-color: #D4AF37;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
 }
 
 .cta-button:hover {
-  background: #B8941F;
-  border-color: #B8941F;
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-  color: #ffffff;
+  box-shadow: var(--shadow-primary);
+  color: var(--color-white);
 }
 
 .cta-button:active {
@@ -44,13 +44,13 @@
 /* Secondary Button */
 .secondary-button {
   background: transparent;
-  color: #1a1a1a;
-  border-color: #1a1a1a;
+  color: var(--color-text-primary);
+  border-color: var(--color-text-primary);
 }
 
 .secondary-button:hover {
-  background: #1a1a1a;
-  color: #ffffff;
+  background: var(--color-text-primary);
+  color: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -61,19 +61,19 @@
 
 /* Package Button */
 .package-button {
-  background: #D4AF37;
-  color: #ffffff;
-  border-color: #D4AF37;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-color: var(--color-primary);
   width: 100%;
   margin-top: 1rem;
 }
 
 .package-button:hover {
-  background: #B8941F;
-  border-color: #B8941F;
+  background: var(--color-primary-dark);
+  border-color: var(--color-primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
-  color: #ffffff;
+  box-shadow: var(--shadow-primary);
+  color: var(--color-white);
 }
 
 /* Button sizes */

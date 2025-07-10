@@ -4,7 +4,7 @@ define('ROOT_PATH', __DIR__);
 define('APP_PATH', ROOT_PATH . '/app');
 define('PUBLIC_PATH', __DIR__);
 
-// BASE_URL fÃ¼r Hostpoint
+// BASE_URL für Hostpoint
 $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? 'https' : 'http';
 $host = $_SERVER['HTTP_HOST'];
 define('BASE_URL', $protocol . '://' . $host);
@@ -42,6 +42,6 @@ try {
     echo '<!DOCTYPE html><html><head><title>404 - Seite nicht gefunden</title></head>';
     echo '<body><h1>404 - Seite nicht gefunden</h1>';
     echo '<p>Die angeforderte Seite konnte nicht gefunden werden.</p>';
-    echo '<a href="' . BASE_URL . '/">ZurÃ¼ck zur Startseite</a></body></html>';
+    echo '<a href="' . BASE_URL . '/">Zurück zur Startseite</a></body></html>';
 }
 ?>

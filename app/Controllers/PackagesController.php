@@ -22,9 +22,9 @@ class PackagesController extends Controller
         
         // Page-specific meta data
         $data = [
-            'title' => 'Gold-Depot Pakete',
+            'title' => 'Gold-Depot Modelle',
             'description' => 'Entdecke unsere transparenten Sparpläne für physische Goldbarren. Quartalsweise Lieferung, faire Preise, vollständig versichert.',
-            'keywords' => '7Shining, Gold, Depot, Pakete, Goldbarren, Sparplan, Schweiz, versichert, Tagespreis',
+            'keywords' => '7Shining, Gold, Depot, Modelle, Goldbarren, Sparplan, Schweiz, versichert, Tagespreis',
             'ogType' => 'website',
             'additionalStyles' => ['packages.css'], // packages.css is already loaded via main styles.css
             'additionalScripts' => [], // packages.js is already loaded
@@ -59,9 +59,9 @@ class PackagesController extends Controller
         
         // Page-specific meta data with partner tracking
         $data = [
-            'title' => 'Gold-Depot Pakete - Exklusiver Partner-Zugang',
+            'title' => 'Gold-Depot Modelle - Exklusiver Partner-Zugang',
             'description' => 'Entdecke unsere transparenten Sparpläne für physische Goldbarren. Quartalsweise Lieferung, faire Preise, vollständig versichert.',
-            'keywords' => '7Shining, Gold, Depot, Pakete, Goldbarren, Sparplan, Partner, Schweiz',
+            'keywords' => '7Shining, Gold, Depot, Modelle, Goldbarren, Sparplan, Partner, Schweiz',
             'ogType' => 'website',
             'additionalStyles' => [],
             'additionalScripts' => [],

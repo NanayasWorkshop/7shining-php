@@ -20,8 +20,8 @@
 <!-- Packages Section -->
 <section class="packages">
     <div class="container">
-        <h2>Wähle dein Depot-Paket</h2>
-        <p class="packages-subtitle">Alle Pakete beinhalten quartalsweise Goldbarren-Lieferungen und transparente Preisgestaltung.</p>
+        <h2>Wähle dein Depot-Modell</h2>
+        <p class="packages-subtitle">Alle Modelle beinhalten eine quartalsweise Lieferung physischer Goldbarren, transparente Preisgestaltung und vollständige Versicherung.</p>
         
         <div class="packages-grid">
             <?php foreach ($packages as $package): ?>
@@ -129,7 +129,7 @@
     <div class="container">
         <div class="cta-content">
             <h2>Bereit für dein Gold-Depot?</h2>
-            <p>Starte noch heute mit dem Aufbau deines physischen Gold-Portfolios. Wähle das Paket, das zu deinen Zielen passt.</p>
+            <p>Starte noch heute mit dem Aufbau deines physischen Gold-Portfolios. Wähle das Modell, das zu deinen Zielen passt.</p>
             <div class="cta-buttons">
                 <a href="<?= $this->url('mitglied-werden') ?>" class="cta-button">Jetzt anmelden</a>
                 <a href="<?= $this->url('faq') ?>" class="secondary-button">Weitere Fragen</a>

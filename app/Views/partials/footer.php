@@ -10,7 +10,7 @@
                 <ul>
                     <li><a href="<?= $this->url() ?>">Home</a></li>
                     <li><a href="<?= $this->url('about') ?>">Über uns</a></li>
-                    <li><a href="<?= $this->url('packages') ?>">Depot-Pakete</a></li>
+                    <li><a href="<?= $this->url('packages') ?>">Depot-Modelle</a></li>
                     <li><a href="<?= $this->url('mitglied-werden') ?>">Mitglied werden</a></li>
                     <li><a href="<?= $this->url('faq') ?>">FAQ</a></li>
                     <li><a href="<?= $this->url('news') ?>">News</a></li>

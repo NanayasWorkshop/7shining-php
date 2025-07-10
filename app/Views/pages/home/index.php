@@ -172,7 +172,7 @@
 
             <div class="products-buttons">
 
-                <a href="<?= $this->url('packages') ?>" class="cta-button">Depot-Pakete ansehen</a>
+                <a href="<?= $this->url('packages') ?>" class="cta-button">Depot-Modelle ansehen</a>
 
                 <a href="<?= $this->url('contact') ?>" class="secondary-button">Kostenlose Beratung</a>
 

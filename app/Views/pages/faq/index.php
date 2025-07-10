@@ -3,7 +3,7 @@
     <div class="container">
         <div class="hero-content">
             <h1>Häufige Fragen</h1>
-            <p>Hier findest du Antworten auf die am häufigsten gestellten Fragen zu 7Shining, unseren Depot-Paketen und der Mitgliedschaft.</p>
+            <p>Hier findest du Antworten auf die am häufigsten gestellten Fragen zu 7Shining, unseren Depot-Modellen und der Mitgliedschaft.</p>
             
             <div class="search-box">
                 <input type="text" id="faq-search" placeholder="Suche nach einem Thema oder Stichwort...">

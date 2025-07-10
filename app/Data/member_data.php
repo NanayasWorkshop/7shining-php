@@ -28,7 +28,7 @@ return [
                     'Kein Aufwand, aber viel Wirkung: Du stärkst unsere Basis – und das zählt'
                 ],
                 'button' => [
-                    'text' => '📦 Zu den Paketen',
+                    'text' => '📦 Zu den Depots',
                     'type' => 'standard-btn',
                     'action' => 'link',
                     'url' => 'packages'

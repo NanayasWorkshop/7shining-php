@@ -17,6 +17,20 @@
     </div>
 </section>
 
+<!-- Mitgliedschafts-Buttons Section -->
+<section class="membership-buttons">
+    <div class="container">
+        <div class="membership-buttons-wrapper">
+            <a href="<?= $this->url('mitglied-werden') ?>" class="membership-btn standard-membership">
+                Mitglied
+            </a>
+            <a href="<?= $this->url('mitglied-werden') ?>" class="membership-btn active-membership">
+                Aktiv Mitglied
+            </a>
+        </div>
+    </div>
+</section>
+
 <!-- Packages Section -->
 <section class="packages">
     <div class="container">
@@ -35,22 +49,17 @@
                         <p class="package-description"><?= $this->escape($package['description']) ?></p>
                     </div>
                     
-                    <div class="package-price">
-                        <span class="price"><?= $this->escape($package['price']) ?></span>
-                        <span class="period"><?= $this->escape($package['period']) ?></span>
-                    </div>
-                    
                     <div class="package-features">
                         <ul>
                             <?php foreach ($package['features'] as $feature): ?>
-                                <li>✓ <?= $this->escape($feature) ?></li>
+                                <li><?= $this->escape($feature) ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                     
                     <div class="package-details">
                         <?php foreach ($package['details'] as $detail): ?>
-                            <p><strong><?= $detail ?></strong></p>
+                            <p><?= $detail ?></p>
                         <?php endforeach; ?>
                     </div>
                     

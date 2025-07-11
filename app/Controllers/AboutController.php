@@ -27,43 +27,8 @@ class AboutController extends Controller
             'keywords' => '7Shining, Über uns, Geschichte, Vision, Mission, Werte, Team, Schweiz, St. Gallen, Verein',
             'ogType' => 'website',
             'testimonials' => $testimonials,
-            'additionalStyles' => ['about.css'], // No additional CSS needed
-            'additionalScripts' => [], // No additional JS needed
-            
-            // About page specific data
-            'stats' => [
-                'members' => '1000+',
-                'experience' => '5+',
-                'satisfaction' => '99%',
-                'support' => '24/7'
-            ],
-            
-            'timeline' => [
-                [
-                    'year' => '2020',
-                    'event' => 'Gründung von 7Shining als Verein in St. Gallen'
-                ],
-                [
-                    'year' => '2021', 
-                    'event' => 'Erste 100 Mitglieder erreicht'
-                ],
-                [
-                    'year' => '2022',
-                    'event' => 'Launch der Depot-Programme'
-                ],
-                [
-                    'year' => '2023',
-                    'event' => 'Expansion in deutschsprachige Länder'
-                ],
-                [
-                    'year' => '2024',
-                    'event' => 'Über 1000 zufriedene Mitglieder'
-                ],
-                [
-                    'year' => '2025',
-                    'event' => 'Neue Website und erweiterte Services'
-                ]
-            ],
+            'additionalStyles' => ['about.css'],
+            'additionalScripts' => [],
             
             'values' => [
                 [
@@ -98,57 +63,24 @@ class AboutController extends Controller
                 ]
             ],
             
-            'team' => [
-                [
-                    'name' => '[Name des Gründers]',
-                    'position' => 'Gründer & Präsident',
-                    'avatar' => '👨‍💼',
-                    'description' => 'Mit über 15 Jahren Erfahrung in der Finanzbranche hat er 7Shining gegründet, um Menschen eine Alternative zu traditionellen Anlageformen zu bieten.'
-                ],
-                [
-                    'name' => '[Name der Geschäftsführerin]',
-                    'position' => 'Geschäftsführung',
-                    'avatar' => '👩‍💼',
-                    'description' => 'Verantwortlich für die operative Leitung und die Weiterentwicklung unserer Dienstleistungen. Ihre Leidenschaft gilt der Mitgliederbetreuung.'
-                ],
-                [
-                    'name' => '[Name des Technikchefs]',
-                    'position' => 'Head of Technology',
-                    'avatar' => '👨‍💻',
-                    'description' => 'Sorgt dafür, dass unsere Plattform sicher, zuverlässig und benutzerfreundlich bleibt. Innovation und Sicherheit stehen im Mittelpunkt seiner Arbeit.'
-                ],
-                [
-                    'name' => '[Name der Kundenbetreuerin]',
-                    'position' => 'Customer Success',
-                    'avatar' => '👩‍🎓',
-                    'description' => 'Unsere Expertin für Mitgliederzufriedenheit. Sie sorgt dafür, dass jedes Mitglied die bestmögliche Erfahrung mit 7Shining macht.'
-                ]
-            ],
-            
             'reasons' => [
                 [
-                    'title' => '🇨🇭 Schweizer Qualität',
-                    'description' => 'Gegründet und ansässig in der Schweiz, stehen wir für Zuverlässigkeit, Präzision und höchste Standards.'
+                    'title' => '🇨🇭 Schweizer Qualität'
                 ],
                 [
-                    'title' => '📊 Transparente Prozesse',
-                    'description' => 'Alle Kosten, Abläufe und Bedingungen sind klar ersichtlich. Keine Überraschungen, keine versteckten Gebühren.'
+                    'title' => '📊 Transparente Prozesse'
                 ],
                 [
-                    'title' => '🏅 Bewährtes Konzept',
-                    'description' => 'Über 5 Jahre Erfahrung und mehr als 1000 zufriedene Mitglieder sprechen für sich.'
+                    'title' => '🏅 Bewährtes Konzept'
                 ],
                 [
-                    'title' => '🎯 Ganzheitlicher Ansatz',
-                    'description' => 'Nicht nur finanzielle, sondern auch persönliche Entwicklung stehen im Zentrum unserer Arbeit.'
+                    'title' => '🎯 Ganzheitlicher Ansatz'
                 ],
                 [
-                    'title' => '🔐 Sicherheit First',
-                    'description' => 'Ihre Daten und Investments sind bei uns in sicheren Händen. Vollständig versicherte Lieferungen.'
+                    'title' => '🔐 Sicherheit First'
                 ],
                 [
-                    'title' => '💬 Persönlicher Support',
-                    'description' => 'Unser Team ist immer für Sie da. Echte Menschen, die sich um Ihre Anliegen kümmern.'
+                    'title' => '💬 Persönlicher Support'
                 ]
             ]
         ];

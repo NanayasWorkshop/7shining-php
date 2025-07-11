@@ -26,70 +26,73 @@ return [
             'id' => 'standard',
             'name' => 'Standard',
             'description' => 'Perfekt für den Einstieg in die Goldanlage',
-            'price' => '149,- CHF',
-            'period' => 'einmalig',
+            'price' => '',
+            'period' => '',
             'is_premium' => false,
             'badge' => null,
             'features' => [
-                'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40',
-                'Online-Depot-Verwaltung',
-                '1g Goldbarren',
-                'Quartalsweise Goldbarren-Lieferung',
-                'Tagespreis-Abrechnung',
-                'Versicherte Lieferung'
+                '✓ Eröffnung Spardepot',
+                '✓ Monatliche Sparrate: CHF 40',
+                '✓ Online-Depot-Verwaltung',
+                '✓ 1g Goldbarren',
+                '✓ Quartalsweise Goldbarren-Lieferung',
+                '✓ Tagespreis-Abrechnung',
+                '✓ Versicherte Lieferung',
+                '149,- CHF einmalig'
             ],
             'details' => [
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Modell wählen',
+            'button_text' => 'Depot wählen',
             'external_url' => 'https://7shining.ch/home/addproduct/10000'
         ],
         [
             'id' => 'premium',
             'name' => 'Premium',
             'description' => 'Erweiterte Services und Flexibilität',
-            'price' => '299,- CHF',
-            'period' => 'einmalig',
-            'is_premium' => true,
-            'badge' => 'Beliebt',
+            'price' => '',
+            'period' => '',
+            'is_premium' => false,
+            'badge' => null,
             'features' => [
-                'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40,- bis 150,-',
-                'Online-Depot-Verwaltung',
-                '1g Goldbarren',
-                'Quartalsweise Goldbarren-Lieferung',
-                'Tagespreis-Abrechnung',
-                'Versicherte Lieferung'
+                '✓ Eröffnung Spardepot',
+                '✓ Monatliche Sparrate: CHF 40,- bis 150,-',
+                '✓ Online-Depot-Verwaltung',
+                '✓ 1g Goldbarren',
+                '✓ Quartalsweise Goldbarren-Lieferung',
+                '✓ Tagespreis-Abrechnung',
+                '✓ Versicherte Lieferung',
+                '299,- CHF einmalig'
             ],
             'details' => [
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Modell wählen',
+            'button_text' => 'Depot wählen',
             'external_url' => 'https://7shining.ch/home/addproduct/30000'
         ],
         [
             'id' => 'vip',
             'name' => 'VIP',
             'description' => 'Maximale Flexibilität und persönliche Betreuung',
-            'price' => '599,- CHF',
-            'period' => 'einmalig',
+            'price' => '',
+            'period' => '',
             'is_premium' => false,
             'badge' => null,
             'features' => [
-                'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40,- bis unbegrenzt',
-                'Online-Depot-Verwaltung',
-                'Flexible Wahl der Barrengrößen',
-                'Anpassung der Goldbarren-Größe jederzeit möglich',
-                'Quartalsweise Goldbarren-Lieferung',
-                'Tagespreis-Abrechnung',
-                'Versicherte Lieferung'
+                '✓ Eröffnung Spardepot',
+                '✓ Monatliche Sparrate: CHF 40,- bis unbegrenzt',
+                '✓ Online-Depot-Verwaltung',
+                '✓ Flexible Wahl der Barrengrößen',
+                '✓ Anpassung der Goldbarren-Größe jederzeit möglich',
+                '✓ Quartalsweise Goldbarren-Lieferung',
+                '✓ Tagespreis-Abrechnung',
+                '✓ Versicherte Lieferung',
+                '599,- CHF einmalig'
             ],
             'details' => [
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Modell wählen',
+            'button_text' => 'Depot wählen',
             'external_url' => 'https://7shining.ch/home/addproduct/40000'
         ]
     ],
@@ -157,10 +160,6 @@ return [
             [
                 'question' => 'Was ist die einmalige Startgebühr?',
                 'answer' => 'Die einmalige Startgebühr ist deine Gebühr für die Eröffnung des Gold-Depots bei 7Shining. Diese wird nur einmal beim Start deines gewählten Modells fällig und ermöglicht dir den Zugang zu unserem Gold-Depot-System und allen Services.'
-            ],
-            [
-                'question' => 'Kann ich mein Modell später ändern?',
-                'answer' => 'Ja, Modell-Wechsel sind grundsätzlich möglich. <strong>Bedenke jedoch:</strong> Das VIP-Modell bietet von Anfang an die maximale Flexibilität und exklusive Vorteile, die später nicht mehr verfügbar sein könnten. Wer klein startet, verpasst oft die besten Marktchancen und den persönlichen Betreuungsservice. Ein späterer Upgrade bedeutet auch, dass du wertvolle Zeit ohne die Premium-Features verbracht hast. <em>Optimal startest du gleich mit dem Modell, das deinen langfristigen Zielen entspricht.</em>'
             ],
             [
                 'question' => 'Wie wird der Goldpreis berechnet?',

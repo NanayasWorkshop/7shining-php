@@ -110,7 +110,6 @@
             <p>Entdecke dein goldenes Potenzial und werde Teil einer Bewegung, die dein Leben positiv verändern kann.</p>
             <div class="cta-buttons">
                 <a href="<?= $this->url('packages') ?>" class="cta-button">Depot-Modelle ansehen</a>
-                <a href="<?= $this->url('contact') ?>" class="secondary-button">Kostenlose Beratung</a>
             </div>
         </div>
     </div>

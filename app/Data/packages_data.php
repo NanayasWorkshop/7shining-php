@@ -38,13 +38,14 @@ return [
                 '✓ Quartalsweise Goldbarren-Lieferung',
                 '✓ Tagespreis-Abrechnung',
                 '✓ Versicherte Lieferung',
-                '149,- CHF einmalig'
-            ],
-            'details' => [
+                '149,- CHF einmalig',
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Depot wählen',
-            'external_url' => 'https://7shining.ch/home/addproduct/10000'
+            'details' => [],
+            'button_member_text' => 'Mitglied',
+            'button_member_url' => 'https://7shining.ch/home/addproduct/10000',
+            'button_active_text' => 'Aktiv Mitglied',
+            'button_active_url' => 'mitglied-werden'
         ],
         [
             'id' => 'premium',
@@ -62,13 +63,14 @@ return [
                 '✓ Quartalsweise Goldbarren-Lieferung',
                 '✓ Tagespreis-Abrechnung',
                 '✓ Versicherte Lieferung',
-                '299,- CHF einmalig'
-            ],
-            'details' => [
+                '299,- CHF einmalig',
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Depot wählen',
-            'external_url' => 'https://7shining.ch/home/addproduct/30000'
+            'details' => [],
+            'button_member_text' => 'Mitglied',
+            'button_member_url' => 'https://7shining.ch/home/addproduct/30000',
+            'button_active_text' => 'Aktiv Mitglied',
+            'button_active_url' => 'mitglied-werden'
         ],
         [
             'id' => 'vip',
@@ -87,13 +89,14 @@ return [
                 '✓ Quartalsweise Goldbarren-Lieferung',
                 '✓ Tagespreis-Abrechnung',
                 '✓ Versicherte Lieferung',
-                '599,- CHF einmalig'
-            ],
-            'details' => [
+                '599,- CHF einmalig',
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Depot wählen',
-            'external_url' => 'https://7shining.ch/home/addproduct/40000'
+            'details' => [],
+            'button_member_text' => 'Mitglied',
+            'button_member_url' => 'https://7shining.ch/home/addproduct/40000',
+            'button_active_text' => 'Aktiv Mitglied',
+            'button_active_url' => 'mitglied-werden'
         ]
     ],
     

@@ -17,20 +17,6 @@
     </div>
 </section>
 
-<!-- Mitgliedschafts-Buttons Section -->
-<section class="membership-buttons">
-    <div class="container">
-        <div class="membership-buttons-wrapper">
-            <a href="<?= $this->url('mitglied-werden') ?>" class="membership-btn standard-membership">
-                Mitglied
-            </a>
-            <a href="<?= $this->url('mitglied-werden') ?>" class="membership-btn active-membership">
-                Aktiv Mitglied
-            </a>
-        </div>
-    </div>
-</section>
-
 <!-- Packages Section -->
 <section class="packages">
     <div class="container">
@@ -57,15 +43,30 @@
                         </ul>
                     </div>
                     
-                    <div class="package-details">
-                        <?php foreach ($package['details'] as $detail): ?>
-                            <p><?= $detail ?></p>
-                        <?php endforeach; ?>
-                    </div>
+                    <?php if (!empty($package['details'])): ?>
+                        <div class="package-details">
+                            <?php foreach ($package['details'] as $detail): ?>
+                                <p><?= $detail ?></p>
+                            <?php endforeach; ?>
+                        </div>
+                    <?php endif; ?>
                     
-                    <a href="<?= $this->escape($package['external_url']) ?>" class="package-button">
-                        <?= $this->escape($package['button_text']) ?>
-                    </a>
+                    <div class="package-buttons">
+                        <?php 
+                        $memberUrl = (strpos($package['button_member_url'], 'http') === 0) 
+                            ? $package['button_member_url'] 
+                            : $this->url($package['button_member_url']); 
+                        $activeUrl = (strpos($package['button_active_url'], 'http') === 0) 
+                            ? $package['button_active_url'] 
+                            : $this->url($package['button_active_url']); 
+                        ?>
+                        <a href="<?= $this->escape($memberUrl) ?>" class="package-button member-button">
+                            <?= $this->escape($package['button_member_text']) ?>
+                        </a>
+                        <a href="<?= $this->escape($activeUrl) ?>" class="package-button active-button">
+                            <?= $this->escape($package['button_active_text']) ?>
+                        </a>
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -129,20 +130,6 @@
                     <p><?= $item['answer'] ?></p>
                 </div>
             <?php endforeach; ?>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Bereit für dein Gold-Depot?</h2>
-            <p>Starte noch heute mit dem Aufbau deines physischen Gold-Portfolios. Wähle das Modell, das zu deinen Zielen passt.</p>
-            <div class="cta-buttons">
-                <a href="<?= $this->url('mitglied-werden') ?>" class="cta-button">Jetzt anmelden</a>
-                <a href="<?= $this->url('faq') ?>" class="secondary-button">Weitere Fragen</a>
-            </div>
         </div>
     </div>
 </section>

@@ -36,8 +36,6 @@
                 <p>7Shining wurde aus der Überzeugung heraus gegründet, dass in jedem Menschen etwas Goldenes schlummert – ein ungenutztes Potenzial, das darauf wartet, entdeckt und zum Strahlen gebracht zu werden.</p>
                 
                 <p>Was als kleine Idee begann, hat sich zu einer Bewegung entwickelt, die Menschen aus verschiedenen Lebensbereichen zusammenbringt. Unser Fokus liegt nicht nur auf finanzieller Stabilität durch kluge Investitionen, sondern vor allem auf dem Aufbau einer Gemeinschaft, die sich gegenseitig stärkt und inspiriert.</p>
-                
-                <p>Heute sind wir stolz darauf, mehr als 1000 Mitglieder zu haben, die alle das gleiche Ziel verfolgen: persönliches Wachstum in einer unterstützenden Umgebung zu erleben.</p>
             </div>
         </div>
     </div>

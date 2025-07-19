@@ -121,17 +121,3 @@
         </div>
     </div>
 </section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <div class="cta-content">
-            <h2>Bereit für dein Gold-Depot?</h2>
-            <p>Starte noch heute mit dem Aufbau deines physischen Gold-Portfolios. Wähle das Modell, das zu deinen Zielen passt.</p>
-            <div class="cta-buttons">
-                <a href="<?= $this->url('mitglied-werden') ?>" class="cta-button">Jetzt anmelden</a>
-                <a href="<?= $this->url('faq') ?>" class="secondary-button">Weitere Fragen</a>
-            </div>
-        </div>
-    </div>
-</section>

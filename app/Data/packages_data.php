@@ -165,10 +165,6 @@ return [
                 'answer' => 'Die einmalige Startgebühr ist deine Gebühr für die Eröffnung des Gold-Depots bei 7Shining. Diese wird nur einmal beim Start deines gewählten Modells fällig und ermöglicht dir den Zugang zu unserem Gold-Depot-System und allen Services.'
             ],
             [
-                'question' => 'Kann ich mein Modell später ändern?',
-                'answer' => 'Ja, Modell-Wechsel sind grundsätzlich möglich. <strong>Bedenke jedoch:</strong> Das VIP-Modell bietet von Anfang an die maximale Flexibilität und exklusive Vorteile, die später nicht mehr verfügbar sein könnten. Wer klein startet, verpasst oft die besten Marktchancen und den persönlichen Betreuungsservice. Ein späterer Upgrade bedeutet auch, dass du wertvolle Zeit ohne die Premium-Features verbracht hast. <em>Optimal startest du gleich mit dem Modell, das deinen langfristigen Zielen entspricht.</em>'
-            ],
-            [
                 'question' => 'Wie wird der Goldpreis berechnet?',
                 'answer' => 'Alle Goldbarren werden nach dem aktuellen Tagespreis zum Zeitpunkt der Rechnungslegung berechnet. So erhältst du immer faire Marktpreise ohne Aufschläge auf veraltete Kurse.'
             ],

@@ -216,7 +216,7 @@ return [
             'id' => 'termination',
             'category' => 'legal',
             'question' => 'Wie kann ich kündigen?',
-            'answer' => 'Eine ordentliche Kündigung ist mit 30 Tagen Frist möglich. Senden Sie Ihre Kündigung schriftlich an info@7shining.com. Es gibt keine Mindestlaufzeit für Depot-Pakete.',
+            'answer' => 'Eine ordentliche Kündigung ist mit 30 Tagen Frist möglich. Senden Sie Ihre Kündigung schriftlich an kontakt@7shining.com. Es gibt keine Mindestlaufzeit für Depot-Pakete.',
             'popular' => false
         ],
         [

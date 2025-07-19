@@ -14,9 +14,9 @@ define('SITE_AUTHOR', '7Shining');
 
 
 
-// Environment für Production ändern
+// Environment fï¿½r Production ï¿½ndern
 define('ENVIRONMENT', 'production'); // statt 'development'
-define('DEBUG_MODE', false); // für Production
+define('DEBUG_MODE', false); // fï¿½r Production
 
 
 // Default meta data
@@ -49,7 +49,7 @@ define('ERFOLGSASSISTENT_JS', 'https://7shining.ch/wbo/WBO/JS/partner.js');
 
 // Contact settings
 
-define('CONTACT_EMAIL', 'info@7shining.com');
+define('CONTACT_EMAIL', 'kontakt@7shining.com');
 
 define('SUPPORT_EMAIL', 'support@7shining.com');
 

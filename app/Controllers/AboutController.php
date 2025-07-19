@@ -29,42 +29,7 @@ class AboutController extends Controller
             'testimonials' => $testimonials,
             'additionalStyles' => ['about.css'], // No additional CSS needed
             'additionalScripts' => [], // No additional JS needed
-            
-            // About page specific data
-            'stats' => [
-                'members' => '1000+',
-                'experience' => '5+',
-                'satisfaction' => '99%',
-                'support' => '24/7'
-            ],
-            
-            'timeline' => [
-                [
-                    'year' => '2020',
-                    'event' => 'Gründung von 7Shining als Verein in St. Gallen'
-                ],
-                [
-                    'year' => '2021', 
-                    'event' => 'Erste 100 Mitglieder erreicht'
-                ],
-                [
-                    'year' => '2022',
-                    'event' => 'Launch der Depot-Programme'
-                ],
-                [
-                    'year' => '2023',
-                    'event' => 'Expansion in deutschsprachige Länder'
-                ],
-                [
-                    'year' => '2024',
-                    'event' => 'Über 1000 zufriedene Mitglieder'
-                ],
-                [
-                    'year' => '2025',
-                    'event' => 'Neue Website und erweiterte Services'
-                ]
-            ],
-            
+                  
             'values' => [
                 [
                     'icon' => '🤝',
@@ -100,28 +65,34 @@ class AboutController extends Controller
             
             'team' => [
                 [
-                    'name' => '[Name des Gründers]',
-                    'position' => 'Gründer & Präsident',
+                    'name' => 'Michael Plic',
+                    'position' => 'Präsident',
                     'avatar' => '👨‍💼',
-                    'description' => 'Mit über 15 Jahren Erfahrung in der Finanzbranche hat er 7Shining gegründet, um Menschen eine Alternative zu traditionellen Anlageformen zu bieten.'
+                    'description' => 'Als Präsident von 7Shining leitet Michael mit Leidenschaft und Vision unseren Verein. Seine Erfahrung und sein Engagement für echte Werte prägen unsere Gemeinschaft nachhaltig.'
                 ],
                 [
-                    'name' => '[Name der Geschäftsführerin]',
-                    'position' => 'Geschäftsführung',
-                    'avatar' => '👩‍💼',
-                    'description' => 'Verantwortlich für die operative Leitung und die Weiterentwicklung unserer Dienstleistungen. Ihre Leidenschaft gilt der Mitgliederbetreuung.'
+                    'name' => 'Tomas Flitar',
+                    'position' => 'Vice Präsident',
+                    'avatar' => '👨‍💼',
+                    'description' => 'Tomas unterstützt als Vice Präsident die strategische Ausrichtung von 7Shining. Mit seinem analytischen Denken und seiner Begeisterung für Innovation treibt er unsere Entwicklung voran.'
                 ],
                 [
-                    'name' => '[Name des Technikchefs]',
-                    'position' => 'Head of Technology',
-                    'avatar' => '👨‍💻',
-                    'description' => 'Sorgt dafür, dass unsere Plattform sicher, zuverlässig und benutzerfreundlich bleibt. Innovation und Sicherheit stehen im Mittelpunkt seiner Arbeit.'
+                    'name' => 'Rene Thieme',
+                    'position' => 'Einkauf und Logistik',
+                    'avatar' => '📦',
+                    'description' => 'Rene sorgt dafür, dass unsere Gold-Depot-Programme reibungslos funktionieren. Seine Expertise in Einkauf und Logistik gewährleistet, dass unsere Mitglieder ihre Goldbarren termingerecht und sicher erhalten.'
                 ],
                 [
-                    'name' => '[Name der Kundenbetreuerin]',
-                    'position' => 'Customer Success',
-                    'avatar' => '👩‍🎓',
-                    'description' => 'Unsere Expertin für Mitgliederzufriedenheit. Sie sorgt dafür, dass jedes Mitglied die bestmögliche Erfahrung mit 7Shining macht.'
+                    'name' => 'Karina Plic',
+                    'position' => 'Marketing und Social Media',
+                    'avatar' => '📱',
+                    'description' => 'Karina bringt unsere Vision in die digitale Welt. Mit ihrer Kreativität und ihrem Gespür für authentische Kommunikation macht sie 7Shining für unsere Community erlebbar.'
+                ],
+                [
+                    'name' => 'Daniela Wirz',
+                    'position' => 'Buchhaltung und Kassier',
+                    'avatar' => '📊',
+                    'description' => 'Daniela behält als Kassier den Überblick über unsere Finanzen. Mit ihrer Genauigkeit und Transparenz sorgt sie dafür, dass jeder Rappen bei 7Shining verantwortungsvoll verwaltet wird.'
                 ]
             ],
             

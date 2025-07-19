@@ -169,7 +169,7 @@ class LegalModel extends Model
         return [
             'company' => '7Shining',
             'address' => '[Adresse]<br>St. Gallen, Schweiz',
-            'email' => 'info@7shining.com',
+            'email' => 'kontakt@7shining.com',
             'support_email' => 'support@7shining.com',
             'depot_email' => 'depot@7shining.com',
             'privacy_email' => 'datenschutz@7shining.com',

@@ -35,23 +35,16 @@
                         <p class="package-description"><?= $this->escape($package['description']) ?></p>
                     </div>
                     
-                    <div class="package-price">
-                        <span class="price"><?= $this->escape($package['price']) ?></span>
-                        <span class="period"><?= $this->escape($package['period']) ?></span>
-                    </div>
-                    
                     <div class="package-features">
                         <ul>
                             <?php foreach ($package['features'] as $feature): ?>
                                 <li>✓ <?= $this->escape($feature) ?></li>
                             <?php endforeach; ?>
+                            <?php foreach ($package['details'] as $detail): ?>
+                                <li>✓ <?= $this->escape($detail) ?></li>
+                            <?php endforeach; ?>
+                            <li>✓ <?= $this->escape($package['price']) ?> <?= $this->escape($package['period']) ?></li>
                         </ul>
-                    </div>
-                    
-                    <div class="package-details">
-                        <?php foreach ($package['details'] as $detail): ?>
-                            <p><strong><?= $detail ?></strong></p>
-                        <?php endforeach; ?>
                     </div>
                     
                     <a href="<?= $this->escape($package['external_url']) ?>" class="package-button">

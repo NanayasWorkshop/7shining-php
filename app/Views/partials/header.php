@@ -15,6 +15,7 @@
             <li><a href="<?= $this->url('mitglied-werden') ?>">Mitglied werden</a></li>
             <li><a href="<?= $this->url('faq') ?>">FAQ</a></li>
             <li><a href="<?= $this->url('news') ?>">News</a></li>
+            <li><a href="https://7shining.ch/wbo/site/login" target="_blank" rel="noopener noreferrer">Login</a></li>
         </ul>
         <div class="hamburger" id="hamburger">
             <span></span>

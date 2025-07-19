@@ -2,7 +2,7 @@
 
 return [
     'hero' => [
-        'title' => 'Unsere Depot-Modelle',
+        'title' => 'Depots',
         'subtitle' => 'Echte Werte. Klare Struktur.',
         'description' => 'Entdecke unsere transparenten Sparpläne mit physischer Auslieferung – individuell wählbar nach deinem Tempo und Budget. Mit quartalsweiser Lieferung, fairen Konditionen und vollständig versichertem Versand.',
         'stats' => [

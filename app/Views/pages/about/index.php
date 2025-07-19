@@ -77,24 +77,6 @@
     </div>
 </section>
 
-<!-- Values Section -->
-<section class="our-values">
-    <div class="container">
-        <h2>Unsere Werte</h2>
-        <div class="values-grid">
-            <?php if (!empty($values)): ?>
-                <?php foreach ($values as $value): ?>
-                    <div class="value-card">
-                        <div class="value-icon"><?= $value['icon'] ?></div>
-                        <h3><?= $this->escape($value['title']) ?></h3>
-                        <p><?= $this->escape($value['description']) ?></p>
-                    </div>
-                <?php endforeach; ?>
-            <?php endif; ?>
-        </div>
-    </div>
-</section>
-
 <!-- Team Section -->
 <section class="our-team">
     <div class="container">
@@ -113,6 +95,24 @@
                             <span class="position"><?= $this->escape($member['position']) ?></span>
                             <p><?= $this->escape($member['description']) ?></p>
                         </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="our-values">
+    <div class="container">
+        <h2>Unsere Werte</h2>
+        <div class="values-grid">
+            <?php if (!empty($values)): ?>
+                <?php foreach ($values as $value): ?>
+                    <div class="value-card">
+                        <div class="value-icon"><?= $value['icon'] ?></div>
+                        <h3><?= $this->escape($value['title']) ?></h3>
+                        <p><?= $this->escape($value['description']) ?></p>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>

@@ -3,7 +3,7 @@
         <div class="footer-content">
             <div class="footer-section">
                 <h4>7Shining</h4>
-                <p>Mehr als ein Verein - eine Bewegung für Wachstum und Werte.</p>
+                <p>Die Bewegung für Wachstum und Werte</p>
             </div>
             <div class="footer-section">
                 <h4>Links</h4>

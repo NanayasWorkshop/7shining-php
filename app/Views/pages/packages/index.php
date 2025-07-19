@@ -35,38 +35,28 @@
                         <p class="package-description"><?= $this->escape($package['description']) ?></p>
                     </div>
                     
+                    <div class="package-price">
+                        <span class="price"><?= $this->escape($package['price']) ?></span>
+                        <span class="period"><?= $this->escape($package['period']) ?></span>
+                    </div>
+                    
                     <div class="package-features">
                         <ul>
                             <?php foreach ($package['features'] as $feature): ?>
-                                <li><?= $this->escape($feature) ?></li>
+                                <li>✓ <?= $this->escape($feature) ?></li>
                             <?php endforeach; ?>
                         </ul>
                     </div>
                     
-                    <?php if (!empty($package['details'])): ?>
-                        <div class="package-details">
-                            <?php foreach ($package['details'] as $detail): ?>
-                                <p><?= $detail ?></p>
-                            <?php endforeach; ?>
-                        </div>
-                    <?php endif; ?>
-                    
-                    <div class="package-buttons">
-                        <?php 
-                        $memberUrl = (strpos($package['button_member_url'], 'http') === 0) 
-                            ? $package['button_member_url'] 
-                            : $this->url($package['button_member_url']); 
-                        $activeUrl = (strpos($package['button_active_url'], 'http') === 0) 
-                            ? $package['button_active_url'] 
-                            : $this->url($package['button_active_url']); 
-                        ?>
-                        <a href="<?= $this->escape($memberUrl) ?>" class="package-button member-button">
-                            <?= $this->escape($package['button_member_text']) ?>
-                        </a>
-                        <a href="<?= $this->escape($activeUrl) ?>" class="package-button active-button">
-                            <?= $this->escape($package['button_active_text']) ?>
-                        </a>
+                    <div class="package-details">
+                        <?php foreach ($package['details'] as $detail): ?>
+                            <p><strong><?= $detail ?></strong></p>
+                        <?php endforeach; ?>
                     </div>
+                    
+                    <a href="<?= $this->escape($package['external_url']) ?>" class="package-button">
+                        <?= $this->escape($package['button_text']) ?>
+                    </a>
                 </div>
             <?php endforeach; ?>
         </div>
@@ -130,6 +120,20 @@
                     <p><?= $item['answer'] ?></p>
                 </div>
             <?php endforeach; ?>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section">
+    <div class="container">
+        <div class="cta-content">
+            <h2>Bereit für dein Gold-Depot?</h2>
+            <p>Starte noch heute mit dem Aufbau deines physischen Gold-Portfolios. Wähle das Modell, das zu deinen Zielen passt.</p>
+            <div class="cta-buttons">
+                <a href="<?= $this->url('mitglied-werden') ?>" class="cta-button">Jetzt anmelden</a>
+                <a href="<?= $this->url('faq') ?>" class="secondary-button">Weitere Fragen</a>
+            </div>
         </div>
     </div>
 </section>

@@ -36,6 +36,42 @@
                 <p>7Shining wurde aus der Überzeugung heraus gegründet, dass in jedem Menschen etwas Goldenes schlummert – ein ungenutztes Potenzial, das darauf wartet, entdeckt und zum Strahlen gebracht zu werden.</p>
                 
                 <p>Was als kleine Idee begann, hat sich zu einer Bewegung entwickelt, die Menschen aus verschiedenen Lebensbereichen zusammenbringt. Unser Fokus liegt nicht nur auf finanzieller Stabilität durch kluge Investitionen, sondern vor allem auf dem Aufbau einer Gemeinschaft, die sich gegenseitig stärkt und inspiriert.</p>
+                
+                <p>Heute sind wir stolz darauf, mehr als 1000 Mitglieder zu haben, die alle das gleiche Ziel verfolgen: persönliches Wachstum in einer unterstützenden Umgebung zu erleben.</p>
+                
+                <div class="timeline">
+                    <?php if (!empty($timeline)): ?>
+                        <?php foreach ($timeline as $event): ?>
+                            <div class="timeline-item">
+                                <div class="year"><?= $this->escape($event['year']) ?></div>
+                                <div class="event"><?= $this->escape($event['event']) ?></div>
+                            </div>
+                        <?php endforeach; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+            
+            <div class="story-visual">
+                <div class="stats-grid">
+                    <?php if (!empty($stats)): ?>
+                        <div class="stat-card">
+                            <span class="stat-number"><?= $this->escape($stats['members']) ?></span>
+                            <span class="stat-label">Mitglieder</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number"><?= $this->escape($stats['experience']) ?></span>
+                            <span class="stat-label">Jahre Erfahrung</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number"><?= $this->escape($stats['satisfaction']) ?></span>
+                            <span class="stat-label">Zufriedenheit</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number"><?= $this->escape($stats['support']) ?></span>
+                            <span class="stat-label">Support</span>
+                        </div>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
@@ -59,6 +95,31 @@
     </div>
 </section>
 
+<!-- Team Section -->
+<section class="our-team">
+    <div class="container">
+        <h2>Unser Team</h2>
+        <p class="team-intro">Hinter 7Shining steht ein engagiertes Team von Menschen, die sich der Vision verschrieben haben, anderen beim Wachstum zu helfen.</p>
+        
+        <div class="team-grid">
+            <?php if (!empty($team)): ?>
+                <?php foreach ($team as $member): ?>
+                    <div class="team-member">
+                        <div class="member-image">
+                            <div class="placeholder-avatar"><?= $member['avatar'] ?></div>
+                        </div>
+                        <div class="member-info">
+                            <h3><?= $this->escape($member['name']) ?></h3>
+                            <span class="position"><?= $this->escape($member['position']) ?></span>
+                            <p><?= $this->escape($member['description']) ?></p>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            <?php endif; ?>
+        </div>
+    </div>
+</section>
+
 <!-- Why Choose Us -->
 <section class="why-choose-us">
     <div class="container">
@@ -68,6 +129,7 @@
                 <?php foreach ($reasons as $reason): ?>
                     <div class="reason">
                         <h3><?= $reason['title'] ?></h3>
+                        <p><?= $this->escape($reason['description']) ?></p>
                     </div>
                 <?php endforeach; ?>
             <?php endif; ?>
@@ -110,6 +172,7 @@
             <p>Entdecke dein goldenes Potenzial und werde Teil einer Bewegung, die dein Leben positiv verändern kann.</p>
             <div class="cta-buttons">
                 <a href="<?= $this->url('packages') ?>" class="cta-button">Depot-Modelle ansehen</a>
+                <a href="<?= $this->url('contact') ?>" class="secondary-button">Kostenlose Beratung</a>
             </div>
         </div>
     </div>

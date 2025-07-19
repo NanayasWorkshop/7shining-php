@@ -4,9 +4,14 @@
 
     <div class="hero-content">
 
-        <h1>Mehr als ein Verein.<br>Es ist eine Bewegung.</h1>
+        <h1>"Die Bewegung für Wachstum und Werte."<br></h1>
 
-        <p>Ein Ort, an dem du wachsen darfst – mit deinen Werten, deinem Potenzial, deinen Visionen. Menschen die sich gegenseitig fördern, unterstützen und inspirieren.</p>
+        <p>Ein Ort, an dem du wachsen darfst – mit deinen Werten, deinem Potenzial, deinen Visionen. Menschen die sich gegenseitig fördern, unterstützen und inspirieren.<p>
+
+        <p>Wir glauben, dass in jedem Menschen etwas Goldenes schlummert – bereit, entdeckt, gestärkt und zum Strahlen gebracht zu werden.<p>
+
+        <p>Wir bringen Menschen zusammen, die nicht nur auf der Suche nach finanzieller Freiheit sind, sondern auch nach Sinn, Tiefe, Gemeinschaft und persönlicher Erfüllung.<p> 
+        </p>
 
         <a href="<?= $this->url('about') ?>" class="cta-button">Mehr erfahren</a>
 

@@ -353,16 +353,6 @@ return [
                 ]
             ],
             [
-                'id' => 'contact',
-                'title' => '13. Kontakt bei Fragen zum Datenschutz',
-                'content' => [
-                    '<p>Bei Fragen oder Anliegen zum Datenschutz kannst du uns unter folgender Adresse kontaktieren:</p>'
-                ],
-                'contact_info' => [
-                    'name' => 'Verein 7Shining',
-                    'address' => 'Hauptstrasse 1, 9400 Rorschach',
-                    'email' => 'datenschutz@7shining.com'
-                ],
                 'additional_content' => [
                     '<p><strong>Stand: 16.05.2025</strong></p>'
                 ]

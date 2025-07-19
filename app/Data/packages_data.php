@@ -25,7 +25,7 @@ return [
         [
             'id' => 'standard',
             'name' => 'Standard',
-            'description' => 'Perfekt für den Einstieg in die Goldanlage',
+            'description' => '',
             'price' => '149,- CHF',
             'period' => 'einmalig',
             'is_premium' => false,
@@ -50,7 +50,7 @@ return [
         [
             'id' => 'premium',
             'name' => 'Premium',
-            'description' => 'Erweiterte Services und Flexibilität',
+            'description' => '',
             'price' => '299,- CHF',
             'period' => 'einmalig',
             'is_premium' => true,
@@ -75,7 +75,7 @@ return [
         [
             'id' => 'vip',
             'name' => 'VIP',
-            'description' => 'Maximale Flexibilität und persönliche Betreuung',
+            'description' => '',
             'price' => '599,- CHF',
             'period' => 'einmalig',
             'is_premium' => false,

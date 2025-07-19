@@ -28,7 +28,7 @@ return [
     [
         'id' => 4,
         'name' => 'Peter M.',
-        'membership_since' => '2024',
+        'membership_since' => '2025',
         'avatar_initials' => 'PM',
         'quote' => 'Die regelmäßigen Gold-Lieferungen geben mir ein Gefühl von Sicherheit und Kontinuität.',
         'featured' => false
@@ -36,7 +36,7 @@ return [
     [
         'id' => 5,
         'name' => 'Sarah B.',
-        'membership_since' => '2024',
+        'membership_since' => '2025',
         'avatar_initials' => 'SB',
         'quote' => 'Transparenz und Vertrauen - das sind die Werte, die 7Shining für mich verkörpert.',
         'featured' => false

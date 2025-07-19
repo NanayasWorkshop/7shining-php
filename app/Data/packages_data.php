@@ -42,8 +42,10 @@ return [
             'details' => [
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Modell wählen',
-            'external_url' => 'https://7shining.ch/home/addproduct/10000'
+            'button_text' => 'Mitglied',
+            'external_url' => 'https://7shining.ch/home/addproduct/10000',
+            'secondary_button_text' => 'Aktives Mitglied',
+            'secondary_url' => 'https://new.7shining.com/mitglied-werden'
         ],
         [
             'id' => 'premium',
@@ -52,7 +54,7 @@ return [
             'price' => '299,- CHF',
             'period' => 'einmalig',
             'is_premium' => true,
-            'badge' => 'Beliebt',
+            'badge' => '',
             'features' => [
                 'Eröffnung Spardepot',
                 'Monatliche Sparrate: CHF 40,- bis 150,-',
@@ -65,8 +67,10 @@ return [
             'details' => [
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Modell wählen',
-            'external_url' => 'https://7shining.ch/home/addproduct/30000'
+            'button_text' => 'Mitglied',
+            'external_url' => 'https://7shining.ch/home/addproduct/30000',
+            'secondary_button_text' => 'Aktives Mitglied',
+            'secondary_url' => 'https://new.7shining.com/mitglied-werden'
         ],
         [
             'id' => 'vip',
@@ -89,8 +93,10 @@ return [
             'details' => [
                 'Mindestlaufzeit: Keine'
             ],
-            'button_text' => 'Modell wählen',
-            'external_url' => 'https://7shining.ch/home/addproduct/40000'
+            'button_text' => 'Mitglied',
+            'external_url' => 'https://7shining.ch/home/addproduct/40000',
+            'secondary_button_text' => 'Aktives Mitglied',
+            'secondary_url' => 'https://new.7shining.com/mitglied-werden'
         ]
     ],
     

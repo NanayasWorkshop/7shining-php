@@ -99,19 +99,19 @@ class AboutController extends Controller
             'reasons' => [
                 [
                     'title' => '🇨🇭 Schweizer Qualität',
-                    'description' => 'Gegründet und ansässig in der Schweiz, stehen wir für Zuverlässigkeit, Präzision und höchste Standards.'
+                    'description' => ''
                 ],
                 [
                     'title' => '📊 Transparente Prozesse',
-                    'description' => 'Alle Kosten, Abläufe und Bedingungen sind klar ersichtlich. Keine Überraschungen, keine versteckten Gebühren.'
+                    'description' => ''
                 ],
                 [
                     'title' => '🏅 Bewährtes Konzept',
-                    'description' => 'Über 5 Jahre Erfahrung und mehr als 1000 zufriedene Mitglieder sprechen für sich.'
+                    'description' => ''
                 ],
                 [
                     'title' => '🎯 Ganzheitlicher Ansatz',
-                    'description' => 'Nicht nur finanzielle, sondern auch persönliche Entwicklung stehen im Zentrum unserer Arbeit.'
+                    'description' => ''
                 ],
             ]
         ];

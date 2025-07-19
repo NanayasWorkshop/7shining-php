@@ -47,9 +47,14 @@
                         </ul>
                     </div>
                     
-                    <a href="<?= $this->escape($package['external_url']) ?>" class="package-button">
-                        <?= $this->escape($package['button_text']) ?>
-                    </a>
+                    <div class="package-buttons">
+                        <a href="<?= $this->escape($package['external_url']) ?>" class="package-button">
+                            <?= $this->escape($package['button_text']) ?>
+                        </a>
+                        <a href="<?= $this->escape($package['secondary_url']) ?>" class="package-button secondary">
+                            <?= $this->escape($package['secondary_button_text']) ?>
+                        </a>
+                    </div>
                 </div>
             <?php endforeach; ?>
         </div>

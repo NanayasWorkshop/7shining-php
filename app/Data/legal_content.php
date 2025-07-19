@@ -224,7 +224,7 @@ return [
                 'contact_info' => [
                     'name' => 'Verein 7Shining',
                     'address' => 'Hauptstrasse 1<br>9400 Rorschach, Schweiz',
-                    'email' => 'kontakt@7shining.ch'
+                    'email' => 'datenschutz@7shining.ch'
                 ]
             ],
             [
@@ -410,7 +410,7 @@ return [
                 'id' => 'board',
                 'title' => '3. Vertretungsberechtigte Personen',
                 'content' => [
-                    '<p>Gemäß den Statuten des Vereins 7Shining wird der Verein durch folgende Personen vertreten:</p>'
+                    '<p></p>'
                 ],
                 'board_grid' => [
                     [
@@ -483,7 +483,7 @@ return [
                 'id' => 'contact',
                 'title' => '9. Kontakt',
                 'content' => [
-                    '<p><strong>Kontakt:</strong> info@7shining.ch</p>'
+                    '<p><strong></strong> info@7shining.ch</p>'
                 ],
                 'contact_info' => [
                     'name' => 'Verein 7Shining',

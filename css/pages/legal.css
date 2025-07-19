@@ -2,7 +2,7 @@
 
 /* Legal Hero Section */
 .legal-hero {
-    padding: 8rem 0 4rem;
+    padding: 5rem 0 3rem;
     background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-primary) 100%);
     text-align: center;
 }
@@ -63,7 +63,7 @@
 }
 
 .content-nav ul li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 .content-nav ul li a {
@@ -91,7 +91,7 @@
 
 .content-main section {
     margin-bottom: 3rem;
-    padding-bottom: 2rem;
+    padding: 0 0 2rem 0; /* Override global section padding */
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -105,8 +105,6 @@
     font-weight: 700;
     margin-bottom: 1.5rem;
     color: var(--color-text-primary);
-    border-left: 4px solid var(--color-primary);
-    padding-left: 1rem;
 }
 
 .content-main h3 {
@@ -152,63 +150,6 @@
 .content-main a:hover {
     opacity: 0.8;
     text-decoration: underline;
-}
-
-/* Info Boxes */
-.info-box {
-    background: var(--color-bg-primary);
-    border: 1px solid var(--color-primary);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-}
-
-.info-box h4 {
-    color: var(--color-primary);
-    margin-bottom: 0.8rem;
-    margin-top: 0;
-}
-
-.info-box p {
-    margin-bottom: 0;
-}
-
-.warning-box {
-    background: linear-gradient(135deg, #ff6b35, #f7931e);
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    color: var(--color-white);
-}
-
-.warning-box h4 {
-    color: var(--color-white);
-    margin-bottom: 0.8rem;
-    margin-top: 0;
-}
-
-.warning-box p {
-    margin-bottom: 0;
-    color: var(--color-white);
-}
-
-.payment-info {
-    background: #e8f5e8;
-    border: 1px solid #16a085;
-    border-radius: 8px;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-}
-
-.payment-info h4 {
-    color: #16a085;
-    margin-bottom: 0.8rem;
-    margin-top: 0;
-}
-
-.payment-info ul {
-    margin-bottom: 0;
-    color: var(--color-text-secondary);
 }
 
 /* Contact Info Styling */
@@ -277,78 +218,10 @@
     font-size: 0.85rem;
 }
 
-/* PDF Download Section */
-.pdf-downloads {
-    background: var(--color-bg-primary);
-    border: 2px solid var(--color-primary);
-    border-radius: 12px;
-    padding: 2rem;
-    margin: 3rem 0;
-}
-
-.pdf-downloads h3 {
-    color: var(--color-primary);
-    margin-bottom: 1rem;
-    margin-top: 0;
-}
-
-.pdf-downloads p {
-    margin-bottom: 2rem;
-    color: var(--color-text-secondary);
-}
-
-.download-buttons {
-    display: grid;
-    gap: 1rem;
-}
-
-.download-button {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    background: var(--color-bg-secondary);
-    border: 2px solid var(--color-border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    color: inherit;
-}
-
-.download-button:hover {
-    border-color: var(--color-primary);
-    background: var(--color-bg-primary);
-    transform: translateY(-2px);
-    text-decoration: none;
-}
-
-.download-icon {
-    font-size: 2rem;
-    flex-shrink: 0;
-}
-
-.download-text {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-}
-
-.download-text strong {
-    font-size: 1.1rem;
-    font-weight: 600;
-    color: var(--color-text-primary);
-}
-
-.download-text span {
-    font-size: 0.9rem;
-    color: var(--color-text-light);
-    opacity: 0.8;
-}
-
 /* Responsive Design */
 @media (max-width: 768px) {
     .legal-hero {
-        padding: 6rem 0 3rem;
+        padding: 4rem 0 2rem;
     }
     
     .content-wrapper {

@@ -3,190 +3,189 @@
 return [
     'agb' => [
         'title' => 'Allgemeine Geschäftsbedingungen',
-        'subtitle' => 'Rechtliche Grundlagen für die Mitgliedschaft und Nutzung unserer Dienstleistungen.',
+        'subtitle' => '',
         'navigation' => [
             ['id' => 'scope', 'title' => '1. Geltungsbereich'],
-            ['id' => 'services', 'title' => '2. Vertragsgegenstand'],
-            ['id' => 'contract', 'title' => '3. Vertragsabschluss'],
+            ['id' => 'contract-object', 'title' => '2. Vertragsgegenstand'],
+            ['id' => 'contract-conclusion', 'title' => '3. Vertragsabschluss'],
             ['id' => 'member-duties', 'title' => '4. Pflichten der Mitglieder'],
             ['id' => 'withdrawal', 'title' => '5. Widerrufsrecht'],
             ['id' => 'liability', 'title' => '6. Haftung'],
             ['id' => 'privacy', 'title' => '7. Datenschutz'],
             ['id' => 'termination', 'title' => '8. Vertragsbeendigung'],
             ['id' => 'jurisdiction', 'title' => '9. Gerichtsstand & Recht'],
-            ['id' => 'delivery', 'title' => '10. Lieferung'],
-            ['id' => 'payment', 'title' => '11. Zahlungsarten'],
-            ['id' => 'final', 'title' => '12. Schlussbestimmungen']
+            ['id' => 'final-provisions', 'title' => '10. Schlussbestimmungen'],
+            ['id' => 'delivery', 'title' => '11. Lieferung'],
+            ['id' => 'payment', 'title' => '12. Zahlungsarten'],
+            ['id' => 'review-waiver', 'title' => '13. Verzicht auf öffentliche Bewertungsplattformen'],
+            ['id' => 'depot-dissolution', 'title' => '14. Auflösung des Depots bei zweimaliger Nichtzahlung'],
+            ['id' => 'voting-rights', 'title' => '15. Stimmrecht'],
+            ['id' => 'acknowledgment', 'title' => '16. Anerkennung'],
+            ['id' => 'final-provisions-2', 'title' => '17. Schlussbestimmungen']
         ],
         'sections' => [
             [
                 'id' => 'scope',
                 'title' => '1. Geltungsbereich',
                 'content' => [
-                    '<p><strong>1.1</strong> Diese Allgemeinen Geschäftsbedingungen (AGB) gelten für alle Verträge und Dienstleistungen zwischen 7Shining und seinen Mitgliedern.</p>',
-                    '<p><strong>1.2</strong> Sie gelten weltweit, sofern keine landesspezifischen Regelungen entgegenstehen.</p>',
+                    '<p><strong>1.1.</strong> Diese AGB gelten für alle Verträge und Dienstleistungen zwischen 7Shining und seinen Mitgliedern.</p>',
+                    '<p><strong>1.2.</strong> Sie gelten weltweit, sofern keine landesspezifischen Regelungen entgegenstehen.</p>',
                     '<p><strong>1.3</strong> Abweichungen bedürfen der schriftlichen Zustimmung durch 7Shining.</p>'
                 ]
             ],
             [
-                'id' => 'services',
+                'id' => 'contract-object',
                 'title' => '2. Vertragsgegenstand',
                 'content' => [
-                    '<p><strong>2.1</strong> Mitglieder können unsere Produkte und Dienstleistungen erwerben.</p>',
-                    '<p><strong>2.2</strong> 7Shining bietet unter anderem Goldbarren verschiedener Größen im monatlichen Abonnementkauf mit quartalsweiser Auslieferung an.</p>',
-                    '<p><strong>2.3</strong> Die zu liefernden Goldbarren errechnen sich nach dem Tagespreis zum Tag der Rechnungslegung.</p>',
-                    '<p><strong>2.4</strong> Etwaiger Quartals-Überschuss von einbezahlten Beträgen wird für die nächste Quartals-Lieferung gutgeschrieben.</p>',
-                    '<p><strong>2.5</strong> Die Kosten für den Versand trägt das Mitglied.</p>'
-                ],
-                'info_box' => [
-                    'type' => 'info',
-                    'title' => 'Wichtiger Hinweis',
-                    'content' => '7Shining betreibt keine Bankgeschäfte, Finanzberatung oder Versicherungsvermittlung und unterliegt keiner FINMA-, Bafin- oder FMA-Aufsicht.'
+                    '<p><strong>2.1.</strong> Mitglieder können unsere Produkte erwerben.</p>',
+                    '<p><strong>2.2.</strong> 7Shining bietet unter anderem Goldbarren verschiedener Größen im monatlichen Abonnementkauf mit quartalsweiser Auslieferung an.</p>',
+                    '<p><strong>2.3.</strong> Die zu liefernden Goldbarren errechnen sich nach dem Tagespreis zum Tage der Rechnungslegung.</p>',
+                    '<p><strong>2.4.</strong> Etwaiger Quartals- Überschuss von einbezahlten Beträgen, wird für die nächste Quartals- Lieferung gutgeschrieben.</p>',
+                    '<p><strong>2.5.</strong> Die Kosten für den Versand trägt das Mitglied.</p>'
                 ]
             ],
             [
-                'id' => 'contract',
+                'id' => 'contract-conclusion',
                 'title' => '3. Vertragsabschluss',
                 'content' => [
-                    '<p><strong>3.1</strong> Der Vertrag kommt durch Anmeldung auf dem Online-Portal und Annahme durch 7Shining zustande.</p>',
-                    '<p><strong>3.2</strong> Bestellungen werden mit Bestellbestätigung verbindlich.</p>',
-                    '<p><strong>3.3</strong> 7Shining behält sich das Recht vor, Anmeldungen ohne Angabe von Gründen abzulehnen.</p>'
+                    '<p><strong>3.1.</strong> Der Vertrag kommt durch Anmeldung auf dem Online-Portal und Annahme durch 7Shining zustande.</p>',
+                    '<p><strong>3.2.</strong> Bestellungen werden mit Bestellbestätigung verbindlich.</p>'
                 ]
             ],
             [
                 'id' => 'member-duties',
                 'title' => '4. Pflichten der Mitglieder',
                 'content' => [
-                    '<p><strong>4.1</strong> Irreführende Aussagen über Produkte, Dienstleistungen oder 7Shining sind untersagt.</p>',
-                    '<p><strong>4.2</strong> Es sind alle geltenden gesetzlichen Vorschriften einzuhalten.</p>',
-                    '<p><strong>4.3</strong> Mitglieder verpflichten sich, 7Shining relevante Änderungen unverzüglich (zum Beispiel Adresse, Bankverbindung, Name, E-Mail) im internen Mitgliedsbereich selbstständig anzupassen.</p>',
-                    '<p><strong>4.4</strong> Nachteile durch fehlende Aktualisierungen gehen zu Lasten des Mitglieds.</p>'
-                ],
-                'warning_box' => [
-                    'title' => '⚠️ Wichtige Mitteilungspflicht',
-                    'content' => 'Mitglieder sind verpflichtet, Änderungen ihrer Kontaktdaten umgehend mitzuteilen. Bei Nichteinhaltung können Nachteile entstehen, für die 7Shining nicht haftet.'
+                    '<p><strong>4.1.</strong> Irreführende Aussagen über Produkte, Dienstleistungen oder 7Shining sind untersagt.</p>',
+                    '<p><strong>4.2.</strong> Es sind alle geltenden gesetzlichen Vorschriften einzuhalten.</p>',
+                    '<p><strong>4.3.</strong> Mitglieder verpflichten sich 7Shining relevante Änderungen unverzüglich (zum Beispiel Adresse, Bankverbindung, Name, E-Mail) unverzüglich im Internen Mitgliedsbereich selbstständig anzupassen.</p>',
+                    '<p><strong>4.4.1.</strong> Nachteile durch fehlende Aktualisierungen gehen zu Lasten des Mitglieds.</p>'
                 ]
             ],
             [
                 'id' => 'withdrawal',
                 'title' => '5. Widerrufsrecht',
                 'content' => [
-                    '<p><strong>5.1</strong> Ein Widerruf des jeweils erworbenen Golddepots, einschließlich der einmaligen Startgebühr, ist innerhalb von 14 Tagen nach Vertragsabschluss möglich. Der Widerruf muss schriftlich per E-Mail an <a href="mailto:widerruf@7shining.com">widerruf@7shining.com</a> erfolgen. Nach Ablauf dieser Frist ist ein Widerruf ausgeschlossen.</p>',
-                    '<p><strong>5.2</strong> Ein Widerruf von Einzahlungen in das Golddepot ist bis spätestens 14 Tage nach Erhalt der quartalsweisen Warenauslieferung möglich und ebenfalls schriftlich per E-Mail an <a href="mailto:widerruf@7shining.com">widerruf@7shining.com</a> zu richten.</p>',
-                    '<p><strong>5.3</strong> Wurde die Ware bereits ausgeliefert, ist diese im Rahmen des Widerrufs einwandfrei und vollständig zurückzusenden.</p>',
-                    '<h3>5.3.1 Rücksendung und Risiko</h3>',
-                    '<ul>',
-                    '<li>Bei ordnungsgemäßem und unbeschädigtem Rückerhalt der Ware wird der entsprechende Betrag dem Golddepot des Mitglieds gutgeschrieben.</li>',
-                    '<li>Die Rücksendung muss versichert und in einwandfreiem Zustand erfolgen.</li>',
-                    '<li>Das Risiko eines Verlustes oder einer Beschädigung während des Rücktransports trägt das Mitglied.</li>',
-                    '<li>Bei Verlust erfolgt keine Rückerstattung, bei Beschädigungen kann eine anteilige Rückerstattung vorgenommen werden.</li>',
-                    '<li>In diesen Fällen haftet 7Shining nicht für den entstandenen Schaden.</li>',
-                    '</ul>',
-                    '<p><strong>5.4</strong> Die Kosten der Rücksendung trägt das Mitglied.</p>'
+                    '<p><strong>5.1.</strong> Ein Widerruf des jeweils erworbenen Golddepots, einschließlich der einmaligen Startgebühr, ist innerhalb von 14 Tagen nach Vertragsabschluss möglich. Der Widerruf muss schriftlich per E-Mail an <a href="mailto:widerruf@7shining.com">widerruf@7shining.com</a> erfolgen. Nach Ablauf dieser Frist ist ein Widerruf ausgeschlossen.</p>',
+                    '<p><strong>5.2.</strong> Ein Widerruf von Einzahlungen in das Golddepot ist bis spätestens 14 Tage nach Erhalt der quartalsweisen Warenauslieferung möglich und ebenfalls schriftlich per E-Mail an <a href="mailto:widerruf@7shining.com">widerruf@7shining.com</a> zu richten.</p>',
+                    '<p><strong>5.3.</strong> Wurde die Ware bereits ausgeliefert, ist diese im Rahmen des Widerrufs einwandfrei und vollständig zurückzusenden.</p>',
+                    '<p><strong>5.3.1.</strong> Bei ordnungsgemäßem und unbeschädigtem Rückerhalt der Ware wird der entsprechende Betrag dem Golddepot des Mitglieds gutgeschrieben.</p>',
+                    '<p>Die Rücksendung muss versichert und in einwandfreiem Zustand erfolgen. Das Risiko eines Verlustes oder einer Beschädigung während des Rücktransports trägt das Mitglied.</p>',
+                    '<p>Bei Verlust erfolgt keine Rückerstattung, bei Beschädigungen kann eine anteilige Rückerstattung vorgenommen werden.</p>',
+                    '<p>In diesen Fällen haftet 7Shining nicht für den entstandenen Schaden. Das Mitglied ist verpflichtet, den Schaden direkt mit der Versicherung des Transportunternehmens abzuwickeln.</p>',
+                    '<p><strong>5.4.</strong> Die Kosten der Rücksendung trägt das Mitglied.</p>'
                 ]
             ],
             [
                 'id' => 'liability',
                 'title' => '6. Haftung',
                 'content' => [
-                    '<p><strong>6.1</strong> 7Shining haftet nur bei Vorsatz oder grober Fahrlässigkeit.</p>',
-                    '<p><strong>6.2</strong> Haftung für Folgeschäden ist – soweit gesetzlich erlaubt – ausgeschlossen.</p>',
-                    '<p><strong>6.3</strong> 7Shining haftet nicht für technische Störungen, Serverausfälle oder Systemfehler, die zu verspäteten Gutschriften, fehlenden Punkten oder Unterbrechungen bei Bestellungen führen, sofern diese nicht vorsätzlich herbeigeführt wurden.</p>'
-                ],
-                'info_box' => [
-                    'type' => 'info',
-                    'title' => 'Haftungsausschluss Gold-Investment',
-                    'content' => '7Shining übernimmt keine Garantie für Wertsteigerungen oder -verluste von Goldbarren. Edelmetall-Investments unterliegen Marktschwankungen.'
+                    '<p><strong>6.1.</strong> 7Shining haftet nur bei Vorsatz oder grober Fahrlässigkeit.</p>',
+                    '<p><strong>6.2.</strong> Haftung für Folgeschäden ist – soweit gesetzlich erlaubt – ausgeschlossen.</p>'
                 ]
             ],
             [
                 'id' => 'privacy',
                 'title' => '7. Datenschutz',
                 'content' => [
-                    '<p><strong>7.1</strong> Personenbezogene Daten werden gemäß Datenschutzgesetz und Datenschutzerklärung verarbeitet.</p>',
-                    '<p><strong>7.2</strong> Weitere Details finden Sie in unserer <a href="datenschutz">Datenschutzerklärung</a>.</p>'
+                    '<p><strong>7.1.</strong> Personenbezogene Daten werden gemäß Datenschutzgesetz und -Erklärung verarbeitet.</p>'
                 ]
             ],
             [
                 'id' => 'termination',
                 'title' => '8. Vertragsbeendigung',
                 'content' => [
-                    '<p><strong>8.1</strong> Eine ordentliche Kündigung ist mit 30 Tagen Frist beidseitig möglich.</p>',
-                    '<p><strong>8.2</strong> Bei schwerwiegenden Verstößen kann 7Shining fristlos kündigen.</p>',
-                    '<h3>8.3 Automatische Beendigung bei Nichtzahlung</h3>',
-                    '<p>Wird die vereinbarte monatliche Mindestsparrate für das jeweilige Golddepot zwei Monate in Folge nicht bezahlt, gilt das Depot als automatisch aufgelöst. Ein eventuell vorhandenes Restguthaben wird auf schriftliches Verlangen per E-Mail an <a href="mailto:depot@7shining.com">depot@7shining.com</a> ausbezahlt.</p>'
+                    '<p><strong>8.1.</strong> Eine ordentliche Kündigung ist mit 30 Tagen Frist beidseitig möglich.</p>',
+                    '<p><strong>8.2.</strong> Bei schwerwiegenden Verstößen kann 7Shining fristlos kündigen.</p>'
                 ]
             ],
             [
                 'id' => 'jurisdiction',
                 'title' => '9. Gerichtsstand & Recht',
                 'content' => [
-                    '<p><strong>9.1</strong> Es gilt das Recht des Landes, in dem 7Shining seinen Sitz hat (Schweiz - Kanton St. Gallen).</p>',
-                    '<p><strong>9.2</strong> Gerichtsstand ist ebenfalls dort, wenn es sich um ein Unternehmen oder eine juristische Person handelt.</p>',
-                    '<p><strong>9.3</strong> Es gilt das Schweizer Vereinsrecht gemäß Art. 60 ff. ZGB.</p>'
+                    '<p><strong>9.1.</strong> Es gilt das Recht des Landes, in dem 7Shining seinen Sitz hat (Schweiz- Kanton St.Gallen).</p>',
+                    '<p><strong>9.2.</strong> Gerichtsstand ist ebenfalls dort, wenn es sich um ein Unternehmen oder eine juristische Person handelt.</p>'
+                ]
+            ],
+            [
+                'id' => 'final-provisions',
+                'title' => '10. Schlussbestimmungen',
+                'content' => [
+                    '<p><strong>10.1.</strong> Sollte eine Bestimmung unwirksam sein, bleibt der Rest der AGB gültig.</p>',
+                    '<p><strong>10.2.</strong> 7Shining kann die AGB ändern.</p>',
+                    '<p><strong>10.2.1.</strong> 7Shining informiert Mitglieder rechtzeitig über Änderungen, z. B. per E-Mail oder im Mitgliederbereich).</p>',
+                    '<p><strong>10.3.</strong> Änderungen dieser Vereinbarung treten 14 Tage nach Bekanntgabe in Kraft, sofern das Mitglied nicht innerhalb dieser Frist schriftlich widerspricht.</p>',
+                    '<p><strong>10.4.</strong> Im Falle eines Widerspruchs behält sich der Verein das Recht vor, die Mitgliedschaft zu beenden.</p>'
                 ]
             ],
             [
                 'id' => 'delivery',
-                'title' => '10. Lieferung',
+                'title' => '11. Lieferung',
                 'content' => [
-                    '<p><strong>10.1</strong> Die Auslieferung von Goldbarren erfolgt kalenderquartalsweise gemäß dem gebuchten Sparpaket.</p>',
-                    '<p><strong>10.2</strong> Die Möglichkeit der Auswahl und Änderung der Barrengröße ist abhängig vom gewählten Depot-Paket.</p>',
-                    '<p><strong>10.3</strong> Die Lieferung erfolgt versichert an die bei 7Shining hinterlegte Lieferadresse.</p>',
-                    '<p><strong>10.4</strong> Das Mitglied ist verpflichtet, Adressänderungen oder sonstige Änderungen rechtzeitig und selbstständig im internen Mitgliedsbereich zu aktualisieren.</p>',
-                    '<p><strong>10.5</strong> Unterlässt das Mitglied die erforderliche Mitwirkung und führt dies zu einer Rücksendung durch den Versanddienstleister, trägt das Mitglied die Kosten der erneuten Zustellung an die korrekte Adresse.</p>',
-                    '<p><strong>10.6</strong> Bei internationalen Lieferungen trägt das Mitglied etwaige Einfuhrzölle, Steuern oder Gebühren selbst.</p>',
-                    '<p><strong>10.7</strong> 7Shining haftet nicht für Verzögerungen durch Behörden oder Transportdienstleister.</p>'
+                    '<p><strong>11.1.</strong> Die Auslieferung von Goldbarren erfolgt Kalender- quartalsweise gemäß dem gebuchten Sparpaket.</p>',
+                    '<p><strong>11.2.</strong> Die Möglichkeit der Auswahl und Änderung der Barrengröße ist abhängig vom gewählten Depot.</p>',
+                    '<p><strong>11.3.</strong> Die Lieferung erfolgt versichert an die bei 7Shining hinterlegte Lieferadresse.</p>',
+                    '<p><strong>11.4.</strong> Das Mitglied ist verpflichtet, Adressänderungen, oder sonstige Änderungen rechtzeitig und selbstständig im internen Mitgliedsbereich zu aktualisieren.</p>',
+                    '<p><strong>11.5.</strong> Unterlässt das Mitglied die erforderliche Mitwirkung und führt dies zu einer Rücksendung durch den Versanddienstleister, trägt das Mitglied die Kosten der erneuten Zustellung an die korrekte Adresse.</p>',
+                    '<p><strong>11.6.</strong> Bei internationalen Lieferungen trägt das Mitglied etwaige Einfuhrzölle, Steuern oder Gebühren selbst.</p>',
+                    '<p><strong>11.7.</strong> 7Shining haftet nicht für Verzögerungen durch Behörden oder Transportdienstleister.</p>'
                 ]
             ],
             [
                 'id' => 'payment',
-                'title' => '11. Zahlungsarten',
+                'title' => '12. Zahlungsarten',
                 'content' => [
-                    '<p><strong>11.1</strong> Mitglieder verpflichten sich, nur die vom Verein zugelassenen Zahlungsmethoden zu nutzen. Rückbuchungen ohne triftigen Grund können zum Ausschluss führen.</p>',
-                    '<p><strong>11.2</strong> Das Mitglied bezahlt die Startgebühr des jeweiligen Depots sofort wie vorgegeben.</p>',
-                    '<p><strong>11.3</strong> Die monatlichen Einzahlungen für das Goldsparprogramm erfolgen bestenfalls per Dauerauftrag, per Überweisung, oder wenn im jeweiligen Land verfügbar, im Lastschriftverfahren.</p>',
-                    '<p><strong>11.4</strong> Alle Zahlungen müssen vom In- und Ausland gebührenfrei sowie bankspesenfrei unserem Konto gutgeschrieben werden, ansonsten werden anfallende Gebühren vom Depot abgezogen.</p>'
-                ],
-                'payment_info' => [
-                    'title' => '💳 Akzeptierte Zahlungsmethoden',
-                    'methods' => [
-                        'Banküberweisung (empfohlen)',
-                        'Dauerauftrag',
-                        'SEPA-Lastschrift (wo verfügbar)'
-                    ]
+                    '<p><strong>12.1.</strong> Mitglieder verpflichten sich, nur die vom Verein zugelassenen Zahlungsmethoden zu nutzen. Rückbuchungen ohne triftigen Grund können zum Ausschluss führen.</p>',
+                    '<p><strong>12.2.</strong> Das Mitglied bezahlt die Startgebühr des jeweiligen Depots sofort wie vorgegeben.</p>',
+                    '<p><strong>12.3.</strong> Die monatlichen Einzahlungen für das Goldsparprogramm bestenfalls per Dauerauftrag, per Überweisung, oder wenn in seinem Land verfügbar im Lastschriftverfahren.</p>',
+                    '<p><strong>12.4.</strong> Alle Zahlungen müssen vom Inland und vom Ausland gebührenfrei sowie bankspesenfrei unserem Konto gutgeschrieben werden, ansonsten werden anfallende Gebühren vom Depot abgezogen.</p>'
                 ]
             ],
             [
-                'id' => 'final',
-                'title' => '12. Schlussbestimmungen',
+                'id' => 'review-waiver',
+                'title' => '13. Verzicht auf öffentliche Bewertungsplattformen',
                 'content' => [
-                    '<p><strong>12.1</strong> Sollte eine Bestimmung unwirksam sein, bleibt der Rest der AGB gültig.</p>',
-                    '<p><strong>12.2</strong> 7Shining kann die AGB ändern. 7Shining informiert Mitglieder rechtzeitig über Änderungen, z.B. per E-Mail oder im Mitgliederbereich.</p>',
-                    '<p><strong>12.3</strong> Änderungen dieser Vereinbarung treten 14 Tage nach Bekanntgabe in Kraft, sofern das Mitglied nicht innerhalb dieser Frist schriftlich widerspricht.</p>',
-                    '<p><strong>12.4</strong> Im Falle eines Widerspruchs behält sich der Verein das Recht vor, die Mitgliedschaft zu beenden.</p>',
-                    '<h3>12.5 Besondere Bestimmungen</h3>',
-                    '<p><strong>Verzicht auf öffentliche Bewertungsplattformen:</strong> Mitglieder verpflichten sich, Kritik zuerst intern zu klären und nicht auf Bewertungsportalen (z.B. Trustpilot, Google) über den Verein zu schreiben, bevor nicht eine Schlichtung versucht wurde.</p>'
-                ],
-                'info_box' => [
-                    'type' => 'date',
-                    'title' => '📅 Stand der AGB',
-                    'content' => 'Diese Allgemeinen Geschäftsbedingungen sind gültig ab <strong>Mai 2025</strong>.'
+                    '<p><strong>13.1.</strong> Mitglieder verpflichten sich, Kritik zuerst intern zu klären und nicht auf Bewertungsportalen (z. B. Trustpilot, Google) über den Verein zu schreiben, bevor nicht eine Schlichtung versucht wurde.</p>'
                 ]
-            ]
-        ],
-        'pdf_downloads' => [
-            [
-                'id' => '7shining-agb',
-                'title' => 'Allgemeine AGB',
-                'description' => 'Vollständige Geschäftsbedingungen (PDF)',
-                'icon' => '📄'
             ],
             [
-                'id' => '7shining-agb-aktive-mitglieder',
-                'title' => 'AGB für aktive Mitglieder',
-                'description' => 'Zusatzbedingungen für aktive Mitgliedschaft (PDF)',
-                'icon' => '📄'
+                'id' => 'depot-dissolution',
+                'title' => '14. Auflösung des Depots bei zweimaliger Nichtzahlung',
+                'content' => [
+                    '<p><strong>14.1.</strong> Wird die vereinbarte monatliche Mindestsparrate für das jeweilige Golddepot zwei Monate in Folge nicht bezahlt, gilt das Depot als automatisch aufgelöst. In diesem Fall wird auch die reguläre Vereinsmitgliedschaft automatisch beendet.</p>',
+                    '<p><strong>14.2.</strong> Mit der Auflösung des Depots verliert das Mitglied sämtliche depotbezogenen Vorteile, wie etwa Bonusansprüche, Vorrangsrechte oder Vergünstigungen.</p>',
+                    '<p><strong>14.3.</strong> Ein eventuell vorhandenes Restguthaben wird auf schriftliches Verlangen per E-Mail an <a href="mailto:depot@7shining.com">depot@7shining.com</a> ausbezahlt.</p>',
+                    '<p><strong>14.4.</strong> Eine spätere Reaktivierung ist ausschließlich durch die Eröffnung eines neuen Depots möglich – inklusive der erneuten Zahlung der einmaligen Startgebühr für das jeweils gewünschte Depot.</p>',
+                    '<p><strong>14.5.</strong> Erfolgen erneut keine monatlichen Einzahlungen, gilt das neue Depot ebenso als beendet und die oben genannten Bedingungen treten erneut in Kraft.</p>'
+                ]
+            ],
+            [
+                'id' => 'voting-rights',
+                'title' => '15. Stimmrecht',
+                'content' => [
+                    '<p><strong>15.1.</strong> Mitglieder verfügen grundsätzlich über kein Stimmrecht in Vereinsangelegenheiten.</p>',
+                    '<p><strong>15.2.</strong> Ein Stimmrecht kann ausschließlich vom Vorstand verliehen werden, wenn ein Mitglied durch außergewöhnliches Engagement oder besondere Verdienste maßgeblich zum Vereinszweck beigetragen hat.</p>',
+                    '<p><strong>15.3.</strong> Die Entscheidung über die Verleihung eines Stimmrechts liegt im alleinigen Ermessen des Vorstands und erfolgt ohne Anspruch auf Begründung.</p>'
+                ]
+            ],
+            [
+                'id' => 'acknowledgment',
+                'title' => '16. Anerkennung',
+                'content' => [
+                    '<p><strong>16.1.</strong> Durch die Anmeldung als Mitglied wird bestätigt die AGB zu akzeptieren.</p>',
+                    '<p><strong>16.2.</strong> Die übrigen Bestimmungen enthalten weitere spezifische Regelungen zu Themen wie Verhalten, Datenschutz, Nutzung von Vereinsressourcen, rechtlichen Angelegenheiten sowie weiteren Aspekten der Mitgliedschaft. Diese AGB bilden einen integralen Bestandteil der Vereinsrichtlinien und ergänzt die Statuten.</p>'
+                ]
+            ],
+            [
+                'id' => 'final-provisions-2',
+                'title' => '17. Schlussbestimmungen',
+                'content' => [
+                    '<p><strong>17.1.</strong> Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam oder undurchführbar sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt. Anstelle der unwirksamen oder undurchführbaren Regelung tritt eine solche, die dem wirtschaftlichen Zweck der ursprünglichen Regelung am nächsten kommt.</p>',
+                    '<p><strong>17.2.</strong> Änderungen oder Ergänzungen dieser AGB bedürfen der Schriftform. Mündliche Nebenabsprachen gelten nicht.</p>',
+                    '<p><strong>17.3.</strong> Es gilt das Schweizer Vereinsrecht gemäß Art. 60 ff. ZGB. Gerichtsstand ist, soweit gesetzlich zulässig, der Sitz des Vereins.</p>',
+                    '<p><strong>17.4.</strong> Aus Gründen der besseren Lesbarkeit wird in dieser Vereinbarung überwiegend das generische Maskulinum verwendet. Sämtliche Personenbezeichnungen gelten gleichermaßen für die Geschlechter.</p>',
+                    '<p><strong>Stand 16.05.2025</strong></p>'
+                ]
             ]
         ]
     ],

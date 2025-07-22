@@ -1,0 +1,127 @@
+/* Home Page Specific Styles */
+
+/* Home Hero Section - 50% height and better spacing */
+.home-hero {
+    min-height: 50vh;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(244, 244, 244, 0.4) 0%, rgba(255, 255, 255, 0.6) 100%), 
+                url('../../images/milad-fakurian-DjjaZybYx4I-unsplash-e1663923748619.jpg') center/cover no-repeat;
+    text-align: center;
+    padding: 0 var(--container-padding);
+    position: relative;
+}
+
+.home-hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem; /* More space between title and button */
+}
+
+.home-hero-content h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 0; /* Remove margin, use gap instead */
+    color: var(--color-text-primary);
+}
+
+/* Override the about-content grid to remove image space */
+.about .about-content {
+    display: block; /* Override the 2-column grid */
+}
+
+/* Center the entire about-text container */
+.about-text {
+    max-width: 1200px;
+    margin: 0 auto; /* Center the container */
+}
+
+/* Home Values - Force 3 columns side by side */
+.home-values {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Force exactly 3 equal columns */
+    gap: var(--space-xl);
+    margin-top: var(--space-2xl);
+    margin-bottom: var(--space-2xl);
+    width: 100%; /* Ensure full width within the centered container */
+}
+
+.home-value-item {
+    text-align: center;
+    padding: var(--space-xl);
+    background: var(--color-bg-primary);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--color-border);
+    transition: var(--transition-normal);
+}
+
+.home-value-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-primary);
+    box-shadow: var(--shadow-primary-lg);
+}
+
+.home-value-item p {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+    opacity: 0.9;
+    margin-bottom: 0;
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+}
+
+/* Home About CTA - Center the button */
+.home-about-cta {
+    text-align: center;
+    margin-top: var(--space-xl);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    /* Reduce hero height on mobile */
+    .home-hero {
+        min-height: 60vh;
+        height: 60vh;
+        padding: var(--space-2xl) var(--space-md);
+    }
+
+    .home-hero-content {
+        gap: 2rem; /* Smaller gap on mobile */
+    }
+
+    .home-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Stack values vertically on mobile */
+    .home-values {
+        grid-template-columns: 1fr;
+        gap: var(--space-lg);
+    }
+
+    .home-value-item {
+        padding: var(--space-lg);
+    }
+}
+
+@media (max-width: 480px) {
+    .home-hero {
+        min-height: 70vh;
+        height: 70vh;
+        padding: var(--space-xl) var(--space-sm);
+    }
+
+    .home-hero-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-value-item {
+        padding: var(--space-md);
+    }
+
+    .home-value-item p {
+        font-size: 0.95rem;
+    }
+}

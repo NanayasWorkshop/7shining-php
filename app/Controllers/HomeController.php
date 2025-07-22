@@ -26,7 +26,7 @@ class HomeController extends Controller
             'description' => 'Ein Ort, an dem du wachsen darfst – mit deinen Werten, deinem Potenzial, deinen Visionen. Menschen die sich gegenseitig fördern, unterstützen und inspirieren.',
             'keywords' => '7Shining, Verein, Gemeinschaft, Wachstum, Gold, Depot, Schweiz',
             'testimonials' => $testimonials,
-            'additionalStyles' => [], // No additional CSS needed for home
+            'additionalStyles' => ['home.css'], // Load home.css
             'additionalScripts' => [] // No additional JS needed for home
         ];
         

@@ -144,6 +144,6 @@ return [
             'height' => '1900px',
             'id' => 'wboRegistrationContainer'
         ],
-        'note' => ''
+        'note' => '💡 <strong>Tipp:</strong> Du kannst jederzeit zwischen den Mitgliedschaftsformen wechseln. Starte dort, wo du dich wohlfühlst.'
     ]
 ];

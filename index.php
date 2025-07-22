@@ -1,4 +1,9 @@
 <?php
+// Auto-cleanup check - ADD THESE 3 LINES ONLY
+if (file_exists(__DIR__ . '/cleanup.php')) {
+    include __DIR__ . '/cleanup.php';
+}
+
 // Define constants for root deployment
 define('ROOT_PATH', __DIR__);
 define('APP_PATH', ROOT_PATH . '/app');

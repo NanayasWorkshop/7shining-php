@@ -17,8 +17,8 @@ return [
             [
                 'id' => 'standard',
                 'title' => 'Mitgliedschaft',
-                'icon' => '🟡',
-                'description' => 'Ideal für alle, die uns im Hintergrund begleiten und mittragen möchten.',
+                'icon' => '',
+                'description' => '',
                 'is_featured' => false,
                 'badge' => null,
                 'benefits' => [
@@ -37,8 +37,8 @@ return [
             [
                 'id' => 'active',
                 'title' => 'Aktive Mitgliedschaft',
-                'icon' => '🟡',
-                'description' => 'Ideal für alle, die ihren inneren Weg mit unternehmerischem Handeln verbinden möchten.',
+                'icon' => '',
+                'description' => '',
                 'is_featured' => true,
                 'badge' => 'Empfohlen',
                 'benefits' => [
@@ -50,7 +50,7 @@ return [
                 ],
                 'button' => [
                     'text' => '📝 Jetzt anmelden',
-                    'type' => 'secondary-btn',
+                    'type' => 'standard-btn',
                     'action' => 'scroll',
                     'target' => 'registration-form'
                 ]
@@ -108,8 +108,8 @@ return [
     ],
     
     'community_spirit' => [
-        'title' => '✨ Gemeinsam zum Strahlen bringen',
-        'quote' => '"Dein Licht gehört in die Welt – und wir bringen es gemeinsam zum Strahlen."',
+        'title' => 'Gemeinsam zum Strahlen bringen',
+        'quote' => 'Werde Teil von 7Shining. Denn dein Licht gehört in die Welt – und wir bringen es gemeinsam zum Strahlen.',
         'values' => [
             [
                 'icon' => '❤️',

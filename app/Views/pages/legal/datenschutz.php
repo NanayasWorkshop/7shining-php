@@ -28,18 +28,16 @@
                             <?= $content ?>
                         <?php endforeach; ?>
 
-                        <!-- Contact Info -->
+                        <!-- Contact Info as regular content -->
                         <?php if (isset($section['contact_info'])): ?>
-                            <div class="contact-info">
-                                <?php if (isset($section['contact_info']['name'])): ?>
-                                    <p><strong><?= $this->escape($section['contact_info']['name']) ?></strong><br>
-                                    <?= $section['contact_info']['address'] ?><br>
-                                    E-Mail: <?= $this->escape($section['contact_info']['email']) ?></p>
-                                <?php else: ?>
-                                    <p>E-Mail: <?= $this->escape($section['contact_info']['email']) ?><br>
-                                    Telefon: <?= $this->escape($section['contact_info']['phone']) ?></p>
-                                <?php endif; ?>
-                            </div>
+                            <?php if (isset($section['contact_info']['name'])): ?>
+                                <p><strong><?= $this->escape($section['contact_info']['name']) ?></strong><br>
+                                <?= $section['contact_info']['address'] ?><br>
+                                E-Mail: <?= $this->escape($section['contact_info']['email']) ?></p>
+                            <?php else: ?>
+                                <p>E-Mail: <?= $this->escape($section['contact_info']['email']) ?><br>
+                                Telefon: <?= $this->escape($section['contact_info']['phone']) ?></p>
+                            <?php endif; ?>
                         <?php endif; ?>
 
                         <!-- Additional Content -->

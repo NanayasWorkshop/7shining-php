@@ -364,11 +364,6 @@ const faqCSS = `
     font-weight: 600;
 }
 
-.faq-question:focus {
-    outline: 2px solid var(--color-primary);
-    outline-offset: 2px;
-}
-
 .faq-answer {
     overflow: hidden;
     transition: max-height 0.3s ease;

@@ -96,7 +96,7 @@ return [
             'id' => 'available-packages',
             'category' => 'packages',
             'question' => 'Welche Depots gibt es?',
-            'answer' => 'Wir bieten drei Depots an:<br><strong>Standard:</strong><br><strong>Premium:</strong><br><strong>VIP</strong><br><br><a href="https://new.7shining.com/packages" target="_blank">Zu den Depots</a>',
+            'answer' => 'Wir bieten drei Depots an:<br><br><strong>Standard:</strong><br><strong>Premium:</strong><br><strong>VIP</strong><br><br><a href="https://new.7shining.com/packages" target="_blank">Zu den Depots</a>',
             'popular' => true
         ],
         [
@@ -126,7 +126,7 @@ return [
             'id' => 'costs-breakdown',
             'category' => 'payment',
             'question' => 'Welche Kosten entstehen?',
-            'answer' => 'Die Kosten sind vollständig transparent.<br>Einmalige Startgebühr: CHF 149.- bis CHF 599.- je nach Depot.<br>Monatliche Sparrate je nach gewähltem Depot.<br>Versandkosten trägt das Mitglied.<br>Aktive Mitgliedschaft CHF 29.- jährlich.<br>Keine versteckten Gebühren oder Überraschungen',
+            'answer' => 'Die Kosten sind vollständig transparent.<br>Einmalige Startgebühr: CHF 149.- bis CHF 599.- je nach Depot.<br>Monatliche Sparrate je nach gewähltem Depot.<br>Versandkosten trägt das Mitglied.<br>Aktive Mitgliedschaft CHF 29.- jährlich.<br>Keine versteckten Gebühren oder Überraschungen.',
             'popular' => true
         ],
         [
@@ -140,7 +140,7 @@ return [
             'id' => 'non-payment-consequences',
             'category' => 'payment',
             'question' => 'Was passiert bei Nichtzahlung?',
-            'answer' => 'Wird die monatliche Mindest- Sparrate von CHF 40.- zwei Monate in Folge nicht bezahlt, wird das Depot automatisch aufgelöst. Ein eventuell vorhandenes Restguthaben wird auf schriftliche Anfrage an depot@7shining.com ausbezahlt.<br>Bitte beachte, dass die einmaligen Start Gebühren Standart CHF 149.-, Premium CHF 299.-, VIP CHF 599.- werden nicht zurück erstattet werden!',
+            'answer' => 'Wird die monatliche Mindest- Sparrate von CHF 40.- zwei Monate in Folge nicht bezahlt, wird das Depot automatisch aufgelöst. Ein eventuell vorhandenes Restguthaben wird auf schriftliche Anfrage an depot@7shining.com ausbezahlt.<br>Bitte beachte, dass die einmaligen Start Gebühren Standart CHF 149.-, Premium CHF 299.-, VIP CHF 599.- werden nicht zurückerstattet!',
             'popular' => false
         ],
         [
@@ -193,7 +193,7 @@ return [
             'id' => 'support-contact',
             'category' => 'technical',
             'question' => 'Wie erreiche ich den Support?',
-            'answer' => 'Unser Support ist für Dich unter der Mailadresse support@7shining.com erreichbar',
+            'answer' => 'Unser Support ist für Dich unter der Mailadresse support@7shining.com erreichbar.',
             'popular' => true
         ],
         

@@ -32,7 +32,7 @@ return [
             'badge' => null,
             'features' => [
                 'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40',
+                '40.- CHF monatlich',
                 'Online-Depot-Verwaltung',
                 '1g Goldbarren',
                 'Quartalsweise Goldbarren-Lieferung',
@@ -57,7 +57,7 @@ return [
             'badge' => '',
             'features' => [
                 'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40,- monatlich',
+                '40.- CHF monatlich',
                 'bis 150,- CHF monatlich',
                 'Online-Depot-Verwaltung',
                 '1g Goldbarren',
@@ -83,7 +83,7 @@ return [
             'badge' => null,
             'features' => [
                 'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40,- monatlich',
+                '40.- CHF monatlich',
                 'bis unbegrenzt CHF monatlich',
                 'Online-Depot-Verwaltung',
                 'Flexible Wahl der Barrengrößen',

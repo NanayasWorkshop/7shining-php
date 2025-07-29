@@ -26,8 +26,8 @@ return [
             'id' => 'standard',
             'name' => 'Standard',
             'description' => '',
-            'price' => '149,- CHF',
-            'period' => 'einmalig',
+            'price' => '149.- CHF',
+            'period' => 'einmalige Startgebühr',
             'is_premium' => false,
             'badge' => null,
             'features' => [
@@ -51,13 +51,14 @@ return [
             'id' => 'premium',
             'name' => 'Premium',
             'description' => '',
-            'price' => '299,- CHF',
-            'period' => 'einmalig',
+            'price' => '299.- CHF',
+            'period' => 'einmalige Startgebühr',
             'is_premium' => true,
             'badge' => '',
             'features' => [
                 'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40,- bis 150,-',
+                'Monatliche Sparrate: CHF 40,- monatlich',
+                'bis 150,- CHF monatlich',
                 'Online-Depot-Verwaltung',
                 '1g Goldbarren',
                 'Quartalsweise Goldbarren-Lieferung',
@@ -76,13 +77,14 @@ return [
             'id' => 'vip',
             'name' => 'VIP',
             'description' => '',
-            'price' => '599,- CHF',
-            'period' => 'einmalig',
+            'price' => '599.- CHF',
+            'period' => 'einmalige Startgebühr',
             'is_premium' => false,
             'badge' => null,
             'features' => [
                 'Eröffnung Spardepot',
-                'Monatliche Sparrate: CHF 40,- bis unbegrenzt',
+                'Monatliche Sparrate: CHF 40,- monatlich',
+                'bis unbegrenzt CHF monatlich',
                 'Online-Depot-Verwaltung',
                 'Flexible Wahl der Barrengrößen',
                 'Anpassung der Goldbarren-Größe jederzeit möglich',
@@ -170,15 +172,15 @@ return [
             ],
             [
                 'question' => 'Wie sicher ist die Lieferung?',
-                'answer' => 'Alle Lieferungen erfolgen vollständig versichert. Bei Verlust oder Beschädigung während des Transports bist du durch unsere Versicherung abgedeckt.'
+                'answer' => 'Alle Lieferungen erfolgen vollständig versichert. Bei Verlust oder Beschädigung während des Transports bist du durch die Versicherung des Transportunternehmens abgesichert.'
             ],
             [
                 'question' => 'Was passiert mit überschüssigen Beträgen?',
-                'answer' => 'Beträge, die nicht für einen ganzen Goldbarren reichen, werden automatisch für die nächste Quartalslieferung gutgeschrieben. Kein Geld geht verloren.'
+                'answer' => 'Beträge die nicht für einen ganzen Goldbarren ausreichend sind, werden automatisch für die nächste Quartalslieferung gutgeschrieben. Kein Geld geht verloren.'
             ],
             [
                 'question' => 'Gibt es eine Mindestlaufzeit?',
-                'answer' => 'Nein, es gibt keine Mindestlaufzeit. Du kannst mit 30 Tagen Frist kündigen.'
+                'answer' => 'Nein, es gibt keine Mindestlaufzeit. Aber bitte beachte, dass die einmalige Startgebühr im Falle einer Kündigung oder Auflösung verfällt.'
             ]
         ]
     ]

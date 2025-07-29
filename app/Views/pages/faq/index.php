@@ -32,7 +32,7 @@
     <div class="container">
         <div class="faq-list">
             <?php foreach ($faq_items as $item): ?>
-                <div class="faq-item" data-category="<?= $this->escape($item['category']) ?>">
+                <div class="faq-item<?= isset($item['neutral_bg']) && $item['neutral_bg'] ? ' faq-neutral-bg' : '' ?>" data-category="<?= $this->escape($item['category']) ?>">
                     <div class="faq-question">
                         <h3><?= $this->escape($item['question']) ?></h3>
                         <span class="toggle-icon">+</span>
@@ -60,7 +60,6 @@
             <h2>Frage nicht gefunden?</h2>
             <p>Unser Support-Team hilft Ihnen gerne weiter. Kontaktieren Sie uns für eine persönliche Beratung.</p>
             <div class="cta-buttons">
-                <a href="<?= $this->url('contact') ?>" class="cta-button">Kontakt aufnehmen</a>
                 <a href="mailto:support@7shining.com" class="secondary-button">E-Mail schreiben</a>
             </div>
         </div>

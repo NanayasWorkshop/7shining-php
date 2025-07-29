@@ -136,6 +136,21 @@
     display: none;
 }
 
+/* Neutral background styling for specific FAQ items */
+.faq-item.faq-neutral-bg {
+    background: var(--color-bg-secondary);
+    border: 1px solid var(--color-border-light);
+}
+
+.faq-item.faq-neutral-bg:hover {
+    border-color: var(--color-border);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item.faq-neutral-bg .faq-question:hover {
+    background: var(--color-bg-primary);
+}
+
 .faq-question {
    padding: 1.5rem 2rem;
    cursor: pointer;
@@ -235,7 +250,7 @@
 /* FAQ CTA Section */
 .faq-cta {
    padding: 6rem 0;
-   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+   background: var(--color-bg-secondary);
    text-align: center;
 }
 
@@ -243,7 +258,7 @@
    font-size: 2.5rem;
    font-weight: 700;
    margin-bottom: 1rem;
-   color: var(--color-white);
+   color: var(--color-text-primary);
 }
 
 .faq-cta .cta-content p {
@@ -253,7 +268,7 @@
    max-width: 600px;
    margin-left: auto;
    margin-right: auto;
-   color: var(--color-white);
+   color: var(--color-text-secondary);
 }
 
 .cta-buttons {
@@ -264,24 +279,24 @@
 }
 
 .cta-buttons .cta-button {
-   background: var(--color-white);
-   color: var(--color-primary);
+   background: var(--color-primary);
+   color: var(--color-white);
 }
 
 .cta-buttons .cta-button:hover {
-   background: #f0f0f0;
+   background: var(--color-primary-dark);
    transform: translateY(-2px);
 }
 
 .cta-buttons .secondary-button {
    background: transparent;
-   color: var(--color-white);
-   border-color: var(--color-white);
+   color: var(--color-text-primary);
+   border-color: var(--color-text-primary);
 }
 
 .cta-buttons .secondary-button:hover {
-   background: var(--color-white);
-   color: var(--color-primary);
+   background: var(--color-text-primary);
+   color: var(--color-white);
 }
 
 /* Mobile Responsive */
@@ -336,6 +351,10 @@
    .cta-buttons .cta-button,
    .cta-buttons .secondary-button {
        width: 250px;
+   }
+
+   .faq-cta {
+       background: var(--color-bg-secondary);
    }
 }
 

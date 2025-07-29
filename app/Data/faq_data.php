@@ -95,8 +95,8 @@ return [
         [
             'id' => 'available-packages',
             'category' => 'packages',
-            'question' => 'Welche Depot-Pakete gibt es?',
-            'answer' => 'Wir bieten drei Depot-Pakete an: <strong>Standard:</strong> CHF 40-100 monatlich, 1g Goldbarren | <strong>Premium:</strong> CHF 40-200 monatlich, 1g Goldbarren + erweiterte Services | <strong>VIP:</strong> Ab CHF 40 unbegrenzt, frei wählbare Barrengrößen + persönlicher Betreuer',
+            'question' => 'Welche Depots gibt es?',
+            'answer' => 'Wir bieten drei Depots an:<br><strong>Standard:</strong><br><strong>Premium:</strong><br><strong>VIP</strong><br><br><a href="https://new.7shining.com/packages" target="_blank">Zu den Depots</a>',
             'popular' => true
         ],
         [
@@ -126,28 +126,28 @@ return [
             'id' => 'costs-breakdown',
             'category' => 'payment',
             'question' => 'Welche Kosten entstehen?',
-            'answer' => 'Die Kosten sind vollständig transparent: Einmalige Startgebühr: CHF 29 | Monatliche Sparrate: Je nach gewähltem Paket | Versandkosten: Trägt das Mitglied | Aktive Mitgliedschaft: CHF 29 jährlich. Keine versteckten Gebühren oder Überraschungen!',
+            'answer' => 'Die Kosten sind vollständig transparent.<br>Einmalige Startgebühr: CHF 149.- bis CHF 599.- je nach Depot.<br>Monatliche Sparrate je nach gewähltem Depot.<br>Versandkosten trägt das Mitglied.<br>Aktive Mitgliedschaft CHF 29.- jährlich.<br>Keine versteckten Gebühren oder Überraschungen',
             'popular' => true
         ],
         [
             'id' => 'payment-methods',
             'category' => 'payment',
             'question' => 'Welche Zahlungsmethoden werden akzeptiert?',
-            'answer' => 'Wir akzeptieren folgende Zahlungsmethoden: Banküberweisung (empfohlen), Dauerauftrag, SEPA-Lastschrift (wo verfügbar). Alle Zahlungen müssen gebührenfrei auf unserem Konto eingehen.',
+            'answer' => 'Wir akzeptieren die jeweils angegebenen Zahlungsmethoden.<br>Alle Zahlungen müssen zwingend Gebührenfrei auf unserem Konto eingehen.',
             'popular' => false
         ],
         [
             'id' => 'non-payment-consequences',
             'category' => 'payment',
             'question' => 'Was passiert bei Nichtzahlung?',
-            'answer' => 'Wird die monatliche Sparrate zwei Monate in Folge nicht bezahlt, wird das Depot automatisch aufgelöst. Ein eventuell vorhandenes Restguthaben wird auf schriftliche Anfrage an depot@7shining.com ausbezahlt.',
+            'answer' => 'Wird die monatliche Mindest- Sparrate von CHF 40.- zwei Monate in Folge nicht bezahlt, wird das Depot automatisch aufgelöst. Ein eventuell vorhandenes Restguthaben wird auf schriftliche Anfrage an depot@7shining.com ausbezahlt.<br>Bitte beachte, dass die einmaligen Start Gebühren Standart CHF 149.-, Premium CHF 299.-, VIP CHF 599.- werden nicht zurück erstattet werden!',
             'popular' => false
         ],
         [
             'id' => 'savings-rate-changes',
             'category' => 'payment',
             'question' => 'Kann ich meine Sparrate ändern?',
-            'answer' => 'Ja, Sie können Ihre monatliche Sparrate jederzeit im Rahmen Ihres gewählten Pakets anpassen. Änderungen gelten ab dem nächsten Abrechnungsmonat. Bei größeren Änderungen können Sie auch zu einem anderen Paket wechseln.',
+            'answer' => 'Generell Ja.<br>Dies ist aber nur im Rahmen ihres gewählten Depots möglich.<br>Deswegen empfehlen wir generell das VIP-Depot, weil sie nur damit absolute Flexibilität geniessen.',
             'popular' => false
         ],
         
@@ -156,21 +156,21 @@ return [
             'id' => 'delivery-frequency',
             'category' => 'delivery',
             'question' => 'Wie oft erhalte ich Goldbarren?',
-            'answer' => 'Die Auslieferung erfolgt quartalsweise (alle 3 Monate). Die gesparten Beträge werden gesammelt und entsprechend dem Tagespreis in Goldbarren umgewandelt. Überschüsse werden für die nächste Lieferung gutgeschrieben.',
+            'answer' => 'Die Auslieferung erfolgt Quartalsweise (alle 3 Monate). Sollten Sie auf grössere Goldbarren sparen, und die getätigten Einzahlungen des Quartals nicht für den gewählten Goldbarren ausreichen, verschiebt sich die Auslieferung dementsprechend um ein oder auch mehrere Quartale.<br>Sollte sich in ihrem Depot ein Rest Guthaben nach der Goldauslieferung befinden, welches nicht mehr für einen vollen Goldbarren ausreichend ist, wird dieses Restguthaben mit der nächsten Lieferung gutgeschrieben.',
             'popular' => true
         ],
         [
             'id' => 'delivery-security',
             'category' => 'delivery',
             'question' => 'Wie sicher ist die Lieferung?',
-            'answer' => 'Alle Lieferungen erfolgen vollständig versichert direkt zu Ihrer Adresse. Das Risiko während des Transports liegt beim Mitglied, ist aber durch die Versicherung abgedeckt. Bei Verlust oder Beschädigung wickeln Sie den Schaden direkt mit der Transportversicherung ab.',
+            'answer' => 'Alle Lieferungen erfolgen vollständig versichert direkt zu Dir nach Hause. Das Risiko während des Transports liegt beim Mitglied, ist aber durch die Versicherung abgedeckt. Bei Verlust oder Beschädigung wickeln Sie den Schaden direkt mit der Transportversicherung ab.',
             'popular' => true
         ],
         [
             'id' => 'international-delivery',
             'category' => 'delivery',
-            'question' => 'Kann ich international liefern lassen?',
-            'answer' => 'Ja, wir liefern international. Bei internationalen Lieferungen trägt das Mitglied etwaige Einfuhrzölle, Steuern oder Gebühren selbst. Bitte informieren Sie sich über die Einfuhrbestimmungen in Ihrem Land.',
+            'question' => 'Kann ich international bestellen?',
+            'answer' => 'Wir liefern in der Schweiz und Liechtenstein, sowie in alle Länder der Europäischen Union. Weitere Kontinente und Länder sind in Vorbereitung. Du erkennst im Bestellvorgang welche zusätzlichen Länder bereits beliefert werden können.',
             'popular' => false
         ],
         
@@ -193,7 +193,7 @@ return [
             'id' => 'support-contact',
             'category' => 'technical',
             'question' => 'Wie erreiche ich den Support?',
-            'answer' => 'Unser Support ist für Sie da: <strong>E-Mail:</strong> support@7shining.com | <strong>Depot-Fragen:</strong> depot@7shining.com | <strong>Geschäftszeiten:</strong> Mo-Fr 09:00-17:00 Uhr. Wir antworten in der Regel innerhalb von 24 Stunden.',
+            'answer' => 'Unser Support ist für Dich unter der Mailadresse support@7shining.com erreichbar',
             'popular' => true
         ],
         
@@ -202,28 +202,28 @@ return [
             'id' => 'withdrawal-rights',
             'category' => 'legal',
             'question' => 'Kann ich meinen Vertrag widerrufen?',
-            'answer' => 'Ja, Sie haben ein 14-tägiges Widerrufsrecht ab Vertragsabschluss. Der Widerruf muss schriftlich per E-Mail an widerruf@7shining.com erfolgen. Bei bereits gelieferten Goldbarren müssen diese in einwandfreiem Zustand zurückgesendet werden.',
+            'answer' => 'Ja, Du hast ein 14-tägiges Widerrufsrecht ab Vertragsabschluss. Der Widerruf muss schriftlich per E-Mail an widerruf@7shining.com erfolgen. Bei bereits gelieferten Goldbarren müssen diese versichert und in einwandfreiem Zustand zurückgesendet werden.',
             'popular' => false
         ],
         [
             'id' => 'bank-status',
             'category' => 'legal',
             'question' => 'Ist 7Shining eine Bank oder Finanzdienstleister?',
-            'answer' => 'Nein, 7Shining ist ein Verein und betreibt keine Bankgeschäfte, Finanzberatung oder Versicherungsvermittlung. Wir unterliegen nicht der Aufsicht der FINMA, Bafin oder FMA. Unsere Depot-Dienstleistungen sind private Vermittlungstätigkeiten.',
+            'answer' => 'Nein, 7Shining ist ein Verein und betreibt keine Bankgeschäfte, Finanzberatung oder Versicherungsvermittlung. Wir unterliegen nicht der Aufsicht der FINMA, Bafin oder FMA.',
             'popular' => false
         ],
         [
             'id' => 'termination',
             'category' => 'legal',
             'question' => 'Wie kann ich kündigen?',
-            'answer' => 'Eine ordentliche Kündigung ist mit 30 Tagen Frist möglich. Senden Sie Ihre Kündigung schriftlich an kontakt@7shining.com. Es gibt keine Mindestlaufzeit für Depot-Pakete.',
+            'answer' => 'Eine ordentliche Kündigung ist jederzeit möglich. Sende Deine Kündigung schriftlich an kontakt@7shining.com. Es gibt keine Mindestlaufzeit für Depots. Bitte beachte, dass die einmaligen Start Gebühren Standart CHF 149.-, Premium CHF 299.-, VIP CHF 599.- nicht zurückerstattet werden!',
             'popular' => false
         ],
         [
             'id' => 'value-guarantees',
             'category' => 'legal',
             'question' => 'Erhalte ich eine Garantie auf Wertsteigerungen?',
-            'answer' => 'Nein, 7Shining gibt keine Garantien für Wertsteigerungen oder -verluste von Goldbarren. Edelmetall-Investments unterliegen natürlichen Marktschwankungen. Gold wird traditionell als Wertaufbewahrungsmittel betrachtet, aber der Wert kann steigen oder fallen.',
+            'answer' => 'Nein, 7Shining gibt keine Garantien für Wertsteigerungen bei Goldbarren. Edelmetalle unterliegen natürlichen Marktschwankungen. Gold wird traditionell als Wertaufbewahrungsmittel betrachtet, aber der Preis kann steigen oder fallen.',
             'popular' => false
         ]
     ]

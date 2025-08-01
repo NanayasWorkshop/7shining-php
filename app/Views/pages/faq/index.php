@@ -58,7 +58,7 @@
     <div class="container">
         <div class="cta-content">
             <h2>Frage nicht gefunden?</h2>
-            <p>Unser Support-Team hilft Ihnen gerne weiter. Kontaktieren Sie uns für eine persönliche Beratung.</p>
+            <p>Unser Support-Team ist gerne für dich da – schreib uns einfach!</p>
             <div class="cta-buttons">
                 <a href="mailto:support@7shining.com" class="secondary-button">E-Mail schreiben</a>
             </div>
